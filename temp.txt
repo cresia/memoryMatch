@@ -1,0 +1,91 @@
+
+        <div class="card">
+          <div class="back danCard" data-card="dan"></div> <!-- back is the answer -->
+          <div class="front"></div> <!-- front is the logo -->
+        </div>
+
+
+        <div class="card">
+          <div class="back brettCard" data-card="brett"></div> <!-- back is the answer -->
+          <div class="front"></div> <!-- front is the logo -->
+        </div>
+
+        <div class="card">
+          <div class="back danCard" data-card="dan"></div>
+          <div class="front"></div>
+        </div>
+
+        <div class="card">
+          <div class="back brettCard" data-card="brett"></div> <!-- back is the answer -->
+          <div class="front"></div> <!-- front is the logo -->
+        </div>
+
+        <div class="card">
+          <div class="back codyCard" data-card="brett"></div>
+          <div class="front"></div>
+        </div>
+
+        <div class="card">
+          <div class="back codyCard" data-card="brett"></div>
+          <div class="front"></div>
+        </div>
+
+        <div class="card">
+          <div class="back billCard" data-card="brett"></div>
+          <div class="front"></div>
+        </div>
+
+        <div class="card">
+          <div class="back billCard" data-card="brett"></div>
+          <div class="front"></div>
+        </div>
+
+        <div class="card">
+          <div class="back scottCard" data-card="brett"></div>
+          <div class="front"></div>
+        </div>
+
+        <div class="card">
+          <div class="back scottCard" data-card="brett"></div>
+          <div class="front"></div>
+        </div>
+
+        <div class="card">
+          <div class="back timdCard" data-card="brett"></div>
+          <div class="front"></div>
+        </div>
+
+        <div class="card">
+          <div class="back timdCard" data-card="brett"></div>
+          <div class="front"></div>
+        </div>
+
+        <div class="card">
+          <div class="back tjCard" data-card="brett"></div>
+          <div class="front"></div>
+        </div>
+
+        <div class="card">
+          <div class="back tjCard" data-card="brett"></div>
+          <div class="front"></div>
+        </div>
+
+        <div class="card">
+          <div class="back timhCard" data-card="brett"></div>
+          <div class="front"></div>
+        </div>
+
+        <div class="card">
+          <div class="back timhCard" data-card="brett"></div>
+          <div class="front"></div>
+        </div>
+
+        <div class="card">
+          <div class="back billCard" data-card="brett"></div>
+          <div class="front"></div>
+        </div>
+
+        <div class="card">
+          <div class="back tjCard" data-card="brett"></div>
+          <div class="front"></div>
+        </div> -->

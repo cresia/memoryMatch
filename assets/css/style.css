@@ -1,1 +1,171 @@
+body{
+  background-image: url("https://cdn02.plentymarkets.com/2brofzsczyt8/item/images/154482/full/Disney-Fototapete-Findet-Nemo-bunt-360x254-cm-FTD-.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
+.titlePic{
+  position: absolute;
+  width:20%;
+  height: 73%;
+  margin-left:25%;
+  top:23px;
+}
+
+
+.title{
+  font-weight: bold;
+  text-align: center;
+  border: solid black 5px;
+  padding: 3%;
+  background-image: url("https://media3.giphy.com/media/q0QNAFZJYHKYU/source.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color:rgb(252, 251, 253);
+  position: relative;
+  opacity: 0.8;
+
+}
+
+aside {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.sideList{
+  border: solid black 2px;
+  padding: 2%;
+  display: inline-block;
+  width: 20vw;
+  text-align: center;
+  margin-top:20%;
+
+}
+
+.box{
+  border: solid black 1px;
+  padding: 10%;
+  margin-bottom: 10%;
+  margin-right:5%;
+  background-color:lightskyblue;
+}
+
+main {
+  display: inline-block;
+}
+
+.mainCards{
+  /* border: solid black 1px; */
+  padding: 3%;
+  width: 65vw;
+  height: 20%;
+  display: inline-block;
+  margin-left:3%;
+
+}
+
+
+.card {
+    border: solid black 1px;
+    /* padding: 5%; */
+    margin-top: 3%;
+    /* background-color: black; */
+    width: 10vw;
+    margin-left: 0.8%;
+    height: 20vh;
+    position: relative;
+    display: inline-block;
+}
+
+
+/* front is the lfz logo */
+.front {
+  background-image: url("https://i.pinimg.com/originals/09/d3/cd/09d3cd5e6f99f90b573af3ec0b8408ee.jpg");
+  width:100%;
+  height:100%;
+  background-position:center;
+  background-size: cover;
+  position:absolute;
+
+}
+
+/* back is the answer */
+.back{
+  background-position:center;
+  width:100%;
+  height:100%;
+  background-size: cover;
+  position:absolute
+
+}
+
+.danCard{
+  background-image: url("https://www.nicepng.com/png/detail/85-852416_peach-is-a-starfish-and-a-supporting-character.png");
+
+}
+
+.brettCard{
+  background-image: url("https://vignette.wikia.nocookie.net/disney/images/d/d0/Anchor-FN.png/revision/latest?cb=20131111065620");
+}
+
+
+.codyCard{
+  background-image: url("http://www.blackfilm.com/read/wp-content/uploads/2016/03/finding-dory-kaitlin-olson-destiny-whale-shark.jpg");
+}
+
+.billCard{
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzh1U0t-7ZBaALm0ESoX1p4mz6sihWpRsIFWd_e5rHe2tlvkXh");
+}
+
+.scottCard{
+  background-image: url("https://s3-eu-west-1.amazonaws.com/ourboox-media-prod/wp-content/uploads/2018/02/02183724/dory_fn.png");
+}
+
+.timdCard{
+  background-image: url("http://www.amisvegetarian.com/wp-content/uploads/2018/09/finding-nemo-characters-with-pictures-finding-nemo-images-liked-on-polyvore-featuring-disney-finding-classroom-clipart.jpg");
+}
+
+.timhCard{
+  background-image: url("https://www.nicepng.com/png/detail/89-898198_nemo-png-photos-finding-dory-characters-png.png");
+}
+
+.tjCard{
+  background-image: url("http://home.exetel.com.au/ttguy/Tad.jpg");
+
+}
+
+
+
+
+
+
+
+
+.hidden{
+  display: none;
+}
+
+
+.modal-content{
+  background-color: lightgrey;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  display:none;
+}
+
+/*
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+} */
