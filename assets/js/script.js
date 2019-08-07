@@ -12,7 +12,7 @@ function initialApp(){
 var theFirstCardClicked = null;
 var theSecondCardClicked = null;
 var match = 0;
-var max_matches = 5;
+var max_matches = 3;
 
 var addMatchedClass;
 
