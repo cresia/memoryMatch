@@ -1,42 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/styles1.css">
+<link href="https://fonts.googleapis.com/css?family=Aladin|Bevan|Slackey&display=swap" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="assets/js/script.js"></script>
-  <!-- <script src="assets/js/script1.js"></script> -->
-
+  <script src="assets/js/script1.js"></script>
   <title>Matching Cards</title>
 </head>
+
 <body>
-<!-- http://i249.photobucket.com/albums/gg204/ManinderLotey/Disney12.gif
-http://www.bumline.net/graphics/Disney/glitterimagesdisney9.gif
-https://media.giphy.com/media/dU6cMQawFTmdG/giphy.gif -->
 
   <header>
     <div class="container title">
-      <img class="titlePic" src="https://media3.giphy.com/media/b18SglxYnfKRW/200w.webp?cid=790b76115d264c0479744d5173301d66&rid=200w.webp" alt="">
-      <h1>Memory Match</h1>
+
+      <!-- <img src="./assets/images/nemo.png" alt="logo"> -->
+
+      <div class="row">
+        <div class="column"><img src="./assets/images/nemo.png" alt="logo">
+
+          <button class="speaker">Reset</button>
+
+          <button class="speaker">
+            <img src="./assets/images/icon2.png" alt="speakerIcon" class= "speakerIcon">
+          </button>
+
+          <button class="speaker">
+            <img src="./assets/images/mute.png" alt="muteIcon" class= "speakerIcon">
+          </button>
+
+        </div>
+
+        <div class="column stat">Game Played
+            <p class="resultGamePlayed">0</p>
+        </div>
+
+        <div class="column stat">Attempts
+            <p class="resultAttempts">0</p>
+        </div>
+
+        <div class="column stat">Accuracy
+          <p class="resultAccuracy">0</p>
+        </div>
+      </div>
+
+
+
     </div>
   </header>
 
-  <aside>
-    <div class="container sideList">
-      Stats
-        <div class="box">Game Played</div>
-        <div class="box resultGamePlayed">0</div>
-        <div class="box">Attempts</div>
-        <div class="box resultAttempts">0</div>
-        <div class="box">Accuracy</div>
-        <div class="box resultAccuracy">0</div>
-      </div>
-    </div>
-  </aside>
 
-  <main>
+  <!-- <div class="container">
+
+    <div class="row">
+      <div class="column">
+        <h2>Game Played</h2>
+        <p class="resultGamePlayed">0</p>
+      </div>
+      <div class="column">
+        <h2>Attempts</h2>
+        <p class="resultAttempts">0</p>
+      </div>
+      <div class="column">
+        <h2>Accuracy</h2>
+        <p class="resultAccuracy">0</p>
+      </div>
+
+    </div>
+
+  </div> -->
+
 
 
     <div class="container mainCards">
@@ -147,7 +183,6 @@ https://media.giphy.com/media/dU6cMQawFTmdG/giphy.gif -->
           </div> -->
 
     </div>
-
-  </main>
 </body>
+
 </html>

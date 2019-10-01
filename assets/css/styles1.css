@@ -1,0 +1,274 @@
+body{
+  background-image: url("https://media3.giphy.com/media/q0QNAFZJYHKYU/source.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:100vh;
+  overflow: hidden;
+}
+
+
+.title{
+  margin-top:2%;
+}
+
+
+
+/* .resetButton{
+  margin-top: 1.5rem;
+} */
+
+/* Container for flexboxes */
+.row {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.stat{
+  color:rgb(15, 7, 87);
+  margin-left:4%;
+  font-family: 'Aladin', cursive;
+  font-size:30px;
+  /* text-align: center; */
+
+}
+
+
+.resultGamePlayed {
+  color:rgb(15, 1, 8);
+  background-size: contain;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-image: url("https://i0.wp.com/creationcreatures.com/wp-content/uploads/Bubble2.png?fit=2640%2C2640&ssl=1");
+  width: 40%;
+  height:40%;
+  font-size: 1.5rem;
+  margin-top:1%;
+  margin-left:3.5%;
+  padding-top:15%;
+}
+
+.resultAttempts, .resultAccuracy {
+  color:rgb(15, 1, 8);
+  background-size: contain;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-image: url("https://i0.wp.com/creationcreatures.com/wp-content/uploads/Bubble2.png?fit=2640%2C2640&ssl=1");
+  margin-top:1%;
+  width: 40%;
+  height:40%;
+  font-size: 1.5rem;
+  margin-left:-3%;
+  padding-top:15%;
+}
+
+
+.mainCards{
+  width: 93%;;
+  height: 20%;
+  display: inline-block;
+  margin-left:3%;
+  position:relative;
+}
+
+.card {
+  border: solid white 1.5px;
+  width: 11vw;
+  margin-left: 4%;
+  height: 19vh;
+  margin-top:2%;
+  position: relative;
+  display: inline-block;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
+}
+
+.flip{
+  transform:rotateY(180deg);
+}
+
+/* front is the lfz logo */
+.front {
+  background-image: url("https://i.pinimg.com/originals/09/d3/cd/09d3cd5e6f99f90b573af3ec0b8408ee.jpg");
+  width:100%;
+  height:100%;
+  background-position:center;
+  background-size: contain;
+  position:absolute;
+  margin: 0 auto;
+  backface-visibility: hidden;
+}
+
+/* back is the answer */
+.back{
+  background-position:center;
+  width:100%;
+  height:100%;
+  background-size: contain;
+  position:absolute;
+  transform: rotateY(180deg);
+  margin: 0 auto;
+}
+
+.danCard{
+  background-repeat: no-repeat;
+  background-position:center;
+  background-image: url("https://www.pinclipart.com/picdir/big/341-3416601_nemo-sticker-finding-dory-white-background-clipart.png");
+  background-size: contain;
+  width:100%;
+  height:100%;
+  position:absolute;
+}
+
+.brettCard{
+  background-repeat: no-repeat;
+  background-position:center;
+  background-image: url("https://i.pinimg.com/originals/02/f4/5b/02f45bac46c44e57af65e522ec5b77c5.gif");
+  background-size: contain;
+  width:100%;
+  height:100%;
+  position:absolute;
+}
+
+.codyCard{
+  background-repeat: no-repeat;
+  background-position:center;
+  background-image: url("https://i.pinimg.com/originals/04/1c/ab/041cab5d642594b8c20d994b388a69e4.png");
+  background-size: contain;
+  width:100%;
+  height:100%;
+  position:absolute;
+}
+
+.billCard{
+  background-repeat: no-repeat;
+  background-position:center;
+  background-image: url("https://webstockreview.net/images/clipart-turtle-finding-nemo-3.png");
+  background-size: contain;
+  width:100%;
+  height:100%;
+  position:absolute;
+}
+
+.scottCard{
+  background-repeat: no-repeat;
+  background-position:center;
+  background-image: url("https://clipground.com/images/bloat-clipart-2.jpg");
+  background-size: contain;
+  width:100%;
+  height:100%;
+  position:absolute;
+}
+
+.timdCard{
+  background-repeat: no-repeat;
+  background-position:center;
+  background-image: url("https://www.stickpng.com/assets/images/58f37913a4fa116215a92419.png");
+  background-size: contain;
+  width:100%;
+  height:100%;
+  position:absolute;
+}
+
+.timhCard{
+  background-repeat: no-repeat;
+  background-position:center;
+  background-image: url("https://i.pinimg.com/originals/88/64/e1/8864e1c5aa6b5f31be718db9c287cbe8.gif");
+  background-size: contain;
+  width:100%;
+  height:100%;
+  position:absolute;
+}
+
+.tjCard{
+  background-repeat: no-repeat;
+  background-position:center;
+  background-image: url("https://cdn.clipart.email/4cc3e93057e8444e33e7265334a2b2f7_i-met-a-lonely-octopus-kenn-nesbitts-poetry4kidscom_300-273.png");
+  background-size: contain;
+  width:100%;
+  height:100%;
+  position:absolute;
+}
+
+.hidden{
+  display: none;
+}
+
+.modal-content{
+  /* background-color: lightpink; */
+  background-image: url("https://image.freepik.com/vector-gratis/playa-vacia-mar-verano-mar-cielo-arena-vector-fondo-vacaciones_87424-62.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px;
+  position: absolute;
+  width: 50%;
+  display:none;
+  top: 96%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 25px;
+  z-index: 1;
+}
+
+
+.modalText{
+  font-family: 'Aladin', cursive;
+  font-size: 35px;
+  text-align:center;
+  color:white;
+}
+
+.winImg{
+  background-image: url("https://media2.giphy.com/media/OXF91oNPj8NH2/giphy.gif");
+  background-size:contain;
+  background-repeat: no-repeat;
+  width:30vw;
+  height:25vh;
+  margin-left: 18%;
+}
+
+
+.playAgain{
+  margin-top:5%;
+  color:white;
+  background-color:rgb(29, 29, 117);
+  font-family: 'Aladin', cursive;
+  font-size: 35px;
+  margin-left:40%;
+  padding:2%;
+  border-radius: 20px;
+
+}
+
+.speaker{
+  width:13%;
+  margin-left:2%;
+}
+
+.speakerIcon{
+  width:25%;
+  height: 25%;
+}
+
+
+
+/*
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}  */

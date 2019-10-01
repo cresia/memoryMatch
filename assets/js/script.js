@@ -148,7 +148,6 @@ function handleCardClick(event){
     displayStats();
 
     $(".back").removeClass("matched");
-
     // $(".back").hide();
     $(".front").show();
 
