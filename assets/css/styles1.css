@@ -107,6 +107,9 @@ body{
 
 /* back is the answer */
 .back{
+  /* background-color:#03396c;
+  opacity:0.5; */
+
   background-position:center;
   width:100%;
   height:100%;
@@ -117,8 +120,8 @@ body{
 }
 
 .doryCard{
-  /* background-color: whitesmoke;
-  opacity:2.5; */
+  /* background-color:#03396c;
+  opacity:0.5; */
   background-repeat: no-repeat;
   background-position:center;
   background-image: url("https://www.pinclipart.com/picdir/big/341-3416601_nemo-sticker-finding-dory-white-background-clipart.png");
@@ -126,10 +129,12 @@ body{
   width:100%;
   height:100%;
   position:absolute;
+
 }
 
 .nemoCard{
-  /* background-color: rgb(6, 6, 85); */
+  /* background-color:#03396c;
+  opacity:0.5; */
   background-repeat: no-repeat;
   background-position:center;
   background-image: url("https://i.pinimg.com/originals/02/f4/5b/02f45bac46c44e57af65e522ec5b77c5.gif");
@@ -137,10 +142,12 @@ body{
   width:100%;
   height:100%;
   position:absolute;
+
 }
 
 .starCard{
-  /* background-color: rgb(6, 6, 85); */
+  /* background-color:#03396c;
+  opacity:0.5; */
   background-repeat: no-repeat;
   background-position:center;
   background-image: url("https://i.pinimg.com/originals/04/1c/ab/041cab5d642594b8c20d994b388a69e4.png");
@@ -148,6 +155,7 @@ body{
   width:100%;
   height:100%;
   position:absolute;
+
 }
 
 .turtleCard{

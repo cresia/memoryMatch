@@ -7,23 +7,19 @@ function initialApp() {
   createCards(shuffleCards()); // this is for dynamic: if use dynamic: call this function and the one below
   $(".card").on("click", handleCardClick); // if use static: uncomment static on html
 
+  // $(".resetButton").on("click", createCards(shuffleCards()));
+
 }
 
 var theFirstCardClicked = null;
 var theSecondCardClicked = null;
 var match = 0;
 var max_matches = 1;
-
 var addMatchedClass;
-
 var attempts = 0;
 var games_played = 0;
 
-
-
 function handleCardClick(event) {
-
-
   if ($(this).find(".back").hasClass("matched")) { // to check if both images has the same class "matched" then they both has been clicked and matched
     return;
   }
@@ -80,12 +76,13 @@ function handleCardClick(event) {
         $(".back").addClass("matched")
 
         $("button").click(closeModal);
+        // createCards(shuffleCards());
         games_played++;
 
         displayStats();
         winAudio();
       }
-      // $(".front").removeClass("flip");
+
       displayStats();
     }
 
@@ -126,7 +123,11 @@ function handleCardClick(event) {
 function closeModal() {
   $(".modal-content").hide();
   resetStats();
+  // shuffleCards();
 }
+
+
+
 
 function calculateAccuracy() {
 
@@ -146,7 +147,6 @@ function displayStats() {
 
 }
 
-
 function resetStats() {
   match = 0;
   attempts = 0;
@@ -157,7 +157,10 @@ function resetStats() {
 
   // $(".back").hide();
   $(".front").show();
+
   // $(".front").removeClass("flip");
+  // createCards(shuffleCards());
+
 
 }
 
