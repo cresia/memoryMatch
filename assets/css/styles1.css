@@ -116,7 +116,9 @@ body{
   margin: 0 auto;
 }
 
-.danCard{
+.doryCard{
+  /* background-color: whitesmoke;
+  opacity:2.5; */
   background-repeat: no-repeat;
   background-position:center;
   background-image: url("https://www.pinclipart.com/picdir/big/341-3416601_nemo-sticker-finding-dory-white-background-clipart.png");
@@ -126,7 +128,8 @@ body{
   position:absolute;
 }
 
-.brettCard{
+.nemoCard{
+  /* background-color: rgb(6, 6, 85); */
   background-repeat: no-repeat;
   background-position:center;
   background-image: url("https://i.pinimg.com/originals/02/f4/5b/02f45bac46c44e57af65e522ec5b77c5.gif");
@@ -136,7 +139,8 @@ body{
   position:absolute;
 }
 
-.codyCard{
+.starCard{
+  /* background-color: rgb(6, 6, 85); */
   background-repeat: no-repeat;
   background-position:center;
   background-image: url("https://i.pinimg.com/originals/04/1c/ab/041cab5d642594b8c20d994b388a69e4.png");
@@ -146,7 +150,7 @@ body{
   position:absolute;
 }
 
-.billCard{
+.turtleCard{
   background-repeat: no-repeat;
   background-position:center;
   background-image: url("https://webstockreview.net/images/clipart-turtle-finding-nemo-3.png");
@@ -156,7 +160,7 @@ body{
   position:absolute;
 }
 
-.scottCard{
+.fatFishCard{
   background-repeat: no-repeat;
   background-position:center;
   background-image: url("https://clipground.com/images/bloat-clipart-2.jpg");
@@ -166,7 +170,7 @@ body{
   position:absolute;
 }
 
-.timdCard{
+.sharkCard{
   background-repeat: no-repeat;
   background-position:center;
   background-image: url("https://www.stickpng.com/assets/images/58f37913a4fa116215a92419.png");
@@ -176,7 +180,7 @@ body{
   position:absolute;
 }
 
-.timhCard{
+.bigSharkCard{
   background-repeat: no-repeat;
   background-position:center;
   background-image: url("https://i.pinimg.com/originals/88/64/e1/8864e1c5aa6b5f31be718db9c287cbe8.gif");
@@ -186,7 +190,7 @@ body{
   position:absolute;
 }
 
-.tjCard{
+.octopusCard{
   background-repeat: no-repeat;
   background-position:center;
   background-image: url("https://cdn.clipart.email/4cc3e93057e8444e33e7265334a2b2f7_i-met-a-lonely-octopus-kenn-nesbitts-poetry4kidscom_300-273.png");
@@ -196,12 +200,22 @@ body{
   position:absolute;
 }
 
+.blueSharkCard{
+  background-repeat: no-repeat;
+  background-position:center;
+  background-image: url("https://cdn.clipart.email/85b3b7029e18161f0b5fa01d78b0eaa2_image-destiny-clipartpng-disney-wiki-fandom-powered-by-wikia_350-669.png");
+  background-size: contain;
+  width:100%;
+  height:100%;
+  position:absolute;
+
+}
+
 .hidden{
   display: none;
 }
 
 .modal-content{
-  /* background-color: lightpink; */
   background-image: url("https://image.freepik.com/vector-gratis/playa-vacia-mar-verano-mar-cielo-arena-vector-fondo-vacaciones_87424-62.jpg");
   background-repeat: no-repeat;
   background-size: cover;

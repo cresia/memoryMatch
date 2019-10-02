@@ -22,6 +22,8 @@ var games_played = 0;
 
 
 function handleCardClick(event) {
+
+
   if ($(this).find(".back").hasClass("matched")) { // to check if both images has the same class "matched" then they both has been clicked and matched
     return;
   }
@@ -31,6 +33,7 @@ function handleCardClick(event) {
     // theFirstCardClicked.find('.front').hide(); //hide the logo to flip the card to the answer
     theFirstCardClicked.addClass("flip"); //hide the logo to flip the card to the answer
     theFirstCardClicked.off();
+    cardsAudio();
 
     console.log('first card')
   }
@@ -47,6 +50,7 @@ function handleCardClick(event) {
 
     theSecondCardClicked.off();
     $('.card').off();
+    cardsAudio();
 
     // check to see if the two cards have the same url
     var firstImgSource = $(theFirstCardClicked).find('.back').css('background-image'); // back = the asnwer
@@ -76,13 +80,12 @@ function handleCardClick(event) {
         $(".back").addClass("matched")
 
         $("button").click(closeModal);
-
-        // games_played++;
+        games_played++;
 
         displayStats();
-
+        winAudio();
       }
-
+      // $(".front").removeClass("flip");
       displayStats();
     }
 
@@ -113,6 +116,7 @@ function handleCardClick(event) {
       }, 1500);
 
       displayStats();
+
     }
 
   }
@@ -146,18 +150,19 @@ function displayStats() {
 function resetStats() {
   match = 0;
   attempts = 0;
-  games_played++;
+  // games_played++;
   displayStats();
+
   $(".back").removeClass("matched");
 
   // $(".back").hide();
   $(".front").show();
   // $(".front").removeClass("flip");
+
 }
 
 function shuffleCards() {
-
-  var cards = ["billCard", "brettCard", "codyCard", "danCard", "scottCard", "timdCard", "timhCard", "tjCard", "billCard", "brettCard", "codyCard", "danCard", "scottCard", "timdCard", "timhCard", "tjCard", "danCard", "danCard"];
+  var cards = ["doryCard", "nemoCard", "starCard", "turtleCard", "fatFishCard", "sharkCard", "bigSharkCard", "octopusCard", "blueSharkCard", "doryCard", "nemoCard", "starCard", "turtleCard", "fatFishCard", "sharkCard", "bigSharkCard", "octopusCard", "blueSharkCard"];
 
   var currentIndex = cards.length, temporaryValue, randomIndex;
 
@@ -177,15 +182,14 @@ function shuffleCards() {
   return cards;
 }
 
-function playAudio(){
-  var horn = new Audio('car_horn.wav');
-  horn.play();
+function cardsAudio(){
+  var clickSound = new Audio("./assets/audio/audio2.mp3");
+  clickSound.play();
+}
 
-  function play() {
-    var audio = new Audio("assets/sounds/audiogoeshere");
-    audio.play();
-  }
-
+function winAudio(){
+  var winModal = new Audio("./assets/audio/winAudio.mp3");
+  winModal.play();
 }
 
 
