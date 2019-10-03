@@ -5,9 +5,9 @@ function initialApp() {
 
 
   createCards(shuffleCards()); // this is for dynamic: if use dynamic: call this function and the one below
-  $(".card").on("click", handleCardClick); // if use static: uncomment static on html
+  // $(".card").on("click", handleCardClick); // if use static: uncomment static on html
 
-  // $(".resetButton").on("click", createCards(shuffleCards()));
+  $(".resetButton").on("click", () => createCards(shuffleCards()));
 
 }
 
@@ -75,7 +75,7 @@ function handleCardClick(event) {
         $(".front").hide();
         $(".back").addClass("matched")
 
-        $("button").click(closeModal);
+        // $("button").click(closeModal);
         // createCards(shuffleCards());
         games_played++;
 
@@ -123,6 +123,7 @@ function handleCardClick(event) {
 function closeModal() {
   $(".modal-content").hide();
   resetStats();
+  // $(".modal-content").on("click", createCards(shuffleCards()));
   // shuffleCards();
 }
 
@@ -197,9 +198,14 @@ function winAudio(){
 
 
 function createCards(shuffledArray) {
+  $(".mainCards").empty();
   var modalContent = $("<div>").addClass("modal-content");
   var winText = $("<p>").text("Congratulations! You Win!!").addClass("modalText");
-  var closeButton = $("<button>").text("Play again").addClass("playAgain");
+  var closeButton = $("<button>").text("Play again").addClass("playAgain").click(function(){
+    closeModal();
+    createCards(shuffleCards());
+  })
+  
   var winImg = $("<img>").addClass("winImg");
 
   modalContent.append(winText, winImg, closeButton);
@@ -219,4 +225,6 @@ function createCards(shuffledArray) {
 
   }
 
+
+  $(".card").on("click", handleCardClick);
 }
