@@ -8,14 +8,45 @@ body{
 
 
 .title{
-  margin-top:2%;
+  margin-top:1%;
+}
+
+.logo{
+  margin-left:20%;
 }
 
 
 
-/* .resetButton{
-  margin-top: 1.5rem;
-} */
+.resetButton{
+  margin-top:3%;
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left:28%;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+
+
+
+}
+
+.resetButton:hover{
+  background-color: yellowgreen
+}
+
+.resetButton:active {
+  background-color:rgb(30, 165, 37);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+
 
 /* Container for flexboxes */
 .row {
@@ -261,13 +292,29 @@ body{
   margin-left:40%;
   padding:2%;
   border-radius: 20px;
+  box-shadow: 0 9px #999;
+  text-decoration: none;
+  outline: none;
+  border: none;
+}
+
+.playAgain:hover {background-color: #130a3f}
+
+.playAgain:active {
+  background-color:rgb(29, 29, 117);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.speaker, .mute{
+  width:18%;
+  margin-left:5%;
+  display: inline-block;
+  text-align: center;
+  text-decoration: navy;
 
 }
 
-.speaker{
-  width:13%;
-  margin-left:2%;
-}
 
 .speakerIcon{
   width:25%;
@@ -276,9 +323,9 @@ body{
 
 
 /* iPads (landscape) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+/* @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) { */
 /* Styles */
-.mainCards {
+/* .mainCards {
 
     margin-top: -5%;
 
@@ -286,22 +333,4 @@ body{
 
 
 
-}
-
-
-
-
-/*
-.close {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}  */
+} */

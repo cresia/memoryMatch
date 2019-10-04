@@ -7,14 +7,22 @@ function initialApp() {
   createCards(shuffleCards()); // this is for dynamic: if use dynamic: call this function and the one below
   // $(".card").on("click", handleCardClick); // if use static: uncomment static on html
 
-  $(".resetButton").on("click", () => createCards(shuffleCards()));
+  // $(".resetButton").on("click", () =>
+  // createCards(shuffleCards()));
+
+  $(".resetButton").click(function () {
+    closeModal();
+    createCards(shuffleCards());
+  })
+
+  $(".speaker").on("click", () => gameAudio())
 
 }
 
 var theFirstCardClicked = null;
 var theSecondCardClicked = null;
 var match = 0;
-var max_matches = 1;
+var max_matches = 2;
 var addMatchedClass;
 var attempts = 0;
 var games_played = 0;
@@ -196,6 +204,12 @@ function winAudio(){
   winModal.play();
 }
 
+function gameAudio(){
+  var gameAudio = new Audio("./assets/audio/heavenly.mp3");
+  gameAudio.play();
+
+}
+
 
 function createCards(shuffledArray) {
   $(".mainCards").empty();
@@ -205,7 +219,7 @@ function createCards(shuffledArray) {
     closeModal();
     createCards(shuffleCards());
   })
-  
+
   var winImg = $("<img>").addClass("winImg");
 
   modalContent.append(winText, winImg, closeButton);
