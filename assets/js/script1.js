@@ -4,9 +4,7 @@ $(document).ready(initialApp);
 function initialApp() {
 
 
-  createCards(shuffleCards()); // this is for dynamic: if use dynamic: call this function and the one below
-  // $(".card").on("click", handleCardClick); // if use static: uncomment static on html
-
+  createCards(shuffleCards());
   // $(".resetButton").on("click", () =>
   // createCards(shuffleCards()));
 
@@ -22,7 +20,7 @@ function initialApp() {
 var theFirstCardClicked = null;
 var theSecondCardClicked = null;
 var match = 0;
-var max_matches = 2;
+var max_matches = 9;
 var addMatchedClass;
 var attempts = 0;
 var games_played = 0;
@@ -70,7 +68,10 @@ function handleCardClick(event) {
       addMatchedClass = $(firstImgSource).addClass("matched"); //adding a new class to determined if the cards has been clicked to the html
       addMatchedClass2 = $(secondImgSource).addClass("matched");
 
+
       $('.card').on('click', handleCardClick);
+      //add matching sounds card
+      matchCardAudio();
 
       //reset firstcard clicked and secondcard clicked
       theFirstCardClicked = null;
@@ -80,11 +81,11 @@ function handleCardClick(event) {
       if (match === max_matches) {
         var modal = $(".modal-content").show();
 
-        $(".front").hide();
-        $(".back").addClass("matched")
 
-        // $("button").click(closeModal);
-        // createCards(shuffleCards());
+
+        $(".front").hide();
+        $(".back").addClass("matched");
+
         games_played++;
 
         displayStats();
@@ -99,6 +100,8 @@ function handleCardClick(event) {
       //how to identify which cards to flip back
       attempts++;
 
+
+
       setTimeout(function () {
         //first card
         // $(theFirstCardClicked).find(".front").show();
@@ -109,19 +112,19 @@ function handleCardClick(event) {
         // $(theSecondCardClicked).find(".front").show();
         $(theSecondCardClicked).removeClass("flip");
         theSecondCardClicked.on('click', handleCardClick);
+        cardsAudio();
 
         //reset firstcard clicked and secondcard clicked
         theFirstCardClicked = null;
 
         //second card
         theSecondCardClicked = null;
-        //
+
         $('.card').on('click', handleCardClick);
 
       }, 1500);
 
       displayStats();
-
     }
 
   }
@@ -131,15 +134,10 @@ function handleCardClick(event) {
 function closeModal() {
   $(".modal-content").hide();
   resetStats();
-  // $(".modal-content").on("click", createCards(shuffleCards()));
-  // shuffleCards();
 }
 
 
-
-
 function calculateAccuracy() {
-
   var accuracyTotal = Math.ceil((match / attempts) * 100);
 
   if (match === 0 && attempts === 0) {
@@ -153,24 +151,14 @@ function displayStats() {
   $(".resultAttempts").text(attempts);
   $(".resultGamePlayed").text(games_played);
   $(".resultAccuracy").text(result);
-
 }
 
 function resetStats() {
   match = 0;
   attempts = 0;
-  // games_played++;
   displayStats();
-
   $(".back").removeClass("matched");
-
-  // $(".back").hide();
   $(".front").show();
-
-  // $(".front").removeClass("flip");
-  // createCards(shuffleCards());
-
-
 }
 
 function shuffleCards() {
@@ -199,8 +187,18 @@ function cardsAudio(){
   clickSound.play();
 }
 
+function matchCardAudio(){
+  var matchCard = new Audio("./assets/audio/match.mp3");
+  matchCard.play();
+}
+
 function winAudio(){
   var winModal = new Audio("./assets/audio/winAudio.mp3");
+  winModal.play();
+}
+
+function playAgainAudio() {
+  var winModal = new Audio("./assets/audio/audio1.mp3");
   winModal.play();
 }
 
@@ -217,6 +215,7 @@ function createCards(shuffledArray) {
   var winText = $("<p>").text("Congratulations! You Win!!").addClass("modalText");
   var closeButton = $("<button>").text("Play again").addClass("playAgain").click(function(){
     closeModal();
+    playAgainAudio();
     createCards(shuffleCards());
   })
 
@@ -238,7 +237,6 @@ function createCards(shuffledArray) {
     $(".mainCards").append(cardContainer);
 
   }
-
 
   $(".card").on("click", handleCardClick);
 }

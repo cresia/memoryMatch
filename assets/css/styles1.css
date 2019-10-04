@@ -6,102 +6,143 @@ body{
   overflow: hidden;
 }
 
-
-.title{
-  margin-top:1%;
-}
-
 .logo{
-  margin-left:20%;
+  margin-left:17%;
 }
-
-
 
 .resetButton{
-  margin-top:3%;
+  width:4%;
   display: inline-block;
   padding: 5px 10px;
-  font-size: 16px;
+  font-size: 20px;
+  font-family: 'Aladin', cursive;
   cursor: pointer;
-  margin-left:28%;
+  margin-left:10.5%;
   text-decoration: none;
   outline: none;
-  color: #fff;
-  background-color: #4CAF50;
-  border: none;
+  /* background-color: rgb(165, 27, 73); */
+  background-color: rgb(255, 252, 252);
+  /* background-color:  rgb(15, 7, 87); */
+  box-shadow: 0 3px rgb(145, 133, 133);
   border-radius: 15px;
-
-
+  border:none;
+  /* color:rgb(75, 27, 165); */
+   color:rgb(29, 16, 146);
 
 }
 
 .resetButton:hover{
-  background-color: yellowgreen
+  /* background-color: rgb(177, 219, 39) */
+  background-color: rgb(218, 233, 182)
+
 }
 
 .resetButton:active {
-  background-color:rgb(30, 165, 37);
+  /* background-color:rgb(177, 219, 39); */
+  background-color: rgb(218, 233, 182);
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
 
+.speaker, .mute{
+  width:4%;
+  display: inline-block;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-left:1.5%;
+  margin-top:0.5%;
+  text-decoration: none;
+  outline: none;
+  /* background-color: rgb(165, 27, 73); */
+  background-color: rgb(255, 252, 252);
+  /* background-color:  rgb(15, 7, 87); */
+  box-shadow: 0 3px rgb(145, 133, 133);
+  border-radius: 15px;
+  border:none;
+}
 
 
+.speaker:hover{
+  background-color: rgb(218, 233, 182)
+}
+
+.speaker:active {
+  background-color:rgb(218, 233, 182);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.mute:hover{
+  background-color: rgb(218, 233, 182);
+}
+
+.mute:active {
+  background-color:rgb(218, 233, 182);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.speakerIcon{
+  width:40%;
+}
 
 /* Container for flexboxes */
 .row {
-  display: -webkit-flex;
+  margin-bottom:-1.5%;
   display: flex;
 }
 
 /* Create three equal columns that sits next to each other */
 .column {
-  -webkit-flex: 1;
-  -ms-flex: 1;
+  margin-top:0.2%;
   flex: 1;
+
 }
 
 .stat{
-  color:rgb(15, 7, 87);
-  margin-left:4%;
+  color:rgb(12, 5, 78);
+  margin-right:12%;
+  margin-top:0.5%;
   font-family: 'Aladin', cursive;
   font-size:30px;
   /* text-align: center; */
-
 }
 
 
 .resultGamePlayed {
-  color:rgb(15, 1, 8);
+  /* color:rgb(15, 1, 8); */
+  color:rgb(168, 55, 187);
   background-size: contain;
   text-align: center;
   background-repeat: no-repeat;
   background-image: url("https://i0.wp.com/creationcreatures.com/wp-content/uploads/Bubble2.png?fit=2640%2C2640&ssl=1");
-  width: 40%;
-  height:40%;
-  font-size: 1.5rem;
+  width: 110px;
+  height:80px;
+  font-size: 30px;
   margin-top:1%;
-  margin-left:3.5%;
-  padding-top:15%;
+  margin-left:10%;
+  padding-top:28%;
 }
 
 .resultAttempts, .resultAccuracy {
-  color:rgb(15, 1, 8);
+  /* color:rgb(15, 1, 8); */
+  /* color:rgb(224, 102, 164); */
+  color:rgb(168, 55, 187);
   background-size: contain;
   text-align: center;
   background-repeat: no-repeat;
   background-image: url("https://i0.wp.com/creationcreatures.com/wp-content/uploads/Bubble2.png?fit=2640%2C2640&ssl=1");
   margin-top:1%;
-  width: 40%;
-  height:40%;
-  font-size: 1.5rem;
-  margin-left:-3%;
-  padding-top:15%;
+  margin-left:-10%;
+  width: 110px;
+  height:80px;
+  font-size: 30px;
+  padding-top:35%;
 }
 
 
 .mainCards{
-  width: 93%;;
+  width: 95%;;
   height: 20%;
   display: inline-block;
   margin-left:3%;
@@ -112,7 +153,7 @@ body{
   width: 11vw;
   margin-left: 4%;
   height: 19vh;
-  margin-top:2%;
+  margin-top:2.8%;
   position: relative;
   display: inline-block;
   transform-style: preserve-3d;
@@ -254,12 +295,15 @@ body{
   background-image: url("https://image.freepik.com/vector-gratis/playa-vacia-mar-verano-mar-cielo-arena-vector-fondo-vacaciones_87424-62.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 20px;
+  /* padding: 20px; */
+  padding: 42px;
   position: absolute;
   width: 50%;
   display:none;
-  top: 96%;
-  left: 50%;
+  /* top: 96%;
+  left: 50%; */
+  top: 137%;
+    left: 55%;
   transform: translate(-50%, -50%);
   border-radius: 25px;
   z-index: 1;
@@ -288,7 +332,8 @@ body{
   color:white;
   background-color:rgb(29, 29, 117);
   font-family: 'Aladin', cursive;
-  font-size: 35px;
+  /* font-size: 35px; */
+   font-size: 30px;
   margin-left:40%;
   padding:2%;
   border-radius: 20px;
@@ -301,25 +346,12 @@ body{
 .playAgain:hover {background-color: #130a3f}
 
 .playAgain:active {
-  background-color:rgb(29, 29, 117);
+  /* background-color:rgb(29, 29, 117); */
+  background-color:rgb(54, 54, 126);
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
 
-.speaker, .mute{
-  width:18%;
-  margin-left:5%;
-  display: inline-block;
-  text-align: center;
-  text-decoration: navy;
-
-}
-
-
-.speakerIcon{
-  width:25%;
-  height: 25%;
-}
 
 
 /* iPads (landscape) ----------- */
