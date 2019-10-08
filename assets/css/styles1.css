@@ -353,16 +353,139 @@ body{
 }
 
 
+/* Desktops and laptops ----------- */
+/* @media only screen  and (min-width : 1224px) { */
+/* Styles */
+/* } */
+
+/* Large screens ----------- */
+/* @media only screen  and (min-width : 1824px) { */
+/* Styles */
+/* } */
+
+
 
 /* iPads (landscape) ----------- */
-/* @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) { */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+ .mainCards {
+    margin-top: 0%;
+  }
+
+  .stat{
+    margin-right: 5%;
+  }
+
+  .column {
+    margin-top: 2.2%;
+  }
+
+  .logo {
+    margin-left: 13%;
+    margin-top: -4%;
+  }
+
+  .row{
+    margin-bottom: -4.5%;
+  }
+
+  .resetButton{
+    width: 6.5%;
+    margin-left: 13%;
+  }
+
+  .speaker, .mute {
+    width: 6%;
+  }
+}
+
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+  .logo{
+    margin-top: 5%;
+    margin-left:12%;
+    width:20%;
+    height:30%;
+  }
+
+  .stat{
+    margin-right: 6%;
+    margin-top: 4.5%;
+    font-family: 'Aladin', cursive;
+    font-size: 25px;
+  }
+
+ .card {
+    width: 13vw;
+    height: 13vh;
+    margin-top: 6.8%;
+    margin-left: 2%;
+ }
+
+ .mainCards{
+   margin-top: 6%;
+ }
+
+ .logo{
+    margin-top: 16%;
+    margin-left: 15%;
+    width: 91%;
+    height: 73%;
+ }
+
+ .resetButton {
+    width: 9%;
+    margin-top: 4%;
+    margin-left: 8.5%;
+ }
+
+ .speaker, .mute {
+    width: 8%;
+ }
+
+}
+
+
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
 /* Styles */
-/* .mainCards {
 
-    margin-top: -5%;
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+
+.logo{
+    margin-left: 1%;
+    width: 145px;
+    height: 99px;
+}
+
+.stat {
+    margin-right: -11%;
+    margin-top: 3.5%;
+    font-size: 15px;
+
+}
+
+.speaker, .mute {
+    width: 13%;
+}
+
+.resetButton {
+    width: 15%;
+
+}
+
+.card{
+    width: 14vw;
+    margin-left: 3%;
+    height: 8vh;
+    margin-top: 9.8%;
+}
+
+.row{
+  margin-bottom: -8.5%;
+}
 
 
-
-
-
-} */
+}
