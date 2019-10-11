@@ -11,30 +11,27 @@ body{
 }
 
 .resetButton{
-  width:4%;
-  display: inline-block;
+  margin-top:6%;
+  width:5%;
+  height:8%;
+  display: flex;
   padding: 5px 10px;
   font-size: 20px;
   font-family: 'Aladin', cursive;
   cursor: pointer;
-  margin-left:10.5%;
+  margin-left:23%;
   text-decoration: none;
   outline: none;
-  /* background-color: rgb(165, 27, 73); */
   background-color: rgb(255, 252, 252);
-  /* background-color:  rgb(15, 7, 87); */
   box-shadow: 0 3px rgb(145, 133, 133);
   border-radius: 15px;
   border:none;
-  /* color:rgb(75, 27, 165); */
-   color:rgb(29, 16, 146);
-
+  color:rgb(29, 16, 146);
 }
 
 .resetButton:hover{
   /* background-color: rgb(177, 219, 39) */
   background-color: rgb(218, 233, 182)
-
 }
 
 .resetButton:active {
@@ -45,17 +42,16 @@ body{
 }
 
 .speaker, .mute{
-  width:4%;
-  display: inline-block;
+  width:12%;
+  height:15%;
+  display: flex;
   padding: 5px 10px;
   cursor: pointer;
-  margin-left:1.5%;
-  margin-top:0.5%;
+  margin-left:23%;
+  margin-top:5%;
   text-decoration: none;
   outline: none;
-  /* background-color: rgb(165, 27, 73); */
   background-color: rgb(255, 252, 252);
-  /* background-color:  rgb(15, 7, 87); */
   box-shadow: 0 3px rgb(145, 133, 133);
   border-radius: 15px;
   border:none;
@@ -83,12 +79,13 @@ body{
 }
 
 .speakerIcon{
-  width:40%;
+  width:90%;
+
 }
 
 /* Container for flexboxes */
 .row {
-  margin-bottom:-1.5%;
+  margin-bottom:-3.5%;
   display: flex;
 }
 
@@ -101,7 +98,8 @@ body{
 
 .stat{
   color:rgb(12, 5, 78);
-  margin-right:12%;
+  /* margin-right:12%; */
+  margin-right:6%;
   margin-top:0.5%;
   font-family: 'Aladin', cursive;
   font-size:30px;
@@ -124,16 +122,15 @@ body{
   padding-top:28%;
 }
 
-.resultAttempts, .resultAccuracy {
-  /* color:rgb(15, 1, 8); */
-  /* color:rgb(224, 102, 164); */
+.resultAttempts, .resultAccuracy, .timeResult {
   color:rgb(168, 55, 187);
   background-size: contain;
   text-align: center;
   background-repeat: no-repeat;
   background-image: url("https://i0.wp.com/creationcreatures.com/wp-content/uploads/Bubble2.png?fit=2640%2C2640&ssl=1");
   margin-top:1%;
-  margin-left:-10%;
+  /* margin-left:-10%; */
+   margin-left:22%;
   width: 110px;
   height:80px;
   font-size: 30px;
@@ -152,7 +149,7 @@ body{
 .card {
   width: 11vw;
   margin-left: 4%;
-  height: 19vh;
+  height: 21vh;
   margin-top:2.8%;
   position: relative;
   display: inline-block;

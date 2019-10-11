@@ -3,27 +3,40 @@ $(document).ready(initialApp);
 
 function initialApp() {
 
-
   createCards(shuffleCards());
+
   // $(".resetButton").on("click", () =>
   // createCards(shuffleCards()));
 
   $(".resetButton").click(function () {
     closeModal();
+    buttons();
     createCards(shuffleCards());
   })
 
-  $(".speaker").on("click", () => gameAudio())
+  $(".speaker").click(function () {
+    buttons();
+    gameAudio()
+  })
 
+  $(".mute").click(function () {
+    buttons();
+    stopAudio();
+  })
 }
 
 var theFirstCardClicked = null;
 var theSecondCardClicked = null;
+var speaker = null;
+var mute = null;
 var match = 0;
+// var max_matches = 9;
 var max_matches = 9;
 var addMatchedClass;
 var attempts = 0;
 var games_played = 0;
+var timer = 100;
+var startTimer = true;
 
 function handleCardClick(event) {
   if ($(this).find(".back").hasClass("matched")) { // to check if both images has the same class "matched" then they both has been clicked and matched
@@ -36,13 +49,12 @@ function handleCardClick(event) {
     theFirstCardClicked.addClass("flip"); //hide the logo to flip the card to the answer
     theFirstCardClicked.off();
     cardsAudio();
-
-    console.log('first card')
+    console.log('first card');
+    timeScores();
   }
   else {
     theSecondCardClicked = $(this);
     console.log('second card');
-
     if (theFirstCardClicked[0] === theSecondCardClicked[0]) { //check if both has the class of Dan if not go to the next to hide
       return;
     }
@@ -53,6 +65,7 @@ function handleCardClick(event) {
     theSecondCardClicked.off();
     $('.card').off();
     cardsAudio();
+
 
     // check to see if the two cards have the same url
     var firstImgSource = $(theFirstCardClicked).find('.back').css('background-image'); // back = the asnwer
@@ -78,11 +91,10 @@ function handleCardClick(event) {
       theSecondCardClicked = null;
 
       //if the match == counter, you win show the modal
-      if (match === max_matches) {
+      // add the timer condition and make the cards nt be able to click which is $('.card').off();
+      if (match === max_matches && timer > 0) {
         var modal = $(".modal-content").show();
-
-
-
+        myStopFunction();
         $(".front").hide();
         $(".back").addClass("matched");
 
@@ -93,13 +105,14 @@ function handleCardClick(event) {
       }
 
       displayStats();
+
+      //-------------- if the cards match !== max_matches and timer < 0 then show another modal ----------------------
     }
 
     else { //not matching
-      //both cards flips back (after 1.5 seconds) timeout(flipback, time_in_seconds)
+      //both cards flips back (after 1.3 seconds) timeout(flipback, time_in_seconds)
       //how to identify which cards to flip back
       attempts++;
-
 
 
       setTimeout(function () {
@@ -122,7 +135,7 @@ function handleCardClick(event) {
 
         $('.card').on('click', handleCardClick);
 
-      }, 1500);
+      }, 1300);
 
       displayStats();
     }
@@ -130,12 +143,10 @@ function handleCardClick(event) {
   }
 }
 
-
 function closeModal() {
   $(".modal-content").hide();
   resetStats();
 }
-
 
 function calculateAccuracy() {
   var accuracyTotal = Math.ceil((match / attempts) * 100);
@@ -144,6 +155,33 @@ function calculateAccuracy() {
     accuracyTotal = " 0 ";
   }
   return accuracyTotal + " %";
+}
+
+
+var timeInterval;
+function timeScores(){
+
+  if(startTimer === true){
+  timeInterval = setInterval(function () {
+      if (timer > 0) {
+        timer--;
+        $(".timeResult").text(timer);
+        // console.log("time is", timer);
+        startTimer = false;
+      }
+      else {
+        $('.card').off();
+        stopAudio();
+        // clearInterval(timeInterval);
+      }
+    }, 1000);
+  }
+
+}
+
+function myStopFunction() {
+   clearInterval(timeInterval);
+  // clearTimeout(timeInterval);
 }
 
 function displayStats() {
@@ -202,10 +240,32 @@ function playAgainAudio() {
   winModal.play();
 }
 
+var gameMusic = new Audio("./assets/audio/heavenly.mp3");
 function gameAudio(){
-  var gameAudio = new Audio("./assets/audio/heavenly.mp3");
-  gameAudio.play();
+  //to handle so that the speaker can only click once
+  // if ($(this).find(".speaker").hasClass("speakerHasBeenClicked")) {
+  //   return;
+  // }
 
+  if (speaker === null) { // if I haven't clicked on the speaker button yet then play the music
+    gameMusic.loop = true;
+    gameMusic.load();
+    gameMusic.play();
+    console.log('speaker has been clicked')
+  }
+}
+
+function stopAudio(){
+  if (mute === null) { // this is for mute button
+    gameMusic.loop = false;
+    gameMusic.load();
+    console.log('mute button has been clicked');
+  }
+}
+
+function buttons() {
+  var gameAudio = new Audio("./assets/audio/buttons.mp3");
+  gameAudio.play();
 }
 
 
@@ -214,6 +274,10 @@ function createCards(shuffledArray) {
   var modalContent = $("<div>").addClass("modal-content");
   var winText = $("<p>").text("Congratulations! You Win!!").addClass("modalText");
   var closeButton = $("<button>").text("Play again").addClass("playAgain").click(function(){
+    timer = 100;
+    $(".timeResult").text(timer);
+    startTimer = true;
+    // timeScores();
     closeModal();
     playAgainAudio();
     createCards(shuffleCards());
@@ -222,7 +286,11 @@ function createCards(shuffledArray) {
   var winImg = $("<img>").addClass("winImg");
 
   modalContent.append(winText, winImg, closeButton);
-  $(".mainCards").append(modalContent)
+  $(".mainCards").append(modalContent);
+
+
+//------  the beginning of the modal where the user need to enter their username ----
+// --- add code for user Input later ---
 
   for (var i = 0; i < shuffledArray.length; i++) {
     var cardContainer = $('<div>').addClass('card');
