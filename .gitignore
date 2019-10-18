@@ -1,2 +1,7 @@
+# .idea/
+# .DS_Store
+
 .idea/
+.vscode/
 .DS_Store
+server/public/api/db_connection.php

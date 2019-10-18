@@ -31,14 +31,19 @@ var speaker = null;
 var mute = null;
 var match = 0;
 // var max_matches = 9;
-var max_matches = 9;
+var max_matches = 1;
 var addMatchedClass;
 var attempts = 0;
 var games_played = 0;
 var timer = 100;
 var startTimer = true;
 
+var username;
+var accuracyTotal;
+var timeInterval;
+
 function handleCardClick(event) {
+
   if ($(this).find(".back").hasClass("matched")) { // to check if both images has the same class "matched" then they both has been clicked and matched
     return;
   }
@@ -51,6 +56,7 @@ function handleCardClick(event) {
     cardsAudio();
     console.log('first card');
     timeScores();
+
   }
   else {
     theSecondCardClicked = $(this);
@@ -65,7 +71,6 @@ function handleCardClick(event) {
     theSecondCardClicked.off();
     $('.card').off();
     cardsAudio();
-
 
     // check to see if the two cards have the same url
     var firstImgSource = $(theFirstCardClicked).find('.back').css('background-image'); // back = the asnwer
@@ -91,29 +96,29 @@ function handleCardClick(event) {
       theSecondCardClicked = null;
 
       //if the match == counter, you win show the modal
-      // add the timer condition and make the cards nt be able to click which is $('.card').off();
+      // add the timer condition and make the cards not be able to click which is $('.card').off();
       if (match === max_matches && timer > 0) {
-        var modal = $(".modal-content").show();
+        var modal =$(".modal-content").show();
         myStopFunction();
         $(".front").hide();
         $(".back").addClass("matched");
+
+        //call the fetch and show the rank result
+        // modal.on("click", handleScores());
 
         games_played++;
 
         displayStats();
         winAudio();
       }
-
       displayStats();
 
-      //-------------- if the cards match !== max_matches and timer < 0 then show another modal ----------------------
     }
 
     else { //not matching
       //both cards flips back (after 1.3 seconds) timeout(flipback, time_in_seconds)
       //how to identify which cards to flip back
       attempts++;
-
 
       setTimeout(function () {
         //first card
@@ -136,20 +141,48 @@ function handleCardClick(event) {
         $('.card').on('click', handleCardClick);
 
       }, 1300);
-
       displayStats();
     }
 
   }
 }
 
+
+function getHighScores(){
+   const req = {
+      method: 'GET',
+      headers: {'Content-Type': 'application/json'},
+      // body: JSON.stringify(scores)
+    };
+    fetch(`server/public/api/scores.php`, req)
+      .then(res => res.json())
+      // .then(res => console.log(res))
+      .then(res =>{createRankPage(res)});
+      // .then(res => console.log(createRankPage(res)))
+}
+
+
+function postUserStats(username, accuracyTotal, timer){
+  fetch(`server/public/api/name.php`,{
+    method: 'POST',
+    headers:{'Content-Type': 'application/json'},
+    body: JSON.stringify({"name": username, "accuracy": accuracyTotal, "time": timer})
+
+  })
+  createRankPage(getHighScores())
+
+}
+
+
+
 function closeModal() {
   $(".modal-content").hide();
   resetStats();
 }
 
+
 function calculateAccuracy() {
-  var accuracyTotal = Math.ceil((match / attempts) * 100);
+  accuracyTotal = Math.ceil((match / attempts) * 100);
 
   if (match === 0 && attempts === 0) {
     accuracyTotal = " 0 ";
@@ -158,31 +191,30 @@ function calculateAccuracy() {
 }
 
 
-var timeInterval;
+
 function timeScores(){
-
   if(startTimer === true){
-  timeInterval = setInterval(function () {
-      if (timer > 0) {
-        timer--;
-        $(".timeResult").text(timer);
-        // console.log("time is", timer);
-        startTimer = false;
-      }
-      else {
-        $('.card').off();
-        stopAudio();
-        // clearInterval(timeInterval);
-      }
-    }, 1000);
+    timeInterval = setInterval(function () {
+        if (timer > 0) {
+          timer--;
+          $(".timeResult").text(timer);
+          startTimer = false;
+        }
+        else {
+          clearInterval(timeInterval);
+          $('.card').off();
+          createLoseModal();
+          winAudio();
+        }
+      }, 1000);
   }
-
 }
+
 
 function myStopFunction() {
    clearInterval(timeInterval);
-  // clearTimeout(timeInterval);
 }
+
 
 function displayStats() {
   var result = calculateAccuracy();
@@ -191,6 +223,7 @@ function displayStats() {
   $(".resultAccuracy").text(result);
 }
 
+
 function resetStats() {
   match = 0;
   attempts = 0;
@@ -198,6 +231,7 @@ function resetStats() {
   $(".back").removeClass("matched");
   $(".front").show();
 }
+
 
 function shuffleCards() {
   var cards = ["doryCard", "nemoCard", "starCard", "turtleCard", "fatFishCard", "sharkCard", "bigSharkCard", "octopusCard", "blueSharkCard", "doryCard", "nemoCard", "starCard", "turtleCard", "fatFishCard", "sharkCard", "bigSharkCard", "octopusCard", "blueSharkCard"];
@@ -220,6 +254,7 @@ function shuffleCards() {
   return cards;
 }
 
+
 function cardsAudio(){
   var clickSound = new Audio("./assets/audio/audio2.mp3");
   clickSound.play();
@@ -235,6 +270,11 @@ function winAudio(){
   winModal.play();
 }
 
+// function loseAudio() {
+//   var winModal = new Audio("./assets/audio/winAudio.mp3");
+//   winModal.play();
+// }
+
 function playAgainAudio() {
   var winModal = new Audio("./assets/audio/audio1.mp3");
   winModal.play();
@@ -242,11 +282,6 @@ function playAgainAudio() {
 
 var gameMusic = new Audio("./assets/audio/heavenly.mp3");
 function gameAudio(){
-  //to handle so that the speaker can only click once
-  // if ($(this).find(".speaker").hasClass("speakerHasBeenClicked")) {
-  //   return;
-  // }
-
   if (speaker === null) { // if I haven't clicked on the speaker button yet then play the music
     gameMusic.loop = true;
     gameMusic.load();
@@ -269,28 +304,103 @@ function buttons() {
 }
 
 
-function createCards(shuffledArray) {
-  $(".mainCards").empty();
-  var modalContent = $("<div>").addClass("modal-content");
-  var winText = $("<p>").text("Congratulations! You Win!!").addClass("modalText");
-  var closeButton = $("<button>").text("Play again").addClass("playAgain").click(function(){
+function createRankPage(highScoreArray){
+  // debugger;
+  console.log(highScoreArray);
+
+  var rankContainer = $('<div>').addClass('rankContainer');
+
+  var title = $("<div>").text("Leader Board").addClass("rankPagetitle");
+
+  var rankTable = $("<table>").addClass("table");
+
+  var thRank = $('<th>').text("Rank").addClass("th");
+  var thName = $("<th>").text("Name").addClass("th");
+  var thTime = $("<th>").text("Time").addClass("th");
+  var thAccuracy = $("<th>").text("Accuracy").addClass("th");
+  var trTableTitle = $('<tr>').append(thRank,thName,thTime,thAccuracy);
+
+  var numText = "";
+  var trRows = ("<tr>");
+  var tdRow = $("<td>").addClass("td");
+
+  var currentRank = 1;
+ rankTable.append(trTableTitle)
+ //loop over each high score entry
+  for(var i = 0; i < highScoreArray.length; i++){
+  var rankTd = $("<td>").text(currentRank)
+  var tdNameResult = $("<td>").text(highScoreArray[i].name).addClass("td");
+  var tdTimeResult = $("<td>").text(highScoreArray[i].time).addClass("td");
+  var tdAccuracyResult = $("<td>").text(highScoreArray[i].accuracy).addClass("td");
+  var trResult = $("<tr>").append(rankTd, tdNameResult, tdTimeResult, tdAccuracyResult);
+
+  rankTable.append(trResult);
+  currentRank++;
+
+  }
+  //end loop
+
+
+  var closeButton = $("<button>").text("Play again").addClass("playAgain").click(function () {
     timer = 100;
     $(".timeResult").text(timer);
     startTimer = true;
-    // timeScores();
+
     closeModal();
     playAgainAudio();
     createCards(shuffleCards());
   })
 
-  var winImg = $("<img>").addClass("winImg");
+  rankContainer.append(title, rankTable, closeButton);
 
-  modalContent.append(winText, winImg, closeButton);
+  $(".mainCards").append(rankContainer);
+}
+
+
+function createLoseModal(){
+  var modalContent = $("<div>").addClass("loseModal");
+  var loseText = $("<p>").text("Sorry, you ran out of the time!!").addClass("modalText");
+  var closeButton = $("<button>").text("Try Again").addClass("playAgain").click(function(){
+    timer = 100;
+    $(".timeResult").text(timer);
+    startTimer = true;
+    games_played++;
+
+    closeModal();
+    myStopFunction();
+    playAgainAudio();
+    createCards(shuffleCards());
+  })
+
+  var loseImg = $("<img>").addClass("winImg");
+
+  modalContent.append(loseText, loseImg, closeButton);
+  $(".mainCards").append(modalContent);
+}
+
+
+function createCards(shuffledArray) {
+  $(".mainCards").empty();
+  var modalContent = $("<div>").addClass("modal-content");
+  var winText = $("<p>").text("Congratulations! You Win!!").addClass("modalText");
+
+  var closeButton = $("<button>").text("Submit").addClass("playAgain").click(function(){
+    //submit high score
+    //then
+    //get high scores
+
+    modalContent.hide();
+    postUserStats(
+      username, accuracyTotal,timer);
+
+  });
+
+  var winImg = $("<img>").addClass("winImg");
+  username = $("<input>").text("").attr("placeholder", "enter your name").addClass("usernameBox");
+
+  modalContent.append(winText, winImg, username, closeButton);
   $(".mainCards").append(modalContent);
 
-
-//------  the beginning of the modal where the user need to enter their username ----
-// --- add code for user Input later ---
 
   for (var i = 0; i < shuffledArray.length; i++) {
     var cardContainer = $('<div>').addClass('card');
