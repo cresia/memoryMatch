@@ -10,7 +10,6 @@ $json_input = file_get_contents('php://input');
 $obj = json_decode($json_input, true);
 
 $userNameInput = $obj['name'];
-// var_dump($userNameInput);
 $userAccuracy = $obj['accuracy'];
 $userTime = $obj['time'];
 
@@ -23,22 +22,12 @@ $result = mysqli_query($conn, $query);
 
 if(!$result){
   // var_dump($result);
-  throw new Exception(mysqli_error($conn));
+  throw new Exception(mysqli_error($conn)); //if the query fails
   // exit();
-}else if(!mysqli_affected_rows($result) && !empty($_GET['id'])) {
-  throw new Exception('Invalid ID: ' . $_GET['id']);
-}else{
-    $output = ['success' => true];
 }
 
 
-$output = [];
-
-while($row = mysqli_fetch_assoc($result)){
-  $output[] = $row;
-}
-
-print(json_encode($output))
+print(json_encode($obj))
 
 
 ?>

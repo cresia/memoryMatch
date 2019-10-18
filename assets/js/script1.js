@@ -35,10 +35,10 @@ var max_matches = 1;
 var addMatchedClass;
 var attempts = 0;
 var games_played = 0;
-var timer = 100;
+var timer = 1000;
 var startTimer = true;
 
-var username;
+// var username;
 var accuracyTotal;
 var timeInterval;
 
@@ -140,7 +140,7 @@ function handleCardClick(event) {
 
         $('.card').on('click', handleCardClick);
 
-      }, 1300);
+      }, 500);
       displayStats();
     }
 
@@ -169,17 +169,15 @@ function postUserStats(username, accuracyTotal, timer){
     body: JSON.stringify({"name": username, "accuracy": accuracyTotal, "time": timer})
 
   })
-  createRankPage(getHighScores())
+  .then(() => getHighScores())
+  // createRankPage(getHighScores())
 
 }
-
-
 
 function closeModal() {
   $(".modal-content").hide();
   resetStats();
 }
-
 
 function calculateAccuracy() {
   accuracyTotal = Math.ceil((match / attempts) * 100);
@@ -189,7 +187,6 @@ function calculateAccuracy() {
   }
   return accuracyTotal + " %";
 }
-
 
 
 function timeScores(){
@@ -210,11 +207,9 @@ function timeScores(){
   }
 }
 
-
 function myStopFunction() {
    clearInterval(timeInterval);
 }
-
 
 function displayStats() {
   var result = calculateAccuracy();
@@ -325,13 +320,13 @@ function createRankPage(highScoreArray){
   var tdRow = $("<td>").addClass("td");
 
   var currentRank = 1;
- rankTable.append(trTableTitle)
+  rankTable.append(trTableTitle)
  //loop over each high score entry
   for(var i = 0; i < highScoreArray.length; i++){
   var rankTd = $("<td>").text(currentRank)
   var tdNameResult = $("<td>").text(highScoreArray[i].name).addClass("td");
   var tdTimeResult = $("<td>").text(highScoreArray[i].time).addClass("td");
-  var tdAccuracyResult = $("<td>").text(highScoreArray[i].accuracy).addClass("td");
+  var tdAccuracyResult = $("<td>").text(highScoreArray[i].accuracy + " %").addClass("td");
   var trResult = $("<tr>").append(rankTd, tdNameResult, tdTimeResult, tdAccuracyResult);
 
   rankTable.append(trResult);
@@ -339,7 +334,6 @@ function createRankPage(highScoreArray){
 
   }
   //end loop
-
 
   var closeButton = $("<button>").text("Play again").addClass("playAgain").click(function () {
     timer = 100;
@@ -383,20 +377,15 @@ function createCards(shuffledArray) {
   $(".mainCards").empty();
   var modalContent = $("<div>").addClass("modal-content");
   var winText = $("<p>").text("Congratulations! You Win!!").addClass("modalText");
+  var username = $("<input>").text("").attr("placeholder", "enter your name").addClass("usernameBox");
 
   var closeButton = $("<button>").text("Submit").addClass("playAgain").click(function(){
-    //submit high score
-    //then
-    //get high scores
-
     modalContent.hide();
-    postUserStats(
-      username, accuracyTotal,timer);
-
+    postUserStats(username.val(), accuracyTotal,timer);
   });
 
   var winImg = $("<img>").addClass("winImg");
-  username = $("<input>").text("").attr("placeholder", "enter your name").addClass("usernameBox");
+  // username = $("<input>").text("").attr("placeholder", "enter your name").addClass("usernameBox");
 
   modalContent.append(winText, winImg, username, closeButton);
   $(".mainCards").append(modalContent);
