@@ -3,11 +3,13 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   height:100vh;
+  width:100vw;
   /* overflow: hidden; */
 }
 
 .logo{
   margin-left:17%;
+  background-image: url("../assets/images/nemo3.png")
 }
 
 .resetButton{
@@ -507,6 +509,9 @@ td, th {
 }
 
 
+
+
+
 @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
 /* Styles */
 
@@ -516,10 +521,9 @@ td, th {
 /* Styles */
 
 .logo{
-    margin-left: 1%;
-    width: 145px;
-    height: 99px;
+  background-image: none;
 }
+
 
 .stat {
     margin-right: -11%;
