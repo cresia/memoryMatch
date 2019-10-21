@@ -140,7 +140,7 @@ function handleCardClick(event) {
 
         $('.card').on('click', handleCardClick);
 
-      }, 500);
+      }, 900);
       displayStats();
     }
 
@@ -311,7 +311,7 @@ function createRankPage(highScoreArray){
 
   var thRank = $('<th>').text("Rank").addClass("th");
   var thName = $("<th>").text("Name").addClass("th");
-  var thTime = $("<th>").text("Time").addClass("th");
+  var thTime = $("<th>").text("Score").addClass("th");
   var thAccuracy = $("<th>").text("Accuracy").addClass("th");
   var trTableTitle = $('<tr>').append(thRank,thName,thTime,thAccuracy);
 
@@ -336,7 +336,7 @@ function createRankPage(highScoreArray){
   //end loop
 
   var closeButton = $("<button>").text("Play again").addClass("playAgain").click(function () {
-    timer = 100;
+    timer = 1000;
     $(".timeResult").text(timer);
     startTimer = true;
 
@@ -355,7 +355,7 @@ function createLoseModal(){
   var modalContent = $("<div>").addClass("loseModal");
   var loseText = $("<p>").text("Sorry, you ran out of the time!!").addClass("modalText");
   var closeButton = $("<button>").text("Try Again").addClass("playAgain").click(function(){
-    timer = 100;
+    timer = 1000;
     $(".timeResult").text(timer);
     startTimer = true;
     games_played++;

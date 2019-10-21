@@ -4,12 +4,11 @@ body{
   background-size: cover;
   height:100vh;
   width:100vw;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 .logo{
-  margin-left:17%;
-  background-image: url("../assets/images/nemo3.png")
+  margin-left:23%;
 }
 
 .resetButton{
@@ -32,12 +31,10 @@ body{
 }
 
 .resetButton:hover{
-  /* background-color: rgb(177, 219, 39) */
-  background-color: rgb(218, 233, 182)
+  background-color: rgb(218, 233, 182);
 }
 
 .resetButton:active {
-  /* background-color:rgb(177, 219, 39); */
   background-color: rgb(218, 233, 182);
   box-shadow: 0 5px #666;
   transform: translateY(4px);
@@ -82,7 +79,6 @@ body{
 
 .speakerIcon{
   width:90%;
-
 }
 
 /* Container for flexboxes */
@@ -95,22 +91,33 @@ body{
 .column {
   margin-top:0.2%;
   flex: 1;
-
 }
 
 .stat{
   color:rgb(12, 5, 78);
-  /* margin-right:12%; */
   margin-right:6%;
   margin-top:0.5%;
   font-family: 'Aladin', cursive;
   font-size:30px;
-  /* text-align: center; */
 }
 
+.stat1{
+  color:rgb(12, 5, 78);
+  margin-right:6%;
+  margin-top:0.5%;
+  font-family: 'Aladin', cursive;
+  font-size:30px;
+}
+
+.stat2{
+  color:rgb(12, 5, 78);
+  margin-right:6%;
+  margin-top:0.5%;
+  font-family: 'Aladin', cursive;
+  font-size:30px;
+}
 
 .resultGamePlayed {
-  /* color:rgb(15, 1, 8); */
   color:rgb(168, 55, 187);
   background-size: contain;
   text-align: center;
@@ -131,14 +138,12 @@ body{
   background-repeat: no-repeat;
   background-image: url("https://i0.wp.com/creationcreatures.com/wp-content/uploads/Bubble2.png?fit=2640%2C2640&ssl=1");
   margin-top:1%;
-  /* margin-left:-10%; */
-   margin-left:22%;
+  margin-left:22%;
   width: 110px;
   height:80px;
   font-size: 30px;
   padding-top:35%;
 }
-
 
 .mainCards{
   width: 95%;;
@@ -157,7 +162,13 @@ body{
   display: inline-block;
   transform-style: preserve-3d;
   transition: all 0.5s ease;
+  cursor:pointer;
 }
+
+/* .card:hover {
+  top: -9px;
+  transform: scale(1.05);
+} */
 
 .flip{
   transform:rotateY(180deg);
@@ -165,25 +176,12 @@ body{
 
 /* front is the lfz logo */
 .front {
-
-  /* border: solid white 1.5px;
-  background-image: url(https://i.pinimg.com/originals/09/d3/cd/09d3cd5….jpg);
-  width: 100%;
-  height: 100%;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: absolute;
-  margin: 0 auto;
-  backface-visibility: hidden; */
-
-
   border: solid white 1.5px;
   background-image: url("https://i.pinimg.com/originals/09/d3/cd/09d3cd5e6f99f90b573af3ec0b8408ee.jpg");
   width:100%;
   height:100%;
   background-position:center;
- background-size: cover;
+  background-size: cover;
   background-repeat: no-repeat;
   position:absolute;
   margin: 0 auto;
@@ -192,8 +190,6 @@ body{
 
 /* back is the answer */
 .back{
-  /* background-color:#03396c;
-  opacity:0.5; */
   background-position:center;
   width:100%;
   height:100%;
@@ -204,12 +200,9 @@ body{
 }
 
 .doryCard{
-  /* background-color:#03396c;
-  opacity:0.5; */
   background-repeat: no-repeat;
   background-position:center;
-  /* background-image: url("https://www.pinclipart.com/picdir/big/341-3416601_nemo-sticker-finding-dory-white-background-clipart.png"); */
-  background-image: url("https://www.pngfind.com/pngs/m/5-58440_free-png-download-dory-fish-png-images-background.png");
+  background-image: url("https://www.pinclipart.com/picdir/big/341-3416601_nemo-sticker-finding-dory-white-background-clipart.png");
   background-size: contain;
   width:100%;
   height:100%;
@@ -217,8 +210,6 @@ body{
 }
 
 .nemoCard{
-  /* background-color:#03396c;
-  opacity:0.5; */
   background-repeat: no-repeat;
   background-position:center;
   background-image: url("https://i.pinimg.com/originals/02/f4/5b/02f45bac46c44e57af65e522ec5b77c5.gif");
@@ -229,8 +220,6 @@ body{
 }
 
 .starCard{
-  /* background-color:#03396c;
-  opacity:0.5; */
   background-repeat: no-repeat;
   background-position:center;
   background-image: url("https://i.pinimg.com/originals/04/1c/ab/041cab5d642594b8c20d994b388a69e4.png");
@@ -298,7 +287,6 @@ body{
   width:100%;
   height:100%;
   position:absolute;
-
 }
 
 .hidden{
@@ -309,20 +297,16 @@ body{
   background-image: url("https://image.freepik.com/vector-gratis/playa-vacia-mar-verano-mar-cielo-arena-vector-fondo-vacaciones_87424-62.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  /* padding: 20px; */
   padding: 42px;
   position: absolute;
   width: 50%;
   display:none;
-  /* top: 96%;
-  left: 50%; */
   top: 137%;
   left: 55%;
   transform: translate(-50%, -50%);
   border-radius: 25px;
   z-index: 1;
 }
-
 
 
 .rankContainer{
@@ -337,7 +321,6 @@ body{
   transform: translate(-50%, -50%);
   border-radius: 25px;
   z-index: 1;
-
 }
 
 .loseModal{
@@ -352,10 +335,7 @@ body{
   transform: translate(-50%, -50%);
   border-radius: 25px;
   z-index: 1;
-
 }
-
-
 
 .modalText{
   font-family: 'Aladin', cursive;
@@ -373,14 +353,12 @@ body{
   margin-left: 18%;
 }
 
-
 .playAgain{
   margin-top:5%;
   color:white;
   background-color:rgb(29, 29, 117);
   font-family: 'Aladin', cursive;
-  /* font-size: 35px; */
-   font-size: 30px;
+  font-size: 30px;
   margin-left:40%;
   padding:2%;
   border-radius: 20px;
@@ -393,7 +371,6 @@ body{
 .playAgain:hover {background-color: #130a3f}
 
 .playAgain:active {
-  /* background-color:rgb(29, 29, 117); */
   background-color:rgb(54, 54, 126);
   box-shadow: 0 5px #666;
   transform: translateY(4px);
@@ -411,9 +388,397 @@ td, th {
   padding: 8px;
 }
 
-/* tr:nth-child(even) {
-  background-color: #dddddd;
-} */
+/* -------------------------- iphone 6,7,8 : landscape ----------------------------*/
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+.logo {
+   margin-top: -5%;
+    margin-left: 22%;
+    width: 92%;
+    height: 54%;
+}
+
+.resetButton {
+  margin-top: -4%;
+  width: 6%;
+  height: 7.5%;
+  padding: 4px 10px;
+}
+
+.speaker, .mute{
+  margin-top: 5%;
+  width: 18%;
+  height: 13%;
+  padding: 3px 9px;
+}
+
+.stat1 {
+  margin-right: 2%;
+  margin-top: -0.5%;
+  font-size: 22px;
+}
+
+.stat {
+  font-size: 22px;
+  margin-top: -0.5%;
+  margin-right: 4%;
+}
+
+.stat2 {
+     font-size: 22px;
+    margin-top: -0.5%;
+    margin-right: 7%;
+}
+
+.column {
+  margin-top: 0.1%;
+}
+
+.row {
+  margin-bottom: -12%;
+}
+
+.card {
+  width: 12vw;
+  margin-left: 3%;
+  height: 21vh;
+  margin-top: 1%;
+
+}
+
+.mainCards {
+  margin-left: 3%;
+  margin-top: 4%;
+}
+
+.timeResult {
+     margin-top: -7%;
+    margin-left: -16%;
+    padding-top: 34%;
+    width: 67px;
+    height: 80px;
+    font-size: 19px;
+}
+
+.resultAttempts {
+   margin-left: -6%;
+    width: 72px;
+    height: 88%;
+    font-size: 22px;
+    padding-top: 34%;
+    margin-top: -8%;
+}
+
+.resultGamePlayed {
+    width: 70px;
+    height: 80px;
+    font-size: 22px;
+    margin-top: -5%;
+    margin-left: 10%;
+    padding-top: 24%;
+}
+
+.column {
+    margin-top: 1.2%;
+  }
+}
+
+/* -------------------------- iphone 6,7,8 : portrait ----------------------------*/
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+body {
+  height:101vh;
+  width:100vw;
+  overflow: hidden;
+}
+
+.logo{
+  display:none;
+}
+
+.stat {
+  margin-right: 6%;
+  margin-top: -0.5%;
+  font-size: 21px;
+  color: white;
+}
+
+.stat1 {
+  font-size: 30px;
+  margin-right: 1%;
+  margin-top: -0.5%;
+  font-size: 21px;
+  color: white;
+}
+
+.stat2 {
+  margin-right: 10%;
+  margin-top: -0.5%;
+  font-size: 21px;
+  color: white;
+}
+
+.speaker{
+    cursor: pointer;
+    width: 71%;
+    height: 15%;
+    margin-top: 14%;
+    margin-left: -45%;
+}
+
+.mute {
+  cursor: pointer;
+  width: 71%;
+  height: 16%;
+  margin-top: 14%;
+  margin-left: -47%;
+}
+
+.resetButton {
+  cursor: pointer;
+  margin-top: -3.3px;
+  height: 8%;
+  margin-left: -46%;
+  width: 27%;
+}
+
+.mainCards {
+  width: 100%;
+  display: inline-block;
+  margin-left: -0.9%;
+  margin-top: 3.5%;
+}
+
+.card{
+  width: 23vw;
+  margin-left: 7%;
+  height: 12.3vh;
+  margin-top: 2%;
+}
+
+.row{
+  margin-bottom: -18%;
+}
+
+.column {
+  margin-top: 1.2%;
+  flex: 1;
+}
+
+.resultAttempts {
+  margin-top: -6%;
+  margin-left: -3%;
+  width: 65px;
+  font-size: 18px;
+  padding-top: 33%;
+  color: rgb(234, 104, 28);
+}
+
+.timeResult {
+  margin-top: -6%;
+  margin-left: -16%;
+  width: 65px;
+  font-size: 18px;
+  padding-top: 33%;
+  color: rgb(234, 104, 28);
+}
+
+.resultGamePlayed {
+    width: 65px;
+    height: 80px;
+    font-size: 19px;
+    margin-top: -4%;
+    margin-left: 14%;
+    padding-top: 23%;
+    color: rgb(234, 104, 28);
+  }
+}
+
+/* --------------------------- iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+ .mainCards {
+    margin-left: 1%;
+    margin-top: 0%;
+  }
+
+  .card {
+    width: 12.5vw;
+    margin-left: 3%;
+    /* height: 21vh;
+    margin-top: 2.8%; */
+}
+
+  
+  .stat {
+         margin-right: 6%;
+    margin-top: 0.5%;
+   
+}
+
+.stat1 {
+      margin-right: 2%;
+    margin-top: 0.5%;
+   
+}
+
+.stat2 {
+    margin-right: 7%;
+    margin-top: 0.5%;
+}
+  
+
+  .column {
+    margin-top: 2.2%;
+  }
+
+  .logo {
+    height: 74%;
+    margin-left: 16%;
+    margin-top: -5%;
+    width: 98%;
+  }
+
+  .row{
+    margin-bottom: -4.5%;
+  }
+
+  .resetButton{
+    width: 8%;
+    height: 11%;
+    margin-left: 19%;
+    margin-top: -4%;
+    padding: 7px 15px;
+  }
+
+  .speaker, .mute {
+    width: 19%;
+    height: 20%;
+    padding: 4px 12px;
+    margin-left: 19%;
+    margin-top: 5%;
+}
+
+.timeResult {
+   margin-top: -6%;
+    margin-left: -23%;
+    width: 110px;
+    height: 80px;
+    font-size: 30px;
+    padding-top: 35%;
+}
+
+.resultAttempts{
+    margin-top: -9%;
+    margin-left: -19%;
+    width: 110px;
+    height: 80px;
+    font-size: 30px;
+    padding-top: 35%;
+}
+
+.resultGamePlayed {
+    width: 111px;
+    margin-top: -3%;
+}
+
+.resultAttempts {
+    width: 111px;
+    margin-top: -3%;
+    margin-left: -7%;
+  }
+ }
+
+/* ----------------------------------------- iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+
+  .logo{
+   display:none;
+ }
+
+  .stat{
+    margin-right: 8%;
+    margin-top: -0.5%;
+    font-size: 35px;
+  }
+
+  .stat1{
+    margin-right: 5%;
+    margin-top: -0.5%;
+    font-size: 35px;
+  }
+
+  .stat2{
+    margin-right: 13%;
+    margin-top: -0.5%;
+    font-size: 35px;
+  }
+
+ .card {
+    width: 21vw;
+    height: 12vh;
+    margin-top: 2.3%;
+    margin-left: 8%;
+ }
+
+ .mainCards{
+    margin-top: -11.5%;
+    margin-left: 2.3%;
+ }
+
+ .column{
+    margin-top: -0.8%;
+
+ }
+
+ .row {
+    margin-bottom: 5.5%;
+}
+
+ .resetButton {
+    width: 20%;
+    height: 11%;
+    margin-top: 8%;
+    margin-left: -27.5%;
+ }
+
+ .speaker, .mute {
+    width: 40%;
+    height: 17%;
+    margin-left: -28%;
+    margin-top: 12%;
+ }
+
+
+ .resultAttempts {
+    color: #ff5522;
+    margin-top: -7%;
+    margin-left: 0%;
+    width: 101px;
+    height: 82px;
+    font-size: 30px;
+    padding-top: 35%;
+}
+
+.timeResult {
+    color: #ff5522;
+    margin-top: -9%;
+    margin-left: -16%;
+    width: 101px;
+    height: 82px;
+    font-size: 31px;
+    padding-top: 35%;
+}
+
+.resultGamePlayed {
+    color: #ff5522;
+    margin-top: -5%;
+    margin-left: 15%;
+    width: 101px;
+    height: 82px;
+    padding-top: 22%;
+    }
+}
+
+
+
 
 
 /* Desktops and laptops ----------- */
@@ -425,132 +790,3 @@ td, th {
 /* @media only screen  and (min-width : 1824px) { */
 /* Styles */
 /* } */
-
-
-
-/* iPads (landscape) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
- .mainCards {
-    margin-top: 0%;
-  }
-
-  .stat{
-    margin-right: 5%;
-  }
-
-  .column {
-    margin-top: 2.2%;
-  }
-
-  .logo {
-    margin-left: 13%;
-    margin-top: -4%;
-  }
-
-  .row{
-    margin-bottom: -4.5%;
-  }
-
-  .resetButton{
-    width: 6.5%;
-    margin-left: 13%;
-  }
-
-  .speaker, .mute {
-    width: 6%;
-  }
-}
-
-
-/* iPads (portrait) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
-  .logo{
-    margin-top: 5%;
-    margin-left:12%;
-    width:20%;
-    height:30%;
-  }
-
-  .stat{
-    margin-right: 6%;
-    margin-top: 4.5%;
-    font-family: 'Aladin', cursive;
-    font-size: 25px;
-  }
-
- .card {
-    width: 13vw;
-    height: 13vh;
-    margin-top: 6.8%;
-    margin-left: 2%;
- }
-
- .mainCards{
-   margin-top: 6%;
- }
-
- .logo{
-    margin-top: 16%;
-    margin-left: 15%;
-    width: 91%;
-    height: 73%;
- }
-
- .resetButton {
-    width: 9%;
-    margin-top: 4%;
-    margin-left: 8.5%;
- }
-
- .speaker, .mute {
-    width: 8%;
- }
-
-}
-
-
-
-
-
-@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
-/* Styles */
-
-}
-
-@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
-/* Styles */
-
-.logo{
-  background-image: none;
-}
-
-
-.stat {
-    margin-right: -11%;
-    margin-top: 3.5%;
-    font-size: 15px;
-
-}
-
-.speaker, .mute {
-    width: 13%;
-}
-
-.resetButton {
-    width: 15%;
-
-}
-
-.card{
-    width: 14vw;
-    margin-left: 3%;
-    height: 8vh;
-    margin-top: 9.8%;
-}
-
-.row{
-  margin-bottom: -8.5%;
-}
-
-
-}
