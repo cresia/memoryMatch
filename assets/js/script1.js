@@ -9,6 +9,7 @@ function initialApp() {
   // createCards(shuffleCards()));
 
   $(".resetButton").click(function () {
+    resetStats()
     closeModal();
     buttons();
     createCards(shuffleCards());
@@ -105,12 +106,12 @@ function handleCardClick(event) {
 
         //call the fetch and show the rank result
         // modal.on("click", handleScores());
-
-        games_played++;
+        match= 0;
 
         displayStats();
         winAudio();
       }
+
       displayStats();
 
     }
@@ -145,6 +146,7 @@ function handleCardClick(event) {
     }
 
   }
+
 }
 
 
@@ -175,8 +177,10 @@ function postUserStats(username, accuracyTotal, timer){
 }
 
 function closeModal() {
+
   $(".modal-content").hide();
-  resetStats();
+  // games_played++;
+  // resetStats();
 }
 
 function calculateAccuracy() {
@@ -222,6 +226,13 @@ function displayStats() {
 function resetStats() {
   match = 0;
   attempts = 0;
+  games_played = 0;
+
+  timer = 1000;
+  $(".timeResult").text(timer);
+  startTimer = true;
+  myStopFunction();
+
   displayStats();
   $(".back").removeClass("matched");
   $(".front").show();
@@ -247,55 +258,6 @@ function shuffleCards() {
   }
 
   return cards;
-}
-
-
-function cardsAudio(){
-  var clickSound = new Audio("./assets/audio/audio2.mp3");
-  clickSound.play();
-}
-
-function matchCardAudio(){
-  var matchCard = new Audio("./assets/audio/match.mp3");
-  matchCard.play();
-}
-
-function winAudio(){
-  var winModal = new Audio("./assets/audio/winAudio.mp3");
-  winModal.play();
-}
-
-// function loseAudio() {
-//   var winModal = new Audio("./assets/audio/winAudio.mp3");
-//   winModal.play();
-// }
-
-function playAgainAudio() {
-  var winModal = new Audio("./assets/audio/audio1.mp3");
-  winModal.play();
-}
-
-var gameMusic = new Audio("./assets/audio/heavenly.mp3");
-function gameAudio(){
-  if (speaker === null) { // if I haven't clicked on the speaker button yet then play the music
-    gameMusic.loop = true;
-    gameMusic.load();
-    gameMusic.play();
-    console.log('speaker has been clicked')
-  }
-}
-
-function stopAudio(){
-  if (mute === null) { // this is for mute button
-    gameMusic.loop = false;
-    gameMusic.load();
-    console.log('mute button has been clicked');
-  }
-}
-
-function buttons() {
-  var gameAudio = new Audio("./assets/audio/buttons.mp3");
-  gameAudio.play();
 }
 
 
@@ -335,13 +297,21 @@ function createRankPage(highScoreArray){
   //end loop
 
   var closeButton = $("<button>").text("Play again").addClass("playAgain").click(function () {
+    games_played++;
+    $(".resultGamePlayed").text(games_played);
+
+    attempts = 0
+    $(".resultAttempts").text(attempts);
+
     timer = 1000;
     $(".timeResult").text(timer);
     startTimer = true;
 
+
     closeModal();
     playAgainAudio();
     createCards(shuffleCards());
+
   })
 
   rankContainer.append(title, rankTable, closeButton);
@@ -358,6 +328,8 @@ function createLoseModal(){
     $(".timeResult").text(timer);
     startTimer = true;
     games_played++;
+    $(".resultGamePlayed").text(games_played);
+
 
     closeModal();
     myStopFunction();
@@ -379,6 +351,7 @@ function createCards(shuffledArray) {
   var username = $("<input>").text("").attr("placeholder", "enter your name").addClass("usernameBox");
 
   var closeButton = $("<button>").text("Submit").addClass("playAgain").click(function(){
+
     modalContent.hide();
     postUserStats(username.val(), accuracyTotal,timer);
   });
@@ -405,4 +378,54 @@ function createCards(shuffledArray) {
   }
 
   $(".card").on("click", handleCardClick);
+}
+
+
+
+function cardsAudio() {
+  var clickSound = new Audio("./assets/audio/audio2.mp3");
+  clickSound.play();
+}
+
+function matchCardAudio() {
+  var matchCard = new Audio("./assets/audio/match.mp3");
+  matchCard.play();
+}
+
+function winAudio() {
+  var winModal = new Audio("./assets/audio/winAudio.mp3");
+  winModal.play();
+}
+
+// function loseAudio() {
+//   var winModal = new Audio("./assets/audio/winAudio.mp3");
+//   winModal.play();
+// }
+
+function playAgainAudio() {
+  var winModal = new Audio("./assets/audio/audio1.mp3");
+  winModal.play();
+}
+
+var gameMusic = new Audio("./assets/audio/heavenly.mp3");
+function gameAudio() {
+  if (speaker === null) { // if I haven't clicked on the speaker button yet then play the music
+    gameMusic.loop = true;
+    gameMusic.load();
+    gameMusic.play();
+    console.log('speaker has been clicked')
+  }
+}
+
+function stopAudio() {
+  if (mute === null) { // this is for mute button
+    gameMusic.loop = false;
+    gameMusic.load();
+    console.log('mute button has been clicked');
+  }
+}
+
+function buttons() {
+  var gameAudio = new Audio("./assets/audio/buttons.mp3");
+  gameAudio.play();
 }
