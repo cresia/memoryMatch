@@ -30,8 +30,8 @@ var theSecondCardClicked = null;
 var speaker = null;
 var mute = null;
 var match = 0;
-// var max_matches = 9;
-var max_matches = 1;
+var max_matches = 9;
+// var max_matches = 1;
 var addMatchedClass;
 var attempts = 0;
 var games_played = 0;
@@ -331,7 +331,6 @@ function createRankPage(highScoreArray){
 
   rankTable.append(trResult);
   currentRank++;
-
   }
   //end loop
 
