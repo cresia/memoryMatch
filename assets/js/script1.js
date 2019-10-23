@@ -9,13 +9,7 @@ function initialApp() {
   // createCards(shuffleCards()));
 
   $(".resetButton").click(function () {
-    theFirstCardClicked = null;
-    theSecondCardClicked = null;
-    games_played++;
-    resetStats()
-    closeModal();
-    buttons();
-    createCards(shuffleCards());
+    handleResetButton();
   })
 
   $(".speaker").click(function () {
@@ -43,8 +37,9 @@ var timer = 3;
 // var timer = 300;
 var startTimer = true;
 
-// var username;
+var username;
 var accuracyTotal;
+
 var timeInterval;
 
 function handleCardClick(event) {
@@ -160,6 +155,16 @@ function getHighScores(){
       // .then(res => console.log(createRankPage(res)))
 }
 
+function handleResetButton(){
+      theFirstCardClicked = null;
+      theSecondCardClicked = null;
+      games_played++;
+
+      resetStats()
+      closeModal();
+      buttons();
+      createCards(shuffleCards());
+}
 
 function postUserStats(username, accuracyTotal, timer){
   fetch(`server/public/api/name.php`,{
@@ -185,6 +190,7 @@ function calculateAccuracy() {
   return accuracyTotal + " %";
 }
 
+
 function timeScores(){
   if(startTimer === true){
     timeInterval = setInterval(function () {
@@ -203,9 +209,11 @@ function timeScores(){
   }
 }
 
+
 function myStopFunction() {
    clearInterval(timeInterval);
 }
+
 
 function displayStats() {
   var result = calculateAccuracy();
@@ -263,7 +271,7 @@ function createRankPage(highScoreArray){
 
   var thRank = $('<th>').text("Rank").addClass("th");
   var thName = $("<th>").text("Name").addClass("th");
-  var thTime = $("<th>").text("Score").addClass("th");
+  var thTime = $("<th>").text("Time").addClass("th");
   var thAccuracy = $("<th>").text("Accuracy").addClass("th");
   var trTableTitle = $('<tr>').append(thRank,thName,thTime,thAccuracy);
 
@@ -286,6 +294,10 @@ function createRankPage(highScoreArray){
   }
   //end loop
 
+  var userNameStats = $("<p>").text("Name: " + username.val()).addClass("userNameStats");
+  var userTimeStats = $("<p>").text("Time: " + timer).addClass("userTimeStats");
+  var userAccuracyStats = $("<p>").text("Accuracy: " + accuracyTotal).addClass("userAccuracyStats");
+
   var closeButton = $("<button>").text("Play again").addClass("playAgain").click(function () {
     games_played++;
     theFirstCardClicked = null;
@@ -295,9 +307,9 @@ function createRankPage(highScoreArray){
     closeModal();
     playAgainAudio();
     createCards(shuffleCards());
-  })
+  });
 
-  rankContainer.append(title, rankTable, closeButton);
+  rankContainer.append(title, rankTable, userNameStats, userTimeStats, userAccuracyStats, closeButton);
 
   $(".mainCards").append(rankContainer);
 }
@@ -314,13 +326,12 @@ function createLoseModal(){
     closeModal();
     playAgainAudio();
     createCards(shuffleCards());
-  })
+  });
 
   var loseImg = $("<img>").addClass("winImg").attr("src", "https://media2.giphy.com/media/OXF91oNPj8NH2/giphy.gif");
 
   modalContent.append(loseText, loseImg, closeButton);
   $(".mainCards").append(modalContent);
-
 }
 
 
@@ -328,16 +339,14 @@ function createCards(shuffledArray) {
   $(".mainCards").empty();
   var modalContent = $("<div>").addClass("modal-content");
   var winText = $("<p>").text("Congratulations! You Win!!").addClass("modalText");
-  var username = $("<input>").text("").attr("placeholder", "enter your name").addClass("usernameBox");
+  username = $("<input>").text("").attr("placeholder", "enter your name").addClass("usernameBox");
 
   var closeButton = $("<button>").text("Submit").addClass("submit").click(function(){
-
     modalContent.hide();
     postUserStats(username.val(), accuracyTotal, timer);
   });
 
   var winImg = $("<img>").addClass("winImg").attr("src", "https://media2.giphy.com/media/OXF91oNPj8NH2/giphy.gif");
-  // username = $("<input>").text("").attr("placeholder", "enter your name").addClass("usernameBox");
 
   modalContent.append(winText, winImg, username, closeButton);
   $(".mainCards").append(modalContent);
