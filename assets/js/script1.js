@@ -11,6 +11,7 @@ function initialApp() {
   $(".resetButton").click(function () {
     theFirstCardClicked = null;
     theSecondCardClicked = null;
+    games_played++;
     resetStats()
     closeModal();
     buttons();
@@ -246,7 +247,6 @@ function shuffleCards() {
     cards[currentIndex] = cards[randomIndex];
     cards[randomIndex] = temporaryValue;
   }
-
   return cards;
 }
 
@@ -295,7 +295,6 @@ function createRankPage(highScoreArray){
     closeModal();
     playAgainAudio();
     createCards(shuffleCards());
-
   })
 
   rankContainer.append(title, rankTable, closeButton);
