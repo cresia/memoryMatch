@@ -133,7 +133,7 @@ body{
     padding-top: 28%;
 }
 
-.resultAttempts {
+.resultAttempts, .resultAccuracy {
  color: rgb(168, 55, 187);
     background-size: contain;
     text-align: center;
@@ -148,7 +148,7 @@ body{
 }
 
  .timeResult {
- color: rgb(168, 55, 187);
+    color: rgb(168, 55, 187);
     background-size: contain;
     text-align: center;
     background-repeat: no-repeat;
@@ -318,8 +318,8 @@ body{
   position: absolute;
   width: 50%;
   display:none;
-  top: 137%;
-  left: 55%;
+  top: 156%;
+  left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 25px;
   z-index: 1;
@@ -327,31 +327,31 @@ body{
 
 
 .rankContainer{
-  background-image: url("https://image.freepik.com/vector-gratis/playa-vacia-mar-verano-mar-cielo-arena-vector-fondo-vacaciones_87424-62.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 42px;
-  position: absolute;
-  width: 50%;
-  top: 137%;
-  left: 55%;
-  transform: translate(-50%, -50%);
-  border-radius: 25px;
-  z-index: 1;
+    background-image: url(https://image.freepik.com/vector-gratis/playa-vacia-mar-verano-mar-cielo-arena-vector-fondo-vacaciones_87424-62.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 42px;
+    position: absolute;
+    width: 50%;
+    top: 155%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+    border-radius: 25px;
+    z-index: 1;
 }
 
 .loseModal{
-   background-image: url("https://image.freepik.com/vector-gratis/playa-vacia-mar-verano-mar-cielo-arena-vector-fondo-vacaciones_87424-62.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 42px;
-  position: absolute;
-  width: 50%;
-  top: 137%;
-  left: 55%;
-  transform: translate(-50%, -50%);
-  border-radius: 25px;
-  z-index: 1;
+    background-image: url(https://image.freepik.com/vector-gratis/playa-vacia-mar-verano-mar-cielo-arena-vector-fondo-vacaciones_87424-62.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 29px;
+    position: absolute;
+    width: 50%;
+    top: 150%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    border-radius: 25px;
+    z-index: 1;
 }
 
 .modalText{
@@ -361,17 +361,66 @@ body{
   color:white;
 }
 
+
 .winImg{
-  background-image: url("https://media2.giphy.com/media/OXF91oNPj8NH2/giphy.gif");
-  background-size:contain;
-  background-repeat: no-repeat;
-  width:30vw;
-  height:25vh;
-  margin-left: 18%;
+    width: 29vw;
+    /* height: 25vh; */
+    margin-left: 19%;
 }
 
 .playAgain{
-  margin-top:5%;
+  width: 18%;
+  margin-top: 3%;
+  color: white;
+  background-color: rgb(29, 29, 117);
+  font-family: 'Aladin', cursive;
+  font-size: 28px;
+  margin-left: 41%;
+  padding: 1.5%;
+  border-radius: 20px;
+  box-shadow: 0 9px #999;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.playAgain:hover {background-color: #130a3f}
+
+.playAgain:active {
+  background-color:rgb(54, 54, 126);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+.submit{
+  width: 18%;
+  margin-top: 2%;
+  color: white;
+  background-color: rgb(29, 29, 117);
+  font-family: 'Aladin', cursive;
+  font-size: 28px;
+  margin-left: 41%;
+  padding: 1.5%;
+  border-radius: 20px;
+  box-shadow: 0 9px #999;
+  text-decoration: none;
+  outline: none;
+  border: none;
+}
+
+.submit:hover {background-color: #130a3f}
+
+.submit:active {
+  background-color:rgb(54, 54, 126);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+.tryAgain{
+  margin-top:2%;
   color:white;
   background-color:rgb(29, 29, 117);
   font-family: 'Aladin', cursive;
@@ -385,9 +434,9 @@ body{
   border: none;
 }
 
-.playAgain:hover {background-color: #130a3f}
+.tryAgain:hover {background-color: #130a3f}
 
-.playAgain:active {
+.tryAgain:active {
   background-color:rgb(54, 54, 126);
   box-shadow: 0 5px #666;
   transform: translateY(4px);
@@ -400,12 +449,20 @@ table {
 }
 
 td, th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
+    border: 1px solid #673AB7;
+    text-align: center;
+    padding: 11px;
+    color: #000000;
+    font-weight: bold;
+     font-size: 20px;
 }
 
-.shuffleSlow-move {
+th{
+    color: #05b0a0;
+    font-size: 24px;
+}
+
+/* .shuffleSlow-move {
   transition: transform 2s;
 }
 .shuffleMedium-move {
@@ -413,7 +470,29 @@ td, th {
 }
 .shuffleFast-move {
   transition: transform 0.5s;
+} */
+
+.usernameBox {
+    margin-left: 31%;
+    width: 35%;
+    /* height: 3%; */
+    padding: 1.5%;
+    border: solid #3F51B5 1.5px;
+    border-radius: 20px;
+    outline: none;
+    text-align: center;
+    font-size: 125%;
 }
+
+.rankPagetitle{
+ text-align: center;
+    font-family: 'Aladin', cursive;
+    color: #4e62d2;
+    font-size: 50px;
+    padding: 1%;
+}
+
+
 
 /* -------------------------- iphone 6,7,8 : landscape ----------------------------*/
 @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
@@ -507,6 +586,38 @@ td, th {
 .column {
     margin-top: 1.2%;
   }
+
+  .loseModal {
+    padding: 13px;
+    width: 50%;
+    top: 126%;
+    left: 49%;
+    height: 305%;
+}
+
+.modalText {
+    font-size: 28px;
+    margin-top: 4%;
+}
+
+
+
+.winImg {
+    width: 29vw;
+    margin-left: 20%;
+    margin-top: -4%;
+}
+
+.tryAgain {
+    font-size: 27px;
+    margin-left: 34%;
+    padding: 3%;
+    margin-top: 2%;
+}
+
+
+
+
 }
 
 /* -------------------------- iphone 6,7,8 : portrait ----------------------------*/
@@ -617,6 +728,59 @@ body {
     padding-top: 23%;
     color: rgb(234, 104, 28);
   }
+
+
+ .loseModal {
+    width: 69%;
+    top: 153%;
+    left: 49%;
+}
+
+.winImg {
+    width: 56vw;
+    height: 15vh;
+    margin-left: 16%;
+    margin-top: -5%;
+}
+
+.tryAgain {
+    margin-top: 5%;
+    font-size: 22px;
+    margin-left: 34%;
+    padding: 4%;
+}
+
+.modal-content {
+    padding: 16px;
+    width: 81%;
+    height: 211%;
+    top: 156%;
+    left: 48%;
+}
+
+.modalText {
+    font-size: 31px;
+    margin-top: 8%;
+}
+
+
+.usernameBox {
+    margin-left: 22%;
+    margin-top: 4%;
+    width: 54%;
+    padding: 2%;
+    font-size: 114%;
+}
+
+.submit {
+    width: 30%;
+    margin-top: 4%;
+    font-size: 25px;
+    margin-left: 36%;
+    padding: 1.5%;
+}
+
+
 }
 
 /* --------------------------- iPads (landscape) ----------- */
@@ -640,16 +804,16 @@ body {
 
 }
 
-.stat1 {
-      margin-right: 2%;
-    margin-top: 0.5%;
+    .stat1 {
+          margin-right: 2%;
+        margin-top: 0.5%;
 
-}
+    }
 
-.stat2 {
-    margin-right: 7%;
-    margin-top: 0.5%;
-}
+    .stat2 {
+        margin-right: 7%;
+        margin-top: 0.5%;
+    }
 
 
   .column {
@@ -683,35 +847,88 @@ body {
     margin-top: 5%;
 }
 
-.timeResult {
-   margin-top: -6%;
-    margin-left: -23%;
-    width: 110px;
-    height: 80px;
-    font-size: 30px;
-    padding-top: 35%;
-}
-
-.resultAttempts{
-    margin-top: -9%;
-    margin-left: -19%;
-    width: 110px;
-    height: 80px;
-    font-size: 30px;
-    padding-top: 35%;
-}
-
-.resultGamePlayed {
-    width: 111px;
-    margin-top: -3%;
-}
-
-.resultAttempts {
-    width: 111px;
-    margin-top: -3%;
-    margin-left: -7%;
+  .timeResult {
+    margin-top: -6%;
+      margin-left: -23%;
+      width: 110px;
+      height: 80px;
+      font-size: 30px;
+      padding-top: 35%;
   }
- }
+
+  .resultAttempts{
+      margin-top: -9%;
+      margin-left: -19%;
+      width: 110px;
+      height: 80px;
+      font-size: 30px;
+      padding-top: 35%;
+  }
+
+  .resultGamePlayed {
+      width: 111px;
+      margin-top: -3%;
+  }
+
+  .resultAttempts {
+      width: 111px;
+      margin-top: -3%;
+      margin-left: -7%;
+    }
+
+
+  .winImg {
+    width: 29vw;
+    height: 19vh;
+    margin-left: 20%;
+    margin-top: -3%;
+}
+
+    .tryAgain {
+        margin-top: 4%;
+        margin-left: 38%;
+    }
+
+
+    .loseModal {
+        padding: 34px;
+        width: 50%;
+        top: 159%;
+        left: 50%;
+    }
+
+    .usernameBox {
+        margin-left: 29%;
+        margin-top: 1%;
+        width: 42%;
+    }
+
+    .submit {
+        width: 23%;
+        margin-left: 40%;
+    }
+
+
+    .playAgain {
+    width: 33%;
+    margin-top: 3%;
+    font-size: 29px;
+    margin-left: 35%;
+    padding: 3.3%;
+  }
+
+  td, th {
+    font-size: 26px;
+}
+
+.rankContainer {
+    width: 58%;
+    top: 173%;
+    left: 51%;
+    padding: 22px;
+}
+
+}
 
 /* ----------------------------------------- iPads (portrait) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
@@ -801,9 +1018,90 @@ body {
     width: 101px;
     height: 82px;
     padding-top: 22%;
-    }
-}
+  }
 
+
+    .winImg {
+       width: 33vw;
+    height: 45%;
+    margin-left: 21%;
+    margin-top: -5%;
+    height: 12vh;
+    }
+
+    .loseModal {
+      left: 49.5%;
+      top: 180%;
+      width: 66%;
+      padding: 52px;
+      border-radius: 23px;
+      height: 130%;
+    }
+
+
+    .tryAgain {
+        margin-left: 36%;
+    }
+
+
+    .modal-content {
+       padding: 65px;
+    top: 164%;
+    left: 49%;
+    height: 143%;
+    width: 59%;
+    }
+
+
+    .modalText {
+      font-size: 40px;
+      margin-top: -2%;
+    }
+
+
+    .usernameBox {
+      margin-left: 24%;
+      width: 46%;
+      margin-top: 3%;
+      padding: 2.6%;
+    }
+
+
+    .submit{
+      width: 27%;
+      margin-top: 5%;
+      margin-left: 38%;
+    }
+
+    .rankContainer {
+      padding: 26px;
+      width: 83%;
+      top: 199%;
+      left: 49%;
+    }
+
+    td, th {
+        padding: 13px;
+        font-size: 27px;
+    }
+
+    th {
+        font-size: 31px;
+    }
+
+    .rankPagetitle {
+        font-size: 59px;
+    }
+
+    .playAgain {
+      width: 30%;
+      margin-top: 4%;
+      margin-left: 37%;
+      padding: 4%;
+      font-size: 34px;
+    }
+
+}
 
 
 

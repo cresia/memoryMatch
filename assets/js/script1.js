@@ -9,6 +9,8 @@ function initialApp() {
   // createCards(shuffleCards()));
 
   $(".resetButton").click(function () {
+    theFirstCardClicked = null;
+    theSecondCardClicked = null;
     resetStats()
     closeModal();
     buttons();
@@ -32,11 +34,12 @@ var speaker = null;
 var mute = null;
 var match = 0;
 // var max_matches = 9;
-var max_matches = 1;
+var max_matches = 2;
 var addMatchedClass;
 var attempts = 0;
 var games_played = 0;
-var timer = 1000;
+var timer = 3;
+// var timer = 300;
 var startTimer = true;
 
 // var username;
@@ -104,10 +107,6 @@ function handleCardClick(event) {
         $(".front").hide();
         $(".back").addClass("matched");
 
-        //call the fetch and show the rank result
-        // modal.on("click", handleScores());
-        match= 0;
-
         displayStats();
         winAudio();
       }
@@ -144,11 +143,8 @@ function handleCardClick(event) {
       }, 900);
       displayStats();
     }
-
   }
-
 }
-
 
 function getHighScores(){
    const req = {
@@ -171,13 +167,10 @@ function postUserStats(username, accuracyTotal, timer){
     body: JSON.stringify({"name": username, "accuracy": accuracyTotal, "time": timer})
 
   })
-  .then(() => getHighScores())
-  // createRankPage(getHighScores())
-
+  .then(() => getHighScores());
 }
 
 function closeModal() {
-
   $(".modal-content").hide();
   // games_played++;
   // resetStats();
@@ -185,13 +178,11 @@ function closeModal() {
 
 function calculateAccuracy() {
   accuracyTotal = Math.ceil((match / attempts) * 100);
-
   if (match === 0 && attempts === 0) {
     accuracyTotal = " 0 ";
   }
   return accuracyTotal + " %";
 }
-
 
 function timeScores(){
   if(startTimer === true){
@@ -226,9 +217,8 @@ function displayStats() {
 function resetStats() {
   match = 0;
   attempts = 0;
-  games_played = 0;
 
-  timer = 1000;
+  timer = 30;
   $(".timeResult").text(timer);
   startTimer = true;
   myStopFunction();
@@ -298,16 +288,10 @@ function createRankPage(highScoreArray){
 
   var closeButton = $("<button>").text("Play again").addClass("playAgain").click(function () {
     games_played++;
-    $(".resultGamePlayed").text(games_played);
+    theFirstCardClicked = null;
+    theSecondCardClicked = null;
 
-    attempts = 0
-    $(".resultAttempts").text(attempts);
-
-    timer = 1000;
-    $(".timeResult").text(timer);
-    startTimer = true;
-
-
+    resetStats();
     closeModal();
     playAgainAudio();
     createCards(shuffleCards());
@@ -323,24 +307,21 @@ function createRankPage(highScoreArray){
 function createLoseModal(){
   var modalContent = $("<div>").addClass("loseModal");
   var loseText = $("<p>").text("Sorry, you ran out of the time!!").addClass("modalText");
-  var closeButton = $("<button>").text("Try Again").addClass("playAgain").click(function(){
-    timer = 1000;
-    $(".timeResult").text(timer);
-    startTimer = true;
+  var closeButton = $("<button>").text("Try Again").addClass("tryAgain").click(function(){
+    theFirstCardClicked = null;
+    theSecondCardClicked = null;
     games_played++;
-    $(".resultGamePlayed").text(games_played);
-
-
+    resetStats();
     closeModal();
-    myStopFunction();
     playAgainAudio();
     createCards(shuffleCards());
   })
 
-  var loseImg = $("<img>").addClass("winImg");
+  var loseImg = $("<img>").addClass("winImg").attr("src", "https://media2.giphy.com/media/OXF91oNPj8NH2/giphy.gif");
 
   modalContent.append(loseText, loseImg, closeButton);
   $(".mainCards").append(modalContent);
+
 }
 
 
@@ -350,37 +331,29 @@ function createCards(shuffledArray) {
   var winText = $("<p>").text("Congratulations! You Win!!").addClass("modalText");
   var username = $("<input>").text("").attr("placeholder", "enter your name").addClass("usernameBox");
 
-  var closeButton = $("<button>").text("Submit").addClass("playAgain").click(function(){
+  var closeButton = $("<button>").text("Submit").addClass("submit").click(function(){
 
     modalContent.hide();
-    postUserStats(username.val(), accuracyTotal,timer);
+    postUserStats(username.val(), accuracyTotal, timer);
   });
 
-  var winImg = $("<img>").addClass("winImg");
+  var winImg = $("<img>").addClass("winImg").attr("src", "https://media2.giphy.com/media/OXF91oNPj8NH2/giphy.gif");
   // username = $("<input>").text("").attr("placeholder", "enter your name").addClass("usernameBox");
 
   modalContent.append(winText, winImg, username, closeButton);
   $(".mainCards").append(modalContent);
 
-
   for (var i = 0; i < shuffledArray.length; i++) {
     var cardContainer = $('<div>').addClass('card');
-
     var backCard = $('<div>').addClass('back ' + shuffledArray[i]);
     var frontCard = $('<div>').addClass('front');
-
     var innerCardCombine = $(cardContainer).append(backCard, frontCard);
 
     $(cardContainer).append(innerCardCombine);
-
     $(".mainCards").append(cardContainer);
-
   }
-
   $(".card").on("click", handleCardClick);
 }
-
-
 
 function cardsAudio() {
   var clickSound = new Audio("./assets/audio/audio2.mp3");
