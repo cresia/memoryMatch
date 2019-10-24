@@ -58,7 +58,6 @@ body{
     border: none;
 }
 
-
 .speaker:hover{
   background-color: rgb(218, 233, 182)
 }
@@ -369,7 +368,7 @@ body{
 }
 
 .playAgain{
-  width: 18%;
+  width: 19%;
   margin-top: 3%;
   color: white;
   background-color: rgb(29, 29, 117);
@@ -396,7 +395,7 @@ body{
 
 .submit{
   width: 18%;
-  margin-top: 2%;
+  margin-top: 0%;
   color: white;
   background-color: rgb(29, 29, 117);
   font-family: 'Aladin', cursive;
@@ -475,7 +474,7 @@ th{
 .usernameBox {
     margin-left: 31%;
     width: 35%;
-    /* height: 3%; */
+    margin-top: 3%;
     padding: 1.5%;
     border: solid #3F51B5 1.5px;
     border-radius: 20px;
@@ -491,6 +490,52 @@ th{
     font-size: 50px;
     padding: 1%;
 }
+
+.columnUserResult{
+    float: left;
+    width: 30.52%;
+    padding: 10px;
+    text-align: center;
+    background-color: #673ab77d;
+    height: 34px;
+    font-size: 22px;
+    color: white;
+    margin-top: 3%;
+    font-weight: bold;
+}
+
+/* .rowUserResult {
+    margin-left: 1%;
+} */
+
+
+.charMax{
+  font-size: 22px;
+  font-style: italic;
+  margin-left: 40%;
+  margin-top: 1%;
+
+}
+/* .rowUserResult:after {
+  content: "";
+  display: table;
+  clear: both;
+} */
+
+
+/*
+.userNameStats{
+  font-size:20px;
+}
+
+.userTimeStats{
+  font-size:20px;
+}
+
+.userAccuracyStats{
+  font-size:20px;
+
+} */
 
 
 
@@ -590,21 +635,19 @@ th{
   .loseModal {
     padding: 13px;
     width: 50%;
-    top: 126%;
+    top: 156%;
     left: 49%;
     height: 305%;
 }
 
 .modalText {
     font-size: 28px;
-    margin-top: 4%;
+    margin-top: -3%;
 }
-
-
 
 .winImg {
     width: 29vw;
-    margin-left: 20%;
+    margin-left: 13%;
     margin-top: -4%;
 }
 
@@ -615,8 +658,26 @@ th{
     margin-top: 2%;
 }
 
+.modal-content {
+    width: 40%;
+    height: 267%;
+    top: 142%;
+    left: 50%;
+}
 
+.usernameBox {
+    margin-left: 20%;
+    width: 60%;
+    margin-top: 2%;
+    font-size: 99%;
+}
 
+.submit {
+    width: 30%;
+    margin-top: 4%;
+    font-size: 21px;
+    margin-left: 37%;
+}
 
 }
 
@@ -751,11 +812,11 @@ body {
 }
 
 .modal-content {
-    padding: 16px;
-    width: 81%;
+  padding: 16px;
+    width: 80%;
     height: 211%;
-    top: 156%;
-    left: 48%;
+    top: 168%;
+    left: 48.5%;
 }
 
 .modalText {
@@ -939,19 +1000,19 @@ body {
 
   .stat{
     margin-right: 8%;
-    margin-top: -0.5%;
+    margin-top: 0.5%;
     font-size: 35px;
   }
 
   .stat1{
     margin-right: 5%;
-    margin-top: -0.5%;
+    margin-top: 0.5%;
     font-size: 35px;
   }
 
   .stat2{
     margin-right: 13%;
-    margin-top: -0.5%;
+    margin-top: 0.5%;
     font-size: 35px;
   }
 
@@ -979,7 +1040,7 @@ body {
  .resetButton {
     width: 20%;
     height: 11%;
-    margin-top: 8%;
+    margin-top: 9%;
     margin-left: -27.5%;
  }
 
@@ -1022,11 +1083,11 @@ body {
 
 
     .winImg {
-       width: 33vw;
-    height: 45%;
-    margin-left: 21%;
-    margin-top: -5%;
-    height: 12vh;
+     width: 40vw;
+
+    margin-left: 14%;
+    margin-top: -7%;
+    height: 16vh;
     }
 
     .loseModal {
@@ -1048,29 +1109,30 @@ body {
        padding: 65px;
     top: 164%;
     left: 49%;
-    height: 143%;
-    width: 59%;
+    height: 146%;
+    width: 58%;
     }
 
 
     .modalText {
-      font-size: 40px;
-      margin-top: -2%;
+     font-size: 42px;
+    margin-top: -4%;
     }
 
 
     .usernameBox {
-      margin-left: 24%;
-      width: 46%;
-      margin-top: 3%;
-      padding: 2.6%;
+     margin-left: 24%;
+    width: 48%;
+    margin-top: 2%;
+    padding: 2.6%;
     }
 
 
     .submit{
-      width: 27%;
-      margin-top: 5%;
-      margin-left: 38%;
+     width: 26%;
+    margin-top: 4%;
+    margin-left: 38%;
+    font-size: 27px;
     }
 
     .rankContainer {
