@@ -311,8 +311,6 @@ body{
 }
 
 
-
-
 .winModal{
     background-image: url(https://image.freepik.com/vector-gratis/playa-vacia-mar-verano-mar-cielo-arena-vector-fondo-vacaciones_87424-62.jpg);
     background-repeat: no-repeat;
@@ -796,9 +794,9 @@ body {
 
 
  .loseModal {
-    width: 69%;
-    top: 153%;
-    left: 49%;
+    width: 68%;
+    top: 47%;
+    left: 50%;
 }
 
 .winImg {
@@ -843,6 +841,11 @@ body {
     font-size: 25px;
     margin-left: 36%;
     padding: 1.5%;
+}
+
+.rankModal {
+    width: 74%;
+    top: 43%;
 }
 
 
@@ -943,34 +946,37 @@ body {
 
 
   .winImg {
-    width: 29vw;
-    height: 19vh;
-    margin-left: 20%;
-    margin-top: -3%;
+    width: 35vw;
+    height: 25vh;
+    margin-left: 19%;
+    margin-top: -5%;
 }
 
     .tryAgain {
-        margin-top: 4%;
-        margin-left: 38%;
+        margin-top: 2%;
+    font-size: 33px;
+    margin-left: 40%;
     }
 
 
     .loseModal {
-        padding: 34px;
-        width: 50%;
-        top: 159%;
-        left: 50%;
+       padding: 18px;
+    width: 52%;
+    height: 43%;
+    top: 49%;
+    left: 49.3%;
     }
 
     .usernameBox {
-        margin-left: 29%;
-        margin-top: 1%;
-        width: 42%;
+       margin-left: 29%;
+    margin-top: 2%;
+    width: 42%;
     }
 
     .submit {
-        width: 23%;
-        margin-left: 40%;
+      width: 23%;
+    margin-left: 40%;
+    margin-top: -3%;
     }
 
 
@@ -992,6 +998,31 @@ body {
     left: 51%;
     padding: 22px;
 }
+
+.modalText {
+    /* font-family: 'Aladin', cursive; */
+       font-size: 45px;
+    margin-top: 3%;
+    /* text-align: center;
+    color: white; */
+}
+
+
+   .winModal {
+    padding: 1%;
+    width: 56%;
+    height: 51%;
+    top: 47%;
+    left: 50%;
+}
+
+.charMax {
+    font-size: 24px;
+    margin-left: 35%;
+    font-weight: bold;
+}
+
+
 
 }
 
@@ -1091,25 +1122,26 @@ body {
 
 
     .winImg {
-     width: 40vw;
-
-    margin-left: 14%;
-    margin-top: -7%;
-    height: 16vh;
+       width: 45vw;
+    margin-left: 12%;
+    margin-top: -5%;
+    height: 18vh;
     }
 
     .loseModal {
-      left: 49.5%;
-      top: 180%;
-      width: 66%;
-      padding: 52px;
-      border-radius: 23px;
-      height: 130%;
+         left: 50.4%;
+    width: 60%;
+    height: 27%;
+    top: 46%;
+    padding: 56px;
+    border-radius: 23px;
     }
 
 
     .tryAgain {
-        margin-left: 36%;
+         margin-left: 36%;
+    margin-top: 5%;
+    font-size: 33px;
     }
 
 
@@ -1123,13 +1155,13 @@ body {
 
 
     .modalText {
-     font-size: 42px;
-    margin-top: -4%;
+    font-size: 45px;
+    margin-top: -8%;
     }
 
 
     .usernameBox {
-     margin-left: 24%;
+    margin-left: 24%;
     width: 48%;
     margin-top: 2%;
     padding: 2.6%;
@@ -1137,10 +1169,10 @@ body {
 
 
     .submit{
-     width: 26%;
-    margin-top: 4%;
+    width: 28%;
+    margin-top: -2%;
     margin-left: 38%;
-    font-size: 27px;
+    font-size: 30px;
     }
 
     .rankContainer {
@@ -1156,20 +1188,64 @@ body {
     }
 
     th {
-        font-size: 31px;
+           font-size: 26px;
+
     }
 
     .rankPagetitle {
-        font-size: 59px;
+            font-size: 55px;
     }
 
     .playAgain {
-      width: 30%;
-      margin-top: 4%;
-      margin-left: 37%;
-      padding: 4%;
-      font-size: 34px;
+          width: 23%;
+    margin-top: 2%;
+    margin-left: 37%;
+    padding: 3%;
+    font-size: 35px;
     }
+
+
+    .winModal {
+    padding: 10%;
+    width: 53%;
+    height: 30%;
+    top: 47%;
+    left: 50%;
+
+}
+
+.charMax {
+    font-size: 24px;
+    margin-left: 29%;
+    margin-top: 2%;
+}
+
+
+.rankModal {
+    padding: 8px;
+    width: 93%;
+    top: 50%;
+    height: 55%;
+    left: 50%;
+
+}
+
+table {
+    width: 97%;
+    margin-left: 1%;
+}
+
+.columnUserResult {
+    width: 29%;
+    padding: 8px;
+    height: 34px;
+    font-size: 27px;
+    margin-top: 2%;
+}
+
+.rowUserResult{
+  margin-left:1%;
+}
 
 }
 
