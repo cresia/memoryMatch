@@ -35,7 +35,7 @@ var max_matches = 2;
 var addMatchedClass;
 var attempts = 0;
 var games_played = 0;
-var timer = 3;
+var timer = 10;
 // var timer = 300;
 var startTimer = true;
 
@@ -162,7 +162,7 @@ function handleResetButton(){
       theFirstCardClicked = null;
       theSecondCardClicked = null;
       games_played++;
-      
+
       resetStats();
       closeModal();
       buttons();
