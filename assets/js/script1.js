@@ -35,7 +35,7 @@ var max_matches = 2;
 var addMatchedClass;
 var attempts = 0;
 var games_played = 0;
-var timer = 10;
+var timer = 5;
 // var timer = 300;
 var startTimer = true;
 
@@ -337,7 +337,7 @@ function createLoseModal(){
   var loseModal = $("<div>").addClass("loseModal");
 
   var loseText = $("<p>").text("Sorry, you ran out of the time!!").addClass("modalText");
-  var loseImg = $("<img>").addClass("winImg").attr("src", "https://media2.giphy.com/media/OXF91oNPj8NH2/giphy.gif");
+  var loseImg = $("<img>").addClass("loseImg").attr("src", "https://media2.giphy.com/media/OXF91oNPj8NH2/giphy.gif");
   var closeButton = $("<button>").text("Try Again").addClass("tryAgain").click(function(){
 
     theFirstCardClicked = null;

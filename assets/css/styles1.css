@@ -342,7 +342,22 @@ body{
 
 
 .loseModal{
-    background-image: url(https://image.freepik.com/vector-gratis/playa-vacia-mar-verano-mar-cielo-arena-vector-fondo-vacaciones_87424-62.jpg);
+
+  background-image: url(https://image.freepik.com/vector-gratis/playa-vacia-mar-verano-mar-cielo-arena-vector-fondo-vacaciones_87424-62.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 29px;
+    position: absolute;
+    width: 43%;
+    top: 50%;
+    height: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 25px;
+    z-index: 1;
+
+
+    /* background-image: url(https://image.freepik.com/vector-gratis/playa-vacia-mar-verano-mar-cielo-arena-vector-fondo-vacaciones_87424-62.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 29px;
@@ -352,7 +367,7 @@ body{
     left: 49%;
     transform: translate(-50%, -50%);
     border-radius: 25px;
-    z-index: 1;
+    z-index: 1; */
 }
 
 #modalShadow{
@@ -374,17 +389,43 @@ body{
 }
 
 .modalText{
+
   font-family: 'Aladin', cursive;
+    font-size: 47px;
+    text-align: center;
+    color: white;
+    margin-top: 2%;
+  /* font-family: 'Aladin', cursive;
   font-size: 35px;
   text-align:center;
-  color:white;
+  color:white; */
+}
+
+
+.loseImg{
+  width: 30vw;
+  height: 28vh;
+  margin-left: 15%;
+  margin-top: -4%;
+  border-radius: 49%;
+
+    /* width: 29vw; */
+    /* height: 25vh; */
+    /* margin-left: 22%; */
 }
 
 
 .winImg{
-    width: 29vw;
+    width: 30vw;
+    height: 28vh;
+    margin-left: 20%;
+    margin-top: -3%;
+    border-radius: 49%;
+
+
+    /* width: 29vw; */
     /* height: 25vh; */
-    margin-left: 19%;
+    /* margin-left: 22%; */
 }
 
 .playAgain{
@@ -427,6 +468,7 @@ body{
   text-decoration: none;
   outline: none;
   border: none;
+  cursor: pointer;
 }
 
 .submit:hover {background-color: #130a3f}
@@ -439,7 +481,23 @@ body{
 
 
 .tryAgain{
-  margin-top:2%;
+
+  margin-top: 2.2%;
+    color: white;
+    background-color: rgb(29, 29, 117);
+    font-family: 'Aladin', cursive;
+    font-size: 30px;
+    margin-left: 39%;
+    padding: 3%;
+    border-radius: 20px;
+    box-shadow: 0 9px #999;
+    text-decoration: none;
+    outline: none;
+    border: none;
+     cursor: pointer;
+
+
+  /* margin-top:2%;
   color:white;
   background-color:rgb(29, 29, 117);
   font-family: 'Aladin', cursive;
@@ -450,7 +508,7 @@ body{
   box-shadow: 0 9px #999;
   text-decoration: none;
   outline: none;
-  border: none;
+  border: none; */
 }
 
 .tryAgain:hover {background-color: #130a3f}
@@ -492,7 +550,19 @@ th{
 } */
 
 .usernameBox {
-    margin-left: 31%;
+
+  margin-left: 31%;
+    width: 35%;
+    margin-top: 1%;
+    padding: 1.5%;
+    border: solid #3F51B5 1.5px;
+    border-radius: 20px;
+    outline: none;
+    text-align: center;
+    font-size: 125%;
+
+
+    /* margin-left: 31%;
     width: 35%;
     margin-top: 3%;
     padding: 1.5%;
@@ -500,7 +570,7 @@ th{
     border-radius: 20px;
     outline: none;
     text-align: center;
-    font-size: 125%;
+    font-size: 125%; */
 }
 
 .rankPagetitle{
@@ -524,9 +594,10 @@ th{
     font-weight: bold;
 }
 
-/* .rowUserResult {
-    margin-left: 1%;
-} */
+.rowUserResult {
+    margin-left: 0%;
+    width: 100.5%;
+}
 
 .hidden {
   display: none;
@@ -636,16 +707,24 @@ th{
   }
 
   .loseModal {
-    padding: 13px;
+    padding: 11px;
     width: 50%;
-    top: 156%;
-    left: 49%;
-    height: 305%;
+    top: 45%;
+    left: 52%;
+    height: 49%;
+}
+
+.loseImg {
+   width: 31vw;
+    height: 33vh;
+    margin-left: 18%;
+    margin-top: -5%;
+    border-radius: 49%;
 }
 
 .modalText {
-    font-size: 28px;
-    margin-top: -3%;
+    font-size: 27px;
+    margin-top: 1%;
 }
 
 .winImg {
@@ -655,10 +734,10 @@ th{
 }
 
 .tryAgain {
-    font-size: 27px;
-    margin-left: 34%;
+       font-size: 22px;
+    margin-left: 36%;
     padding: 3%;
-    margin-top: 2%;
+    margin-top: 0%;
 }
 
 .modal-content {
@@ -794,8 +873,9 @@ body {
 
 
  .loseModal {
-    width: 68%;
-    top: 47%;
+     width: 71%;
+    height: 34%;
+    top: 46%;
     left: 50%;
 }
 
@@ -807,9 +887,9 @@ body {
 }
 
 .tryAgain {
-    margin-top: 5%;
-    font-size: 22px;
-    margin-left: 34%;
+    margin-top: 9%;
+    font-size: 24px;
+    margin-left: 33%;
     padding: 4%;
 }
 
@@ -822,8 +902,8 @@ body {
 }
 
 .modalText {
-    font-size: 31px;
-    margin-top: 8%;
+ font-size: 26px;
+    margin-top: 0%;
 }
 
 
@@ -848,6 +928,13 @@ body {
     top: 43%;
 }
 
+.loseImg {
+    width: 59vw;
+    height: 23vh;
+    margin-left: 9%;
+    margin-top: -5%;
+    border-radius: 49%;
+}
 
 }
 
