@@ -1,36 +1,39 @@
 body{
-  background-image: url("https://media3.giphy.com/media/q0QNAFZJYHKYU/source.gif");
+  /* background-image: url("https://media3.giphy.com/media/q0QNAFZJYHKYU/source.gif"); */
+  background-image: url("../images/background.gif");
   background-repeat: no-repeat;
   background-size: cover;
-  height:100%;
-  /* width:100vw; */
-  /* position: fixed; */
-  /* overflow: hidden; */
+  /* height:100%; */
+  height: 100vh;
+  margin: 0;
+  /* height: 100vh;
+  margin: 0;
+  background-position: center; */
 }
 
 .logo{
-   margin-left: 28%;
-    width: 90%;
-    height: 75%;
-    margin-top: 0.5%;
+  margin-left: 29%;
+  width: 90%;
+  height: 75%;
+  margin-top: 5%;
 }
 
 .resetButton{
-  margin-top: 2.5%;
-    width: 4.6%;
-    height: 9.5%;
-    display: flex;
-    padding: 5px 10px;
-    font-size: 20px;
-    font-family: 'Aladin', cursive;
-    cursor: pointer;
-    margin-left: 20%;
-    text-decoration: none;
-    outline: none;
-    background-color: rgb(255, 252, 252);
-    box-shadow: 0 3px rgb(145, 133, 133);
-    border-radius: 15px;
-    border: none;
+  margin-top: 9%;
+  width: 6%;
+  height: 9.5%;
+  display: flex;
+  padding: 5px 10px;
+  font-size: 20px;
+  font-family: 'Aladin', cursive;
+  cursor: pointer;
+  margin-left: 25%;
+  text-decoration: none;
+  outline: none;
+  background-color: rgb(255, 252, 252);
+  box-shadow: 0 3px rgb(145, 133, 133);
+  border-radius: 15px;
+  border: none;
 }
 
 .resetButton:hover{
@@ -44,19 +47,57 @@ body{
 }
 
 .speaker, .mute{
-   width: 10.5%;
-    height: 16%;
-    display: flex;
-    padding: 5px 10px;
-    cursor: pointer;
-    margin-left: 20%;
-    margin-top: 5%;
-    text-decoration: none;
-    outline: none;
-    background-color: rgb(255, 252, 252);
-    box-shadow: 0 3px rgb(145, 133, 133);
-    border-radius: 15px;
-    border: none;
+  margin-top: 5%;
+  width: 6%;
+  height: 9.5%;
+  display: flex;
+  padding: 5px 10px;
+  font-size: 20px;
+  font-family: 'Aladin', cursive;
+  cursor: pointer;
+  margin-left: 25%;
+  text-decoration: none;
+  outline: none;
+  background-color: rgb(255, 252, 252);
+  box-shadow: 0 3px rgb(145, 133, 133);
+  border-radius: 15px;
+  border: none;
+}
+
+.speaker:hover{
+  background-color: rgb(218, 233, 182);
+}
+
+.speaker:active {
+  background-color: rgb(218, 233, 182);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.mute:hover{
+  background-color: rgb(218, 233, 182);
+}
+
+.mute:active {
+  background-color: rgb(218, 233, 182);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+/* .speaker, .mute{
+  width: 10.5%;
+  height: 16%;
+  display: flex;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-left: 20%;
+  margin-top: 5%;
+  text-decoration: none;
+  outline: none;
+  background-color: rgb(255, 252, 252);
+  box-shadow: 0 3px rgb(145, 133, 133);
+  border-radius: 15px;
+  border: none;
 }
 
 .speaker:hover{
@@ -81,7 +122,7 @@ body{
 
 .speakerIcon{
   width:90%;
-}
+} */
 
 /* Container for flexboxes */
 .row {
@@ -96,78 +137,81 @@ body{
 }
 
 .stat{
- color: rgb(12, 5, 78);
-    margin-right: 11%;
-    margin-top: 0.6%;
-    font-family: 'Aladin', cursive;
-    font-size: 32px;
+  color: rgb(12, 5, 78);
+  margin-right: 11%;
+  margin-top: 1.5%;
+  font-family: 'Aladin', cursive;
+  font-size: 32px;
 }
 
 .stat1{
-    color: rgb(12, 5, 78);
-    margin-right: 8%;
-    margin-top: 0.6%;
-    font-family: 'Aladin', cursive;
-    font-size: 30px;
+  color: rgb(12, 5, 78);
+  margin-right: 8%;
+  margin-top: 1.5%;
+  font-family: 'Aladin', cursive;
+  font-size: 30px;
 }
 
 .stat2{
- color: rgb(12, 5, 78);
-    margin-right: 10%;
-    margin-top: 0.6%;
-    font-family: 'Aladin', cursive;
-    font-size: 32px;
+  color: rgb(12, 5, 78);
+  margin-right: 10%;
+  margin-top: 1.5%;
+  font-family: 'Aladin', cursive;
+  font-size: 32px;
 }
 
 .resultGamePlayed {
   color: rgb(168, 55, 187);
-    background-size: contain;
-    text-align: center;
-    background-repeat: no-repeat;
-    background-image: url(https://i0.wp.com/creationcreatures.com/wp-content/uploads/Bubble2.png?fit=2640%2C2640&ssl=1);
-    width: 115px;
-    height: 80px;
-    font-size: 30px;
-    margin-top: 1%;
-    margin-left: 10%;
-    padding-top: 28%;
+  background-size: contain;
+  text-align: center;
+  background-repeat: no-repeat;
+  /* background-image: url(https://i0.wp.com/creationcreatures.com/wp-content/uploads/Bubble2.png?fit=2640%2C2640&ssl=1); */
+  background-image: url(../images/bubble1.png);
+  width: 115px;
+  height: 80px;
+  font-size: 30px;
+  margin-top: 1%;
+  margin-left: 10%;
+  padding-top: 28%;
 }
 
 .resultAttempts, .resultAccuracy {
- color: rgb(168, 55, 187);
-    background-size: contain;
-    text-align: center;
-    background-repeat: no-repeat;
-    background-image: url(https://i0.wp.com/creationcreatures.com/wp-content/uploads/Bubble2.png?fit=2640%2C2640&ssl=1);
-    margin-top: 1%;
-    margin-left: -6%;
-    width: 115px;
-    height: 80px;
-    font-size: 30px;
-    padding-top: 35%;
+  color: rgb(168, 55, 187);
+  background-size: contain;
+  text-align: center;
+  background-repeat: no-repeat;
+  /* background-image: url(https://i0.wp.com/creationcreatures.com/wp-content/uploads/Bubble2.png?fit=2640%2C2640&ssl=1); */
+  background-image: url(../images/bubble1.png);
+  margin-top: 1%;
+  margin-left: -6%;
+  width: 115px;
+  height: 80px;
+  font-size: 30px;
+  padding-top: 35%;
 }
 
  .timeResult {
-    color: rgb(168, 55, 187);
-    background-size: contain;
-    text-align: center;
-    background-repeat: no-repeat;
-    background-image: url(https://i0.wp.com/creationcreatures.com/wp-content/uploads/Bubble2.png?fit=2640%2C2640&ssl=1);
-    margin-top: 1%;
-    margin-left: -19%;
-    width: 115px;
-    height: 80px;
-    font-size: 30px;
-    padding-top: 35%;
+  color: rgb(168, 55, 187);
+  background-size: contain;
+  text-align: center;
+  background-repeat: no-repeat;
+  /* background-image: url(https://i0.wp.com/creationcreatures.com/wp-content/uploads/Bubble2.png?fit=2640%2C2640&ssl=1); */
+  background-image: url(../images/bubble1.png);
+  margin-top: 1%;
+  margin-left: -19%;
+  width: 115px;
+  height: 80px;
+  font-size: 30px;
+  padding-top: 35%;
 }
 
 .mainCards{
   width: 95%;
-    height: 20%;
-    display: inline-block;
-    margin-left: 3%;
-    position: relative;
-    margin-top: 1%;
+  height: 20%;
+  display: inline-block;
+  margin-left: 3%;
+  position: relative;
+  margin-top: 0.5%;
 }
 
 .card {
@@ -182,19 +226,23 @@ body{
   cursor:pointer;
 }
 
-/* .card:hover {
-  top: -9px;
-  transform: scale(1.05);
+/*
+.card{
+   transition: all .3s ease-in-out;
+}
+
+.card:hover{
+  transform: scale(1.1);
 } */
+
 
 .flip{
   transform:rotateY(180deg);
 }
 
-/* front is the lfz logo */
 .front {
-  border: solid white 1.5px;
-  background-image: url("https://i.pinimg.com/originals/09/d3/cd/09d3cd5e6f99f90b573af3ec0b8408ee.jpg");
+  border: solid white 2px;
+  background-image: url("../images/frontCardsImg.jpg");
   width:100%;
   height:100%;
   background-position:center;
@@ -219,7 +267,8 @@ body{
 .doryCard{
   background-repeat: no-repeat;
   background-position:center;
-  background-image: url("https://www.pinclipart.com/picdir/big/341-3416601_nemo-sticker-finding-dory-white-background-clipart.png");
+  /* background-image: url("https://www.pinclipart.com/picdir/big/341-3416601_nemo-sticker-finding-dory-white-background-clipart.png"); */
+  background-image: url("../images/newDory.png");
   background-size: contain;
   width:100%;
   height:100%;
@@ -229,7 +278,8 @@ body{
 .nemoCard{
   background-repeat: no-repeat;
   background-position:center;
-  background-image: url("https://i.pinimg.com/originals/02/f4/5b/02f45bac46c44e57af65e522ec5b77c5.gif");
+  /* background-image: url("https://i.pinimg.com/originals/02/f4/5b/02f45bac46c44e57af65e522ec5b77c5.gif"); */
+  background-image: url("../images/newNemo.gif");
   background-size: contain;
   width:100%;
   height:100%;
@@ -239,7 +289,8 @@ body{
 .starCard{
   background-repeat: no-repeat;
   background-position:center;
-  background-image: url("https://i.pinimg.com/originals/04/1c/ab/041cab5d642594b8c20d994b388a69e4.png");
+  /* background-image: url("https://i.pinimg.com/originals/04/1c/ab/041cab5d642594b8c20d994b388a69e4.png"); */
+  background-image: url("../images/newStarFish.png");
   background-size: contain;
   width:100%;
   height:100%;
@@ -249,7 +300,8 @@ body{
 .turtleCard{
   background-repeat: no-repeat;
   background-position:center;
-  background-image: url("https://webstockreview.net/images/clipart-turtle-finding-nemo-3.png");
+  /* background-image: url("https://webstockreview.net/images/clipart-turtle-finding-nemo-3.png"); */
+  background-image: url("../images/newTurtle.png");
   background-size: contain;
   width:100%;
   height:100%;
@@ -259,7 +311,8 @@ body{
 .fatFishCard{
   background-repeat: no-repeat;
   background-position:center;
-  background-image: url("https://clipground.com/images/bloat-clipart-2.jpg");
+  /* background-image: url("https://clipground.com/images/bloat-clipart-2.jpg"); */
+  background-image: url("../images/newFatFish.jpg");
   background-size: contain;
   width:100%;
   height:100%;
@@ -269,7 +322,8 @@ body{
 .sharkCard{
   background-repeat: no-repeat;
   background-position:center;
-  background-image: url("https://www.stickpng.com/assets/images/58f37913a4fa116215a92419.png");
+  /* background-image: url("https://www.stickpng.com/assets/images/58f37913a4fa116215a92419.png"); */
+  background-image: url("../images/newSharkFish.png");
   background-size: contain;
   width:100%;
   height:100%;
@@ -279,7 +333,8 @@ body{
 .bigSharkCard{
   background-repeat: no-repeat;
   background-position:center;
-  background-image: url("https://i.pinimg.com/originals/88/64/e1/8864e1c5aa6b5f31be718db9c287cbe8.gif");
+  /* background-image: url("https://i.pinimg.com/originals/88/64/e1/8864e1c5aa6b5f31be718db9c287cbe8.gif"); */
+  background-image: url("../images/newBigSharkFish.gif");
   background-size: contain;
   width:100%;
   height:100%;
@@ -289,7 +344,8 @@ body{
 .octopusCard{
   background-repeat: no-repeat;
   background-position:center;
-  background-image: url("https://cdn.clipart.email/4cc3e93057e8444e33e7265334a2b2f7_i-met-a-lonely-octopus-kenn-nesbitts-poetry4kidscom_300-273.png");
+  /* background-image: url("https://cdn.clipart.email/4cc3e93057e8444e33e7265334a2b2f7_i-met-a-lonely-octopus-kenn-nesbitts-poetry4kidscom_300-273.png"); */
+  background-image: url("../images/newOctopus.png");
   background-size: contain;
   width:100%;
   height:100%;
@@ -299,7 +355,8 @@ body{
 .blueSharkCard{
   background-repeat: no-repeat;
   background-position:center;
-  background-image: url("https://cdn.clipart.email/85b3b7029e18161f0b5fa01d78b0eaa2_image-destiny-clipartpng-disney-wiki-fandom-powered-by-wikia_350-669.png");
+  /* background-image: url("https://cdn.clipart.email/85b3b7029e18161f0b5fa01d78b0eaa2_image-destiny-clipartpng-disney-wiki-fandom-powered-by-wikia_350-669.png"); */
+   background-image: url("../images/newBlueShark.png");
   background-size: contain;
   width:100%;
   height:100%;
@@ -312,62 +369,48 @@ body{
 
 
 .winModal{
-    background-image: url(https://image.freepik.com/vector-gratis/playa-vacia-mar-verano-mar-cielo-arena-vector-fondo-vacaciones_87424-62.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 29px;
-    position: absolute;
-    width: 50%;
-    top: 50%;
-    left: 49%;
-    transform: translate(-50%, -50%);
-    border-radius: 25px;
-    z-index: 1;
+  background-image: url(../images/newWinLoseRankModal.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 29px;
+  position: absolute;
+  width: 50%;
+  top: 50%;
+  left: 49%;
+  transform: translate(-50%, -50%);
+  border-radius: 25px;
+  z-index: 1;
 }
 
 
 .rankModal{
-    background-image: url(https://image.freepik.com/vector-gratis/playa-vacia-mar-verano-mar-cielo-arena-vector-fondo-vacaciones_87424-62.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 42px;
-    position: absolute;
-    width: 50%;
-    top: 50%;
-    left: 51%;
-    transform: translate(-50%, -50%);
-    border-radius: 25px;
-    z-index: 1;
+  background-image: url(../images/newWinLoseRankModal.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 42px;
+  position: absolute;
+  width: 50%;
+  top: 50%;
+  left: 51%;
+  transform: translate(-50%, -50%);
+  border-radius: 25px;
+  z-index: 1;
 }
 
 
 .loseModal{
-
-  background-image: url(https://image.freepik.com/vector-gratis/playa-vacia-mar-verano-mar-cielo-arena-vector-fondo-vacaciones_87424-62.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 29px;
-    position: absolute;
-    width: 43%;
-    top: 50%;
-    height: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 25px;
-    z-index: 1;
-
-
-    /* background-image: url(https://image.freepik.com/vector-gratis/playa-vacia-mar-verano-mar-cielo-arena-vector-fondo-vacaciones_87424-62.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 29px;
-    position: absolute;
-    width: 50%;
-    top: 50%;
-    left: 49%;
-    transform: translate(-50%, -50%);
-    border-radius: 25px;
-    z-index: 1; */
+  background-image: url(../images/newWinLoseRankModal.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 29px;
+  position: absolute;
+  width: 43%;
+  top: 50%;
+  height: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 25px;
+  z-index: 1;
 }
 
 #modalShadow{
@@ -389,16 +432,11 @@ body{
 }
 
 .modalText{
-
   font-family: 'Aladin', cursive;
-    font-size: 47px;
-    text-align: center;
-    color: white;
-    margin-top: 2%;
-  /* font-family: 'Aladin', cursive;
-  font-size: 35px;
-  text-align:center;
-  color:white; */
+  font-size: 47px;
+  text-align: center;
+  color: white;
+  margin-top: 2%;
 }
 
 
@@ -408,24 +446,14 @@ body{
   margin-left: 15%;
   margin-top: -4%;
   border-radius: 49%;
-
-    /* width: 29vw; */
-    /* height: 25vh; */
-    /* margin-left: 22%; */
 }
 
-
 .winImg{
-    width: 30vw;
-    height: 28vh;
-    margin-left: 20%;
-    margin-top: -3%;
-    border-radius: 49%;
-
-
-    /* width: 29vw; */
-    /* height: 25vh; */
-    /* margin-left: 22%; */
+  width: 30vw;
+  height: 28vh;
+  margin-left: 20%;
+  margin-top: -3%;
+  border-radius: 49%;
 }
 
 .playAgain{
@@ -445,7 +473,9 @@ body{
   cursor: pointer;
 }
 
-.playAgain:hover {background-color: #130a3f}
+.playAgain:hover {
+  background-color: #130a3f
+}
 
 .playAgain:active {
   background-color:rgb(54, 54, 126);
@@ -481,37 +511,24 @@ body{
 
 
 .tryAgain{
-
   margin-top: 2.2%;
-    color: white;
-    background-color: rgb(29, 29, 117);
-    font-family: 'Aladin', cursive;
-    font-size: 30px;
-    margin-left: 39%;
-    padding: 3%;
-    border-radius: 20px;
-    box-shadow: 0 9px #999;
-    text-decoration: none;
-    outline: none;
-    border: none;
-     cursor: pointer;
-
-
-  /* margin-top:2%;
-  color:white;
-  background-color:rgb(29, 29, 117);
+  color: white;
+  background-color: rgb(29, 29, 117);
   font-family: 'Aladin', cursive;
   font-size: 30px;
-  margin-left:40%;
-  padding:2%;
+  margin-left: 39%;
+  padding: 3%;
   border-radius: 20px;
   box-shadow: 0 9px #999;
   text-decoration: none;
   outline: none;
-  border: none; */
+  border: none;
+  cursor: pointer;
 }
 
-.tryAgain:hover {background-color: #130a3f}
+.tryAgain:hover {
+  background-color: #130a3f
+}
 
 .tryAgain:active {
   background-color:rgb(54, 54, 126);
@@ -526,12 +543,12 @@ table {
 }
 
 td, th {
-    border: 1px solid #673AB7;
-    text-align: center;
-    padding: 11px;
-    color: #000000;
-    font-weight: bold;
-     font-size: 20px;
+  border: 1px solid #673AB7;
+  text-align: center;
+  padding: 11px;
+  color: #000000;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 th{
@@ -539,64 +556,43 @@ th{
     font-size: 24px;
 }
 
-/* .shuffleSlow-move {
-  transition: transform 2s;
-}
-.shuffleMedium-move {
-  transition: transform 1s;
-}
-.shuffleFast-move {
-  transition: transform 0.5s;
-} */
-
 .usernameBox {
 
   margin-left: 31%;
-    width: 35%;
-    margin-top: 1%;
-    padding: 1.5%;
-    border: solid #3F51B5 1.5px;
-    border-radius: 20px;
-    outline: none;
-    text-align: center;
-    font-size: 125%;
-
-
-    /* margin-left: 31%;
-    width: 35%;
-    margin-top: 3%;
-    padding: 1.5%;
-    border: solid #3F51B5 1.5px;
-    border-radius: 20px;
-    outline: none;
-    text-align: center;
-    font-size: 125%; */
+  width: 35%;
+  margin-top: 1%;
+  padding: 1.5%;
+  border: solid #3F51B5 1.5px;
+  border-radius: 20px;
+  outline: none;
+  text-align: center;
+  font-size: 125%;
 }
 
 .rankPagetitle{
- text-align: center;
-    font-family: 'Aladin', cursive;
-    color: #4e62d2;
-    font-size: 50px;
-    padding: 1%;
+  text-align: center;
+  font-family: 'Aladin', cursive;
+  color: #4e62d2;
+  font-size: 50px;
+  padding: 1%;
 }
 
 .columnUserResult{
-    float: left;
-    width: 30.52%;
-    padding: 10px;
-    text-align: center;
-    background-color: #673ab77d;
-    height: 34px;
-    font-size: 22px;
-    color: white;
-    margin-top: 3%;
-    font-weight: bold;
+  float: left;
+  width: 30.52%;
+  padding: 10px;
+  text-align: center;
+  background-color: #673ab77d;
+  height: 34px;
+  font-size: 22px;
+  color: white;
+  margin-top: 3%;
+  font-weight: bold;
 }
 
 .rowUserResult {
-    margin-left: 0%;
-    width: 100.5%;
+  margin-left: 0%;
+  width: 100.5%;
 }
 
 .hidden {
@@ -616,46 +612,51 @@ th{
 /* -------------------------- iphone 6,7,8 : landscape ----------------------------*/
 @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
 .logo {
-   margin-top: -5%;
-    margin-left: 22%;
-    width: 92%;
+   /* margin-top: -5%; */
+       margin-top: 1%;
+    margin-left: 25%;
+    width: 100%;
     height: 54%;
 }
 
 .resetButton {
-  margin-top: -4%;
-  width: 6%;
-  height: 7.5%;
-  padding: 4px 10px;
+  margin-top: 4%;
+    margin-left: 3.5rem;
+    width: 8%;
+    height: 7.5%;
+    padding: 4px 11px;
 }
 
 .speaker, .mute{
-  margin-top: 5%;
-  width: 18%;
-  height: 13%;
-  padding: 3px 9px;
+
+  margin-left: 3.5rem;
+      margin-top: 0.5rem;
+    width: 8%;
+    height: 7.5%;
+    padding: 4px 11px;
 }
 
 .stat1 {
   margin-right: 2%;
-  margin-top: -0.5%;
+  margin-top: 0.5%;
   font-size: 22px;
 }
 
 .stat {
   font-size: 22px;
-  margin-top: -0.5%;
+  margin-top: 0.5%;
   margin-right: 4%;
 }
 
 .stat2 {
-     font-size: 22px;
-    margin-top: -0.5%;
-    margin-right: 7%;
+  font-size: 22px;
+  margin-top: 0.5%;
+  margin-right: 7%;
 }
 
 .column {
-  margin-top: 0.1%;
+  margin-top: 0.6%;
+  height: 10rem;
 }
 
 .row {
@@ -671,8 +672,8 @@ th{
 }
 
 .mainCards {
-  margin-left: 3%;
-  margin-top: 3.5%;
+  margin-left: 3.5%;
+  margin-top: 2%;
 }
 
 .timeResult {
@@ -702,81 +703,162 @@ th{
     padding-top: 24%;
 }
 
-.column {
-    margin-top: 1.2%;
-  }
 
-  .loseModal {
-    padding: 11px;
+.loseModal {
+      padding: 11px;
     width: 50%;
-    top: 45%;
-    left: 52%;
-    height: 49%;
+    top: 43%;
+    left: 50%;
+    height: 53%;
 }
 
 .loseImg {
-   width: 31vw;
-    height: 33vh;
-    margin-left: 18%;
-    margin-top: -5%;
-    border-radius: 49%;
+  width: 37vw;
+  height: 37vh;
+  margin-left: 13%;
+  margin-top: -6%;
+  border-radius: 49%;
 }
 
 .modalText {
-    font-size: 27px;
-    margin-top: 1%;
+  font-size: 27px;
+      margin-top: 3%;
 }
 
 .winImg {
-    width: 29vw;
-    margin-left: 13%;
-    margin-top: -4%;
+ width: 32vw;
+  height: 8rem;
 }
 
 .tryAgain {
-       font-size: 22px;
-    margin-left: 36%;
-    padding: 3%;
-    margin-top: 0%;
+  font-size: 19px;
+  margin-left: 35%;
+  padding: 2%;
+  margin-top: 3%;
+  width: 6rem;
 }
 
-.modal-content {
-    width: 40%;
-    height: 267%;
-    top: 142%;
-    left: 50%;
-}
+/* .modal-content {
+  width: 40%;
+  height: 267%;
+  top: 142%;
+  left: 50%;
+} */
 
 .usernameBox {
-    margin-left: 20%;
+  margin-left: 20%;
     width: 60%;
     margin-top: 2%;
     font-size: 99%;
 }
 
 .submit {
-    width: 30%;
-    margin-top: 4%;
+      width: 30%;
+    margin-top: -2%;
     font-size: 21px;
     margin-left: 37%;
+}
+
+.winModal {
+    /* background-image: url(../images/newWinLoseRankModal.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 29px;
+    position: absolute; */
+    width: 50%;
+    top: 39%;
+    height: 19rem;
+    /* left: 49%;
+    transform: translate(-50%, -50%);
+    border-radius: 25px;
+    z-index: 1; */
+}
+
+.charMax {
+    font-size: 19px;
+    /* font-style: italic; */
+    /* display: block; */
+    /* margin: 1rem auto; */
+    margin-left: 31%;
+    margin-top: 3%;
+    font-weight: bold;
+}
+
+
+.rankModal {
+    /* background-image: url(../images/newWinLoseRankModal.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 39px;
+    position: absolute; */
+    width: 50%;
+    top: 40%;
+    height: 19rem;
+    left: 51%;
+    /* transform: translate(-50%, -50%);
+    border-radius: 25px;
+    z-index: 1; */
+}
+
+.rankPagetitle {
+    /* text-align: center;
+    font-family: 'Aladin', cursive;
+    color: #4e62d2; */
+    font-size: 29px;
+    /* padding: 1%; */
+    margin-top: -2rem;
+}
+
+th {
+    /* color: #05b0a0; */
+    font-size: 16px;
+}
+
+td, th {
+    /* border: 1px solid #673AB7;
+    text-align: center;
+    padding: 11px;
+    color: #000000;
+    font-weight: bold; */
+    font-size: 14px;
+    /* height: 1rem; */
+}
+
+.columnUserResult {
+  height: 12px;
+  font-size: 12.6px;
+  width: 27.2%;
+  margin-top: 1%;
+}
+
+.playAgain {
+    width: 34%;
+    margin-top: 3%;
+    /* color: white;
+    background-color: rgb(29, 29, 117);
+    font-family: 'Aladin', cursive; */
+    font-size: 17px;
+    margin-left: 32%;
+    /* padding: 1.5%;
+    border-radius: 20px;
+    box-shadow: 0 9px #999;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    cursor: pointer; */
 }
 
 }
 
 /* -------------------------- iphone 6,7,8 : portrait ----------------------------*/
 @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
-body {
-    height: 100%;
-    padding: 1.4%;
-}
-
 .logo{
   display:none;
 }
 
 .stat {
   margin-right: 6%;
-  margin-top: -0.5%;
+  margin-top: 1%;
   font-size: 21px;
   color: white;
 }
@@ -784,52 +866,44 @@ body {
 .stat1 {
   font-size: 30px;
   margin-right: 1%;
-  margin-top: -0.5%;
+  margin-top: 1%;
   font-size: 21px;
   color: white;
 }
 
 .stat2 {
   margin-right: 10%;
-  margin-top: -0.5%;
+  margin-top: 1%;
   font-size: 21px;
   color: white;
 }
 
-.speaker{
-      padding: 0px 7px;
-   width: 81%;
-    height: 15%;
-    margin-top: 14%;
-    margin-left: -45%;
-}
-
-.mute {
-    width: 79%;
-    height: 15%;
-    margin-top: 14%;
-    margin-left: -44%;
-    padding: 0px 5px;
+.speaker, .mute{
+  cursor: pointer;
+  margin-top: 7px;
+  height: 8%;
+  margin-left: -45%;
+  width: 35%;
 }
 
 .resetButton {
   cursor: pointer;
-  margin-top: -3.3px;
+  margin-top: 5px;
   height: 8%;
-  margin-left: -46%;
-  width: 27%;
+  margin-left: -45%;
+  width: 36%;
 }
 
 .mainCards {
-    width: 100%;
-    display: inline-block;
-    margin-left: -0.9%;
-    margin-top: 1.5%;
+  width: 100%;
+  display: inline-block;
+  margin-left: -0.9%;
+  margin-top: 0.5%;
 }
 
 .card{
   width: 23vw;
-  margin-left: 7%;
+  margin-left: 8%;
   height: 12.3vh;
   margin-top: 2%;
 }
@@ -839,8 +913,9 @@ body {
 }
 
 .column {
-  margin-top: 1.2%;
+  margin-top: 0.3%;
   flex: 1;
+  height: 10rem;
 }
 
 .resultAttempts {
@@ -862,6 +937,2558 @@ body {
 }
 
 .resultGamePlayed {
+  width: 65px;
+  height: 80px;
+  font-size: 19px;
+  margin-top: -4%;
+  margin-left: 14%;
+  padding-top: 23%;
+  color: rgb(234, 104, 28);
+}
+
+ .loseModal {
+  width: 71%;
+  height: 34%;
+  top: 43%;
+  left: 50%;
+}
+
+.loseImg {
+  width: 63vw;
+  height: 23vh;
+  margin-left: 6%;
+  margin-top: -5%;
+  border-radius: 49%;
+}
+
+.winImg {
+    width: 60vw;
+    height: 21vh;
+    margin-left: 9%;
+    margin-top: -5%;
+}
+
+.tryAgain {
+  margin-top: 5%;
+  font-size: 23px;
+  margin-left: 30%;
+  padding: 4%;
+  width: 7rem;
+}
+
+
+.modalText {
+ font-size: 26px;
+  margin-top: 0%;
+}
+
+.usernameBox {
+  margin-left: 20%;
+  margin-top: 4%;
+  width: 57%;
+  padding: 2%;
+  font-size: 114%;
+}
+
+.charMax {
+    font-size: 20px;
+    margin-left: 23%;
+    margin-top: 3%;
+    font-weight: bold;
+}
+
+.submit {
+    width: 32%;
+    margin-top: -1%;
+    font-size: 25px;
+    margin-left: 35%;
+    padding: 1.5%;
+}
+
+.rankModal {
+    width: 103%;
+    top: 45%;
+    height: 25rem;
+}
+
+.winModal {
+    width: 73%;
+    top: 46%;
+    left: 50%;
+}
+
+.rankPagetitle {
+    font-size: 39px;
+    margin-top: -1rem;
+}
+
+th {
+    font-size: 17px;
+}
+
+td, th {
+    font-size: 17px;
+}
+
+.columnUserResult {
+    width: 28%;
+    height: 20px;
+      padding-top: 1rem;
+    font-size: 14px;
+}
+
+.playAgain {
+    width: 31%;
+    margin-top: 4%;
+    font-size: 25px;
+    margin-left: 35%;
+  }
+}
+
+/* --------------------------- iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+.mainCards {
+    margin-left: 2.5%;
+    margin-top: 0.5%;
+}
+
+.card {
+  width: 12.5vw;
+  margin-left: 3%;
+  /* height: 21vh;
+  margin-top: 2.8%; */
+}
+
+.stat {
+  margin-right: 6%;
+  margin-top: 1.5%;
+}
+
+.stat1 {
+  margin-right: 2%;
+  margin-top: 1.5%;
+}
+
+.stat2 {
+  margin-right: 7%;
+  margin-top: 1.5%;
+}
+
+.column {
+  margin-top: 2.2%;
+}
+
+.logo {
+    height: 77%;
+    margin-left: 21%;
+    margin-top: -2%;
+    width: 100%;
+}
+
+.row{
+  margin-bottom: -4.5%;
+}
+
+.resetButton{
+  width: 8%;
+  height: 11%;
+  margin-left: 30%;
+  margin-top: 0.5%;
+  padding: 7px 15px;
+}
+
+.speaker, .mute {
+  width: 8%;
+  height: 11%;
+  margin-left: 30%;
+  margin-top: 4%;
+  padding: 7px 15px;
+  /* width: 19%;
+  height: 20%;
+  padding: 4px 12px;
+  margin-left: 19%;
+  margin-top: 5%; */
+}
+
+.timeResult {
+  /* margin-top: -6%;
+  margin-left: -23%;
+  width: 110px;
+  height: 80px;
+  font-size: 30px;
+  padding-top: 35%; */
+    margin-top: -3%;
+    margin-left: -21%;
+    width: 108px;
+    height: 80px;
+    font-size: 30px;
+    padding-top: 35%;
+}
+
+.resultAttempts{
+  margin-top: -9%;
+  margin-left: -19%;
+  width: 110px;
+  height: 80px;
+  font-size: 30px;
+  padding-top: 35%;
+}
+
+.resultGamePlayed {
+  width: 111px;
+  margin-top: -3%;
+}
+
+.resultAttempts {
+  width: 111px;
+  margin-top: -3%;
+  margin-left: -7%;
+}
+
+.winImg {
+  width: 35vw;
+  height: 25vh;
+  margin-left: 19%;
+  margin-top: -5%;
+}
+
+.tryAgain {
+  width: 11rem;
+  display: block;
+  margin: 1rem auto;
+}
+
+.loseModal {
+  padding: 18px;
+  width: 58%;
+  height: 51%;
+  top: 46%;
+  left: 50%;
+}
+
+.loseImg {
+    width: 41vw;
+    height: 33vh;
+    margin-left: 15%;
+    margin-top: -5%;
+}
+
+.usernameBox {
+  margin-left: 29%;
+  margin-top: 2%;
+  width: 42%;
+}
+
+.submit {
+  width: 23%;
+  margin-left: 40%;
+  margin-top: -2%;
+}
+
+.playAgain {
+  width: 33%;
+  margin-top: 4%;
+  font-size: 29px;
+  margin-left: 35%;
+  padding: 3.3%;
+}
+
+td, th {
+  font-size: 26px;
+}
+
+.rankContainer {
+  width: 58%;
+  top: 173%;
+  left: 51%;
+  padding: 22px;
+}
+
+.modalText {
+/* font-family: 'Aladin', cursive; */
+  font-size: 45px;
+  margin-top: 3%;
+/* text-align: center;
+color: white; */
+}
+
+.winModal {
+  padding: 1%;
+  width: 56%;
+  height: 53%;
+  top: 47%;
+  left: 50%;
+}
+
+.charMax {
+  font-size: 24px;
+  margin-left: 35%;
+  font-weight: bold;
+}
+
+.columnUserResult {
+    width: 29.28%;
+    font-size: 20px;
+}
+
+.rankModal {
+    /* background-image: url(../images/newWinLoseRankModal.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 42px;
+    position: absolute;
+    width: 50%; */
+    top: 43%;
+    width: 55%;
+    /* left: 51%;
+    transform: translate(-50%, -50%);
+    border-radius: 25px;
+    z-index: 1; */
+}
+
+}
+
+/* ----------------------------------------- iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+/*
+.logo{
+  display:none;
+}
+
+.stat{
+  margin-right: 8%;
+  margin-top: 1%;
+  font-size: 35px;
+}
+
+.stat1{
+  margin-right: 5%;
+  margin-top: 1%;
+  font-size: 35px;
+}
+
+.stat2{
+  margin-right: 13%;
+  margin-top: 1%;
+  font-size: 35px;
+}
+
+.card {
+  width: 21vw;
+  height: 12vh;
+  margin-top: 2.3%;
+  margin-left: 8%;
+}
+
+.mainCards{
+  margin-top: -12%;
+  margin-left: 3.5%;
+}
+
+.column{
+  margin-top: -0.8%;
+}
+
+.row {
+  margin-bottom: 5.5%;
+}
+
+.resetButton {
+    width: 27%;
+    height: 11%;
+    margin-top: 18%;
+    margin-left: -17%;
+}
+
+.speaker, .mute {
+    width: 27%;
+    height: 11%;
+    margin-top: 10%;
+    margin-left: -16%;
+}
+
+.resultAttempts {
+  color: #ff5522;
+  margin-top: -7%;
+  margin-left: 0%;
+  width: 101px;
+  height: 82px;
+  font-size: 30px;
+  padding-top: 35%;
+}
+
+.timeResult {
+  color: #ff5522;
+  margin-top: -9%;
+  margin-left: -13%;
+  width: 101px;
+  height: 82px;
+  font-size: 31px;
+  padding-top: 35%;
+}
+
+.resultGamePlayed {
+  color: #ff5522;
+  margin-top: -5%;
+  margin-left: 15%;
+  width: 101px;
+  height: 82px;
+  padding-top: 22%;
+}
+
+.winImg {
+  width: 55vw;
+  margin-left: 3%;
+  margin-top: -5%;
+  height: 24vh;
+}
+
+.loseModal {
+  left: 50.4%;
+  width: 66%;
+  height: 41%;
+  top: 46%;
+  padding: 56px;
+  border-radius: 23px;
+}
+
+.loseImg {
+  width: 60vw;
+  height: 29vh;
+  margin-left: 5%;
+  margin-top: -4%;
+}
+
+.tryAgain {
+  margin-left: 33%;
+  margin-top: 6%;
+  font-size: 35px;
+  width: 11rem;
+}
+
+.modalText {
+  font-size: 49px;
+  margin-top: -4%;
+}
+
+.usernameBox {
+  margin-left: 19%;
+  width: 60%;
+  margin-top: 6%;
+  padding: 2.6%;
+}
+
+.submit{
+  margin-top: 0%;
+  margin-left: 34%;
+  font-size: 33px;
+  width: 10rem;
+}
+
+.rankContainer {
+  padding: 26px;
+  width: 83%;
+  top: 199%;
+  left: 49%;
+}
+
+td, th {
+  padding: 13px;
+  font-size: 27px;
+}
+
+th {
+  font-size: 26px;
+}
+
+.rankPagetitle {
+  font-size: 55px;
+}
+
+.playAgain {
+    width: 22%;
+    margin-top: 2%;
+    margin-left: 38%;
+    padding: 2%;
+    font-size: 31px;
+}
+
+.winModal {
+  padding: 10%;
+  width: 58%;
+  height: 43%;
+  top: 47%;
+  left: 50%;
+}
+
+.charMax {
+  font-size: 28px;
+  margin-left: 28%;
+  margin-top: 2%;
+  font-weight: bold
+}
+
+.rankModal {
+  padding: 8px;
+  width: 93%;
+  top: 50%;
+  height: 55%;
+  left: 50%;
+}
+
+table {
+  width: 97%;
+  margin-left: 1%;
+}
+
+.columnUserResult {
+  width: 29.95%;
+  padding: 8px;
+  height: 34px;
+  font-size: 27px;
+  margin-top: 2%;
+}
+
+.rowUserResult{
+  margin-left:1%;
+  } */
+}
+
+
+/*------------------------- Desktops and laptops ----------- */
+@media (min-width:1194px) and (max-width: 1259px){
+.mainCards {
+  margin-left: 2.5%;
+  margin-top: 0.5%;
+}
+
+.card {
+  width: 12.5vw;
+  margin-left: 3%;
+}
+
+.stat {
+  margin-right: 6%;
+  margin-top: 1.5%;
+}
+
+.stat1 {
+  margin-right: 2%;
+  margin-top: 1.5%;
+}
+
+.stat2 {
+  margin-right: 7%;
+  margin-top: 1.5%;
+}
+
+.column {
+  margin-top: 2.2%;
+}
+
+.logo {
+  height: 77%;
+  margin-left: 19%;
+  margin-top: -2%;
+  width: 100%;
+}
+
+.row{
+  margin-bottom: -4.5%;
+}
+
+.resetButton{
+  width: 6%;
+  height: 11%;
+  margin-left: 26%;
+  margin-top: 0.5%;
+  padding: 7px 15px;
+}
+
+.speaker, .mute {
+  width: 6%;
+  height: 11%;
+  margin-left: 26%;
+  margin-top: 4%;
+  padding: 7px 15px;
+}
+
+.timeResult {
+  margin-top: -3%;
+  margin-left: -21%;
+  width: 108px;
+  height: 80px;
+  font-size: 30px;
+  padding-top: 35%;
+}
+
+.resultAttempts{
+  margin-top: -9%;
+  margin-left: -19%;
+  width: 110px;
+  height: 80px;
+  font-size: 30px;
+  padding-top: 35%;
+}
+
+.resultGamePlayed {
+  width: 111px;
+  margin-top: -3%;
+}
+
+.resultAttempts {
+  width: 111px;
+  margin-top: -3%;
+  margin-left: -7%;
+}
+
+.winImg {
+  width: 35vw;
+  height: 25vh;
+  margin-left: 19%;
+  margin-top: -5%;
+}
+
+.tryAgain {
+  width: 11rem;
+  display: block;
+  margin: 1rem auto;
+}
+
+.loseModal {
+  padding: 18px;
+  width: 58%;
+  height: 51%;
+  top: 46%;
+  left: 50%;
+}
+
+.loseImg {
+    width: 41vw;
+    height: 33vh;
+    margin-left: 15%;
+    margin-top: -5%;
+}
+
+.usernameBox {
+  margin-left: 29%;
+  margin-top: 2%;
+  width: 42%;
+}
+
+.submit {
+  width: 23%;
+  margin-left: 40%;
+  margin-top: -2%;
+}
+
+/* .playAgain {
+  width: 33%;
+  margin-top: 4%;
+  font-size: 29px;
+  margin-left: 35%;
+  padding: 3.3%;
+} */
+
+td, th {
+  font-size: 26px;
+}
+
+.rankContainer {
+  width: 58%;
+  top: 173%;
+  left: 51%;
+  padding: 22px;
+}
+
+.modalText {
+  font-size: 45px;
+  margin-top: 3%;
+}
+
+.winModal {
+  padding: 1%;
+  width: 56%;
+  height: 53%;
+  top: 47%;
+  left: 50%;
+}
+
+.charMax {
+  font-size: 24px;
+  margin-left: 38%;
+  font-weight: bold;
+}
+
+.rankModal {
+    top: 43%;
+    width: 55%;
+  }
+
+   .columnUserResult {
+    width: 30%;
+    font-size: 20px;
+  }
+
+  .playAgain {
+    width: 19%;
+    font-size: 25px;
+    padding: 2%;
+  }
+}
+
+/*---------------- DangerZone conflict with ipads landscape ------------------*/
+@media (min-width:960px) and (max-width: 1193px){
+  .mainCards {
+    margin-left: 2.5%;
+    margin-top: 0.5%;
+}
+
+.card {
+  width: 12.5vw;
+  margin-left: 3%;
+}
+
+.stat {
+  margin-right: 6%;
+  margin-top: 1.5%;
+}
+
+.stat1 {
+  margin-right: 2%;
+  margin-top: 1.5%;
+}
+
+.stat2 {
+  margin-right: 5%;
+  margin-top: 1.5%;
+}
+
+.column {
+  margin-top: 2.2%;
+}
+
+.logo {
+  height: 77%;
+  margin-left: 21%;
+  margin-top: -2%;
+  width: 100%;
+}
+
+.row{
+  margin-bottom: -4.5%;
+}
+
+.resetButton{
+  width: 6%;
+  height: 11%;
+  margin-left: 30%;
+  margin-top: 0.5%;
+  padding: 7px 15px;
+}
+
+.speaker, .mute {
+  width: 6%;
+  height: 11%;
+  margin-left: 30%;
+  margin-top: 4%;
+  padding: 7px 15px;
+}
+
+.timeResult {
+  margin-top: -3%;
+  margin-left: -21%;
+  width: 108px;
+  height: 80px;
+  font-size: 30px;
+  padding-top: 35%;
+}
+
+.resultAttempts{
+  margin-top: -9%;
+  margin-left: -19%;
+  width: 110px;
+  height: 80px;
+  font-size: 30px;
+  padding-top: 35%;
+}
+
+.resultGamePlayed {
+  width: 111px;
+  margin-top: -3%;
+}
+
+.resultAttempts {
+  width: 111px;
+  margin-top: -3%;
+  margin-left: -7%;
+}
+
+.winImg {
+  width: 35vw;
+  height: 25vh;
+  margin-left: 19%;
+  margin-top: -5%;
+}
+
+.tryAgain {
+  width: 11rem;
+  display: block;
+  margin: 1rem auto;
+}
+
+.loseModal {
+  padding: 18px;
+  width: 58%;
+  height: 51%;
+  top: 46%;
+  left: 50%;
+}
+
+.loseImg {
+  width: 41vw;
+  height: 33vh;
+  margin-left: 15%;
+  margin-top: -5%;
+}
+
+.usernameBox {
+      margin-left: 27%;
+    margin-top: 2%;
+    width: 44%;
+  /* margin-left: 29%;
+  margin-top: 2%;
+  width: 42%; */
+}
+
+.submit {
+  width: 23%;
+  margin-left: 40%;
+  margin-top: -2%;
+}
+
+.playAgain {
+  width: 33%;
+  margin-top: 4%;
+  font-size: 29px;
+  margin-left: 35%;
+  padding: 3.3%;
+}
+
+td, th {
+  font-size: 26px;
+}
+
+.rankContainer {
+  width: 58%;
+  top: 173%;
+  left: 51%;
+  padding: 22px;
+}
+
+.modalText {
+  font-size: 45px;
+  margin-top: 3%;
+}
+
+.winModal {
+  padding: 1%;
+  width: 56%;
+  height: 53%;
+  top: 47%;
+  left: 50%;
+}
+
+.charMax {
+  font-size: 24px;
+  margin-left: 36%;
+  font-weight: bold;
+}
+
+.columnUserResult {
+    width: 29.65%;
+    font-size: 18px;
+    padding-top: 1rem;
+}
+
+.rankModal {
+    top: 43%;
+    width: 55%;
+  }
+}
+
+
+@media (min-width:900px) and (max-width: 959px){
+.mainCards {
+    margin-left: 2.5%;
+    margin-top: 0.5%;
+}
+
+.card {
+  width: 12.5vw;
+  margin-left: 3%;
+}
+
+.stat {
+  margin-right: 6%;
+  margin-top: 1.5%;
+}
+
+.stat1 {
+  margin-right: 2%;
+  margin-top: 1.5%;
+}
+
+.stat2 {
+  margin-right: 7%;
+  margin-top: 1.5%;
+}
+
+.column {
+  margin-top: 2.2%;
+}
+
+.logo {
+  height: 77%;
+  margin-left: 23%;
+  margin-top: -2%;
+  width: 103%;
+}
+
+.row{
+  margin-bottom: -4.5%;
+}
+
+.resetButton{
+  width: 8%;
+  height: 11%;
+  margin-left: 35%;
+  margin-top: 2%;
+  padding: 7px 15px;
+}
+
+.speaker, .mute {
+  width: 8%;
+  height: 11%;
+  margin-left: 35%;
+  margin-top: 4%;
+  padding: 7px 15px;
+}
+
+.timeResult {
+  margin-top: -3%;
+  margin-left: -21%;
+  width: 108px;
+  height: 80px;
+  font-size: 30px;
+  padding-top: 35%;
+}
+
+.resultAttempts{
+  margin-top: -9%;
+  margin-left: -19%;
+  width: 110px;
+  height: 80px;
+  font-size: 30px;
+  padding-top: 35%;
+}
+
+.resultGamePlayed {
+  width: 111px;
+  margin-top: -3%;
+}
+
+.resultAttempts {
+  width: 111px;
+  margin-top: -3%;
+  margin-left: -7%;
+}
+
+.winImg {
+  width: 35vw;
+  height: 25vh;
+  margin-left: 19%;
+  margin-top: -5%;
+}
+
+.tryAgain {
+  width: 11rem;
+  display: block;
+  margin: 1rem auto;
+}
+
+.loseModal {
+  padding: 18px;
+  width: 58%;
+  height: 51%;
+  top: 46%;
+  left: 50%;
+}
+
+.loseImg {
+  width: 41vw;
+  height: 33vh;
+  margin-left: 15%;
+  margin-top: -5%;
+}
+
+.usernameBox {
+  margin-left: 29%;
+  margin-top: 2%;
+  width: 42%;
+}
+
+.submit {
+  width: 23%;
+  margin-left: 40%;
+  margin-top: -2%;
+}
+
+td, th {
+  font-size: 26px;
+}
+
+.rankContainer {
+  width: 58%;
+  top: 173%;
+  left: 51%;
+  padding: 22px;
+}
+
+.modalText {
+  font-size: 45px;
+  margin-top: 3%;
+}
+
+.winModal {
+  padding: 1%;
+  width: 56%;
+  height: 53%;
+  top: 47%;
+  left: 50%;
+}
+
+.charMax {
+  font-size: 24px;
+  margin-left: 35%;
+  font-weight: bold;
+}
+
+.rankModal {
+  top: 43%;
+  width: 55%;
+}
+
+.columnUserResult {
+  width: 28.8%;
+  padding: 10px;
+  padding-top: 1rem;
+  font-size: 18px;
+}
+.playAgain {
+  width: 23%;
+  font-size: 21px;
+  padding: 3%;
+  }
+}
+
+@media (min-width:836px) and (max-width: 899px){
+.mainCards {
+  margin-left: 2.5%;
+  margin-top: 0.5%;
+}
+
+.card {
+  width: 12.5vw;
+  margin-left: 3%;
+}
+
+.stat {
+  margin-right: 6%;
+  margin-top: 1.5%;
+}
+
+.stat1 {
+  margin-right: 2%;
+  margin-top: 1.5%;
+}
+
+.stat2 {
+  margin-right: 4%;
+  margin-top: 1.5%;
+}
+
+.column {
+  margin-top: 2.2%;
+}
+
+.logo {
+  height: 77%;
+  margin-left: 23%;
+  margin-top: -2%;
+  width: 106%;
+}
+
+.row{
+  margin-bottom: -4.5%;
+}
+
+.resetButton{
+  width: 8%;
+  height: 11%;
+  margin-left: 37%;
+  margin-top: 3%;
+  padding: 7px 15px;
+}
+
+.speaker, .mute {
+  width: 8%;
+  height: 11%;
+  margin-left: 37%;
+  margin-top: 4%;
+  padding: 7px 15px;
+}
+
+.timeResult {
+  margin-top: -3%;
+  margin-left: -21%;
+  width: 108px;
+  height: 80px;
+  font-size: 30px;
+  padding-top: 35%;
+}
+
+.resultAttempts{
+  margin-top: -9%;
+  margin-left: -19%;
+  width: 110px;
+  height: 80px;
+  font-size: 30px;
+  padding-top: 35%;
+}
+
+.resultGamePlayed {
+  width: 111px;
+  margin-top: -3%;
+}
+
+.resultAttempts {
+  width: 111px;
+  margin-top: -3%;
+  margin-left: -7%;
+}
+
+.winImg {
+  width: 35vw;
+  height: 25vh;
+  margin-left: 19%;
+  margin-top: -5%;
+}
+
+.tryAgain {
+  width: 11rem;
+  display: block;
+  margin: 1rem 11rem;
+}
+
+.loseModal {
+  padding: 18px;
+  width: 58%;
+  height: 51%;
+  top: 46%;
+  left: 50%;
+}
+
+.loseImg {
+    width: 43vw;
+    height: 33vh;
+    margin-left: 15%;
+    margin-top: -5%;
+}
+
+.usernameBox {
+  margin-left: 29%;
+  margin-top: 2%;
+  width: 42%;
+}
+
+.submit {
+  width: 23%;
+  margin-left: 40%;
+  margin-top: -2%;
+}
+
+td, th {
+  font-size: 22px;
+}
+
+.rankContainer {
+  width: 58%;
+  top: 173%;
+  left: 51%;
+  padding: 22px;
+}
+
+.modalText {
+  font-size: 45px;
+  margin-top: 3%;
+}
+
+.winModal {
+  padding: 1%;
+  width: 56%;
+  height: 53%;
+  top: 47%;
+  left: 50%;
+}
+
+.charMax {
+  font-size: 21px;
+  margin-left: 35%;
+  font-weight: bold;
+}
+
+.rankModal {
+    top: 43%;
+    width: 55%;
+  }
+
+.columnUserResult {
+    width: 33%;
+    padding: 0px;
+    padding-top:1rem;
+    font-size: 18px;
+  }
+
+.playAgain {
+    width: 25%;
+    font-size: 21px;
+    padding: 2%;
+  }
+}
+
+
+ @media (min-width:785px) and (max-width: 835px){
+.column {
+  margin-top: 2.2%;
+}
+
+.stat {
+  margin-right: 6%;
+  margin-top: 1.5%;
+}
+
+.stat1 {
+  margin-right: 2%;
+  margin-top: 1.5%;
+}
+
+.stat2 {
+  margin-right: 7%;
+  margin-top: 1.5%;
+}
+
+.logo {
+  height: 77%;
+  margin-left: 27%;
+  margin-top: -2%;
+  width: 113%;
+}
+
+.resetButton{
+  width: 9%;
+  height: 11%;
+  margin-left: 47%;
+  margin-top: 4%;
+  padding: 7px 15px;
+}
+
+.speaker, .mute {
+  width: 9%;
+  height: 11%;
+  margin-left: 47%;
+  margin-top: 4%;
+  padding: 7px 15px;
+}
+
+.timeResult {
+  margin-top: -3%;
+  margin-left: -21%;
+  width: 108px;
+  height: 80px;
+  font-size: 30px;
+  padding-top: 35%;
+}
+
+.resultAttempts{
+  margin-top: -9%;
+  margin-left: -19%;
+  width: 110px;
+  height: 80px;
+  font-size: 30px;
+  padding-top: 35%;
+}
+
+.resultGamePlayed {
+  width: 111px;
+  margin-top: -3%;
+}
+
+.resultAttempts {
+  width: 111px;
+  margin-top: -3%;
+  margin-left: -7%;
+}
+
+.winImg {
+  width: 35vw;
+  height: 25vh;
+  margin-left: 19%;
+  margin-top: -5%;
+}
+
+.tryAgain {
+      width: 12rem;
+    display: block;
+    margin: 3rem 9rem;
+}
+
+.loseModal {
+  padding: 18px;
+  width: 58%;
+  height: 51%;
+  top: 46%;
+  left: 50%;
+}
+
+.loseImg {
+   width: 47vw;
+    height: 33vh;
+    display: block;
+    margin: -1rem 3rem;
+}
+
+.usernameBox {
+  margin-left: 29%;
+  margin-top: 2%;
+  width: 42%;
+}
+
+.submit {
+  width: 23%;
+  margin-left: 40%;
+  margin-top: -2%;
+}
+
+td, th {
+  font-size: 20px;
+}
+
+.rankContainer {
+  width: 58%;
+  top: 173%;
+  left: 51%;
+  padding: 22px;
+}
+
+.modalText {
+ font-size: 40px;
+    margin-top: 4%;
+}
+
+.winModal {
+  padding: 1%;
+  width: 56%;
+  height: 53%;
+  top: 47%;
+  left: 50%;
+}
+
+.charMax {
+  font-size: 20px;
+  margin-left: 35%;
+  font-weight: bold;
+}
+
+.rankModal {
+    top: 43%;
+    width: 55%;
+  }
+
+
+.columnUserResult {
+    width: 31.24%;
+    padding: 4px;
+    padding-top: 1rem;
+    font-size: 17px;
+  }
+
+  th {
+    font-size: 19px;
+}
+
+   .playAgain {
+    width: 25%;
+    font-size: 21px;
+    padding: 2%;
+  }
+}
+
+
+/*------------ dangerZone conflict with ipads patroit -------------- */
+@media (min-width:750px) and (max-width: 784px){
+  .logo{
+    display:none;
+  }
+
+  .stat{
+    margin-right: 8%;
+    margin-top: 1%;
+    font-size: 35px;
+  }
+
+  .stat1{
+    margin-right: 5%;
+    margin-top: 1%;
+    font-size: 35px;
+  }
+
+  .stat2{
+    margin-right: 12%;
+    margin-top: 1%;
+    font-size: 35px;
+  }
+
+  .card {
+    width: 21vw;
+    height: 11.5vh;
+    margin-top: 2%;
+    margin-left: 8%;
+  }
+
+  .mainCards{
+    margin-top: -12%;
+    margin-left: 3.3%;
+  }
+
+  .column{
+    margin-top: -0.8%;
+  }
+
+  .row {
+    margin-bottom: 5.5%;
+  }
+
+  .resetButton {
+    width: 23%;
+    height: 11%;
+    margin-top: 20%;
+    margin-left: -21%;
+  }
+
+  .speaker, .mute {
+    width: 23%;
+    height: 11%;
+    margin-top: 10%;
+    margin-left: -21%;
+  }
+
+  .resultAttempts {
+    color: #ff5522;
+    margin-top: -7%;
+    margin-left: 0%;
+    width: 101px;
+    height: 82px;
+    font-size: 30px;
+    padding-top: 35%;
+  }
+
+  .timeResult {
+    color: #ff5522;
+    margin-top: -9%;
+    margin-left: -13%;
+    width: 101px;
+    height: 82px;
+    font-size: 31px;
+    padding-top: 35%;
+  }
+
+  .resultGamePlayed {
+    color: #ff5522;
+    margin-top: -5%;
+    margin-left: 15%;
+    width: 101px;
+    height: 82px;
+    padding-top: 22%;
+  }
+
+  .winImg {
+    width: 55vw;
+    margin-left: 3%;
+    margin-top: -5%;
+    height: 24vh;
+  }
+
+  /* .loseModal {
+    left: 50.4%;
+    width: 66%;
+    height: 41%;
+    top: 46%;
+    padding: 56px;
+    border-radius: 23px;
+  }
+
+  .loseImg {
+    width: 60vw;
+    height: 29vh;
+    margin-left: 5%;
+    margin-top: -4%;
+  }
+
+  .tryAgain {
+    margin-left: 33%;
+    margin-top: 6%;
+    font-size: 35px;
+    width: 11rem;
+  }
+
+  .modal-content {
+    padding: 65px;
+    top: 164%;
+    left: 49%;
+    height: 146%;
+    width: 58%;
+  }
+
+  .modalText {
+    font-size: 49px;
+    margin-top: -4%;
+  } */
+
+
+
+  .loseModal {
+  left: 50.4%;
+  width: 66%;
+  height: 41%;
+  top: 46%;
+  padding: 56px;
+  border-radius: 23px;
+}
+
+.loseImg {
+  width: 60vw;
+  height: 29vh;
+  margin-left: 5%;
+  margin-top: -4%;
+}
+
+.tryAgain {
+  margin-left: 33%;
+  margin-top: 6%;
+  font-size: 35px;
+  width: 11rem;
+}
+
+.modalText {
+  font-size: 46px;
+  margin-top: -4%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+  .usernameBox {
+    margin-left: 19%;
+    width: 60%;
+    margin-top: 6%;
+    padding: 2.6%;
+  }
+
+  .submit{
+    margin-top: 0%;
+    margin-left: 34%;
+    font-size: 33px;
+    width: 10rem;
+  }
+
+  .rankContainer {
+    padding: 26px;
+    width: 83%;
+    top: 199%;
+    left: 49%;
+  }
+
+  td, th {
+    padding: 13px;
+    font-size: 25px;
+  }
+
+  th {
+      font-size: 26px;
+  }
+
+  .rankPagetitle {
+    font-size: 50px;
+    margin-top: 2rem;
+  }
+
+  .playAgain {
+    width: 22%;
+    margin-top: 3%;
+    margin-left: 38%;
+    padding: 1%;
+    font-size: 28px;
+  }
+
+  .winModal {
+    padding: 10%;
+    width: 58%;
+    height: 43%;
+    top: 47%;
+    left: 50%;
+  }
+
+  .charMax {
+    font-size: 28px;
+    margin-left: 28%;
+    margin-top: 2%;
+    font-weight: bold
+  }
+
+  .rankModal {
+    padding: 8px;
+    width: 93%;
+    top: 46%;
+    height: 60%;
+    left: 50%;
+  }
+
+  table {
+    width: 97%;
+    margin-left: 1.3%;
+    margin-top: -0.5rem;
+  }
+
+  .rowUserResult{
+    margin-left:1%;
+  }
+
+  .columnUserResult {
+    width: 31.2%;
+    padding: 4px;
+    padding-top: 1rem;
+    height: 44px;
+    font-size: 22px;
+    margin-top: 3%;
+  }
+}
+
+ @media (min-width:700px) and (max-width: 749px){
+  .logo {
+  display:none;
+  }
+
+  .stat {
+  margin-right: 8%;
+  margin-top: 3%;
+  font-size: 35px;
+  }
+
+  .stat1 {
+  margin-right: 5%;
+  margin-top: 3%;
+  font-size: 35px;
+  }
+
+  .stat2 {
+  margin-right: 10%;
+  margin-top: 3%;
+  font-size: 35px;
+  }
+
+  .mainCards{
+  margin-top: 0%;
+  }
+
+  .resetButton {
+    width: 25%;
+    height: 10%;
+    margin-top: 22%;
+    margin-left: -43%;
+  }
+
+  .speaker, .mute {
+    width: 25%;
+    height: 11%;
+    margin-top: 15%;
+    margin-left: -43%;
+  }
+
+  .resultAttempts {
+    color: #ff5522;
+    margin-top: -7%;
+    margin-left: 0%;
+    width: 101px;
+    height: 82px;
+    font-size: 30px;
+    padding-top: 35%;
+  }
+
+  .timeResult {
+    color: #ff5522;
+    margin-top: -9%;
+    margin-left: -13%;
+    width: 101px;
+    height: 82px;
+    font-size: 31px;
+    padding-top: 35%;
+  }
+
+  .resultGamePlayed {
+    color: #ff5522;
+    margin-top: -5%;
+    margin-left: 15%;
+    width: 101px;
+    height: 82px;
+    padding-top: 22%;
+  }
+
+  .winImg {
+    width: 55vw;
+    margin-left: 3%;
+    margin-top: -5%;
+    height: 24vh;
+  }
+
+  .loseModal {
+    left: 50.4%;
+    width: 66%;
+    height: 41%;
+    top: 46%;
+    padding: 56px;
+    border-radius: 23px;
+  }
+
+  .loseImg {
+    width: 60vw;
+    height: 29vh;
+    margin-left: 5%;
+    margin-top: -4%;
+  }
+
+  .tryAgain {
+    margin-left: 33%;
+    margin-top: 6%;
+    font-size: 35px;
+    width: 11rem;
+  }
+
+  .modalText {
+    font-size: 43px;
+    margin-top: -4%;
+  }
+
+  .usernameBox {
+    margin-left: 19%;
+    width: 60%;
+    margin-top: 6%;
+    padding: 2.6%;
+}
+
+  .submit{
+    margin-top: 0%;
+    margin-left: 33%;
+    font-size: 33px;
+    width: 10rem;
+  }
+
+  .rankContainer {
+    padding: 26px;
+    width: 83%;
+    top: 199%;
+    left: 49%;
+  }
+
+  .rankPagetitle {
+    font-size: 50px;
+    margin-top: 2rem;
+  }
+
+  .winModal {
+    padding: 10%;
+    width: 58%;
+    height: 43%;
+    top: 47%;
+    left: 50%;
+  }
+
+  .charMax {
+    font-size: 25px;
+    margin-left: 28%;
+    margin-top: 2%;
+    font-weight: bold;
+  }
+
+  .rankModal {
+    padding: 8px;
+    width: 93%;
+    top: 46%;
+    height: 60%;
+    left: 50%;
+  }
+
+  table {
+    width: 97%;
+    margin-left: 1.3%;
+    margin-top: -0.5rem;
+  }
+
+  .rowUserResult{
+    margin-left:1%;
+  }
+
+  .columnUserResult {
+    width: 32%;
+    padding: 2px;
+    padding-top: 1rem;
+    font-size: 16px;
+    }
+
+  th {
+    font-size: 14px;
+  }
+
+  td, th {
+      font-size: 17px;
+  }
+
+  .playAgain {
+    width: 37%;
+    margin-top: 7%;
+    font-size: 24px;
+    margin-left: 33%;
+  }
+
+}
+
+
+/*------------ dangerZone conflict with iphone landscape -------------- */
+ @media (min-width:600px) and (max-width: 699px){
+  .logo {
+    margin-top: 1%;
+    margin-left: 25%;
+    width: 100%;
+    height: 54%;
+}
+
+  .resetButton {
+    margin-top: 4%;
+    margin-left: 3.5rem;
+    width: 8%;
+    height: 7.5%;
+    padding: 4px 11px;
+  }
+
+  .speaker, .mute{
+    margin-left: 3.5rem;
+    margin-top: 0.5rem;
+    width: 8%;
+    height: 7.5%;
+    padding: 4px 11px;
+  }
+
+  .stat1 {
+    margin-right: 2%;
+    margin-top: 0.5%;
+    font-size: 22px;
+  }
+
+  .stat {
+    font-size: 22px;
+    margin-top: 0.5%;
+    margin-right: 4%;
+  }
+
+  .stat2 {
+    font-size: 22px;
+    margin-top: 0.5%;
+    margin-right: 7%;
+  }
+
+  .column {
+    margin-top: 0.6%;
+    height: 10rem;
+  }
+
+  .row {
+    margin-bottom: -12%;
+  }
+
+  .front {
+    border: solid white 1.5px;
+  }
+
+  .card {
+    width: 12vw;
+    margin-left: 3%;
+    height: 21vh;
+    margin-top: 1%;
+  }
+
+  .mainCards {
+    margin-left: 3.5%;
+    margin-top: 2%;
+  }
+
+  .timeResult {
+    margin-top: -7%;
+    margin-left: -16%;
+    padding-top: 34%;
+    width: 67px;
+    height: 80px;
+    font-size: 19px;
+  }
+
+  .resultAttempts {
+    margin-left: -6%;
+    width: 72px;
+    height: 88%;
+    font-size: 22px;
+    padding-top: 34%;
+    margin-top: -8%;
+  }
+
+  .resultGamePlayed {
+    width: 70px;
+    height: 80px;
+    font-size: 22px;
+    margin-top: -5%;
+    margin-left: 10%;
+    padding-top: 24%;
+  }
+
+  .loseModal {
+    padding: 11px;
+    width: 50%;
+    top: 43%;
+    left: 50%;
+    height: 53%;
+  }
+
+  .loseImg {
+    width: 37vw;
+    height: 37vh;
+    margin-left: 13%;
+    margin-top: -6%;
+    border-radius: 49%;
+  }
+
+  .modalText {
+    font-size: 27px;
+    margin-top: 3%;
+  }
+
+  .winImg {
+  width: 32vw;
+    height: 8rem;
+  }
+
+  .tryAgain {
+    font-size: 19px;
+    margin-left: 36%;
+    padding: 2%;
+    margin-top: 3%;
+    width: 6rem;
+  }
+
+  .usernameBox {
+    margin-left: 20%;
+    width: 60%;
+    margin-top: 2%;
+    font-size: 99%;
+  }
+
+  .submit {
+      width: 30%;
+      margin-top: -2%;
+      font-size: 21px;
+      margin-left: 37%;
+  }
+
+  .winModal {
+      width: 50%;
+      top: 39%;
+      height: 19rem;
+  }
+
+  .charMax {
+      font-size: 19px;
+      margin-left: 31%;
+      margin-top: 3%;
+      font-weight: bold;
+  }
+
+  .rankModal {
+      width: 55%;
+      top: 40%;
+      height: 19rem;
+      left: 51%;
+  }
+
+  .rankPagetitle {
+      font-size: 29px;
+      margin-top: -2rem;
+  }
+
+  td, th {
+      font-size: 14px;
+  }
+
+  .columnUserResult {
+    height: 18px;
+    font-size: 11.9px;
+    width: 27.7%;
+    margin-top: 1%;
+  }
+
+  th {
+    color: #05b0a0;
+    font-size: 16px;
+  }
+
+  table {
+      margin-top: -0.3rem;
+    }
+
+  .playAgain {
+      width: 31%;
+      margin-top: 1.8%;
+      font-size: 17px;
+      margin-left: 34%;
+    }
+}
+
+/* ----------------- working up until here ----------------- */
+@media (min-width:500px) and (max-width: 599px){
+  .logo {
+    margin-top: 18%;
+    margin-left: 30%;
+    width: 100%;
+    height: 54%;
+  }
+
+  .resetButton {
+    margin-top: 22%;
+    margin-left: 3.3rem;
+    width: 8%;
+    height: 7.5%;
+    padding: 4px 11px;
+  }
+
+  .speaker, .mute{
+    margin-left: 3.3rem;
+    margin-top: 0.5rem;
+    width: 8%;
+    height: 7.5%;
+    padding: 4px 11px;
+  }
+
+  .stat1 {
+   margin-right: 1%;
+    margin-top: 5%;
+    font-size: 23px;
+  }
+
+  .stat {
+    font-size: 23px;
+    margin-top: 5%;
+    margin-right: 4%;
+  }
+
+  .stat2 {
+    font-size: 23px;
+    margin-top: 5%;
+    margin-right: 7%;
+  }
+
+  .timeResult {
+    margin-top: -7%;
+    margin-left: -16%;
+    padding-top: 34%;
+    width: 67px;
+    height: 80px;
+    font-size: 19px;
+  }
+
+  .resultGamePlayed {
+    width: 70px;
+    height: 80px;
+    font-size: 22px;
+    margin-top: -5%;
+    margin-left: 14%;
+    padding-top: 24%;
+  }
+
+   .resultAttempts {
+    margin-left: -6%;
+    width: 72px;
+    height: 88%;
+    font-size: 22px;
+    padding-top: 34%;
+    margin-top: -7%;
+  }
+
+
+
+
+   .loseModal {
+    width: 71%;
+    height: 34%;
+    top: 43%;
+    left: 50%;
+  }
+
+  .loseImg {
+    width: 63vw;
+    height: 23vh;
+    margin-left: 6%;
+    margin-top: -5%;
+    border-radius: 49%;
+  }
+
+
+  .tryAgain {
+    margin-top: 5%;
+    font-size: 23px;
+    margin-left: 33%;
+    padding: 4%;
+    width: 9rem;
+  }
+
+  .modalText {
+    font-size: 35px;
+    margin-top: 0%;
+  }
+
+
+
+  /* .winImg {
+    width: 60vw;
+    height: 21vh;
+    margin-left: 9%;
+    margin-top: -5%;
+  } */
+
+
+  .winModal {
+    width: 73%;
+    top: 46%;
+    left: 50%;
+  }
+
+   .winImg {
+    width: 60vw;
+    height: 21vh;
+    margin-left: 9%;
+    margin-top: -5%;
+  }
+
+  .usernameBox {
+    margin-left: 20%;
+    margin-top: 4%;
+    width: 57%;
+    padding: 2%;
+    font-size: 114%;
+  }
+
+  .charMax {
+    font-size: 19px;
+    margin-left: 33%;
+    margin-top: 3%;
+    font-weight: bold;
+  }
+
+  .submit {
+    width: 32%;
+    margin-top: -1%;
+    font-size: 25px;
+    margin-left: 35%;
+    padding: 1.5%;
+  }
+
+
+  .card {
+    width: 21vw;
+    height: 11.5vh;
+    margin-top: 2%;
+    margin-left: 8%;
+  }
+
+  .mainCards{
+    margin-top: -12%;
+    margin-left: 3.3%;
+  }
+
+  .column{
+    margin-top: -0.8%;
+  }
+
+  .row {
+    margin-bottom: 5.5%;
+  }
+
+  .columnUserResult {
+    width: 32.5%;
+    padding: 1px;
+    padding-top: 1rem;
+    font-size: 11px;
+  }
+
+  .rankPagetitle {
+    font-size: 47px;
+  }
+
+  th {
+    font-size: 13px;
+  }
+
+  td, th {
+    font-size: 12px;
+  }
+
+  .rankModal {
+    top: 46%;
+    height: 28rem;
+    width: 20rem;
+  }
+
+  .playAgain {
+    width: 36%;
+    font-size: 19px;
+    margin-left: 33%;
+    padding: 3%;
+  }
+}
+
+
+/*----------- can copy from 459 style ----------- */
+@media (min-width:460px) and (max-width: 499px){
+  .logo {
+    display:none;
+  }
+
+  .stat {
+    margin-right: 6%;
+    margin-top: 4%;
+    font-size: 23px;
+    color: white;
+  }
+
+  .stat1 {
+    margin-right: 1%;
+    margin-top: 4%;
+    font-size: 23px;
+    color: white;
+  }
+
+  .stat2 {
+    margin-right: 9%;
+    margin-top: 4%;
+    font-size: 23px;
+    color: white;
+  }
+
+  .resetButton {
+    margin-top: 16px;
+    height: 11%;
+    margin-left: -34%;
+    width: 27%;
+  }
+
+  .speaker, .mute{
+    margin-top: 9px;
+    height: 11%;
+    margin-left: -34%;
+    width: 27%;
+  }
+
+  .resultAttempts {
+    margin-left: -6%;
+    width: 72px;
+    height: 88%;
+    font-size: 22px;
+    padding-top: 34%;
+    margin-top: -7%;
+    color: rgb(234, 104, 28);
+  }
+
+  .timeResult {
+    margin-top: -7%;
+    margin-left: -16%;
+    padding-top: 34%;
+    width: 67px;
+    height: 80px;
+    font-size: 19px;
+    color: rgb(234, 104, 28);
+  }
+
+  .resultGamePlayed {
+    width: 70px;
+    height: 80px;
+    font-size: 22px;
+    margin-top: -5%;
+    margin-left: 14%;
+    padding-top: 24%;
+    color: rgb(234, 104, 28);
+  }
+
+  .timeResult {
+    margin-top: -7%;
+    margin-left: -16%;
+    padding-top: 34%;
+    width: 67px;
+    height: 80px;
+    font-size: 19px;
+  }
+
+  .resultGamePlayed {
+    width: 70px;
+    height: 80px;
+    font-size: 22px;
+    margin-top: -5%;
+    margin-left: 14%;
+    padding-top: 24%;
+  }
+
+   .resultAttempts {
+    margin-left: -6%;
+    width: 72px;
+    height: 88%;
+    font-size: 22px;
+    padding-top: 34%;
+    margin-top: -7%;
+  }
+
+  .card {
+    width: 21vw;
+    height: 11.5vh;
+    margin-top: 2%;
+    margin-left: 8%;
+  }
+
+  .mainCards{
+    margin-top: -12%;
+    margin-left: 3.3%;
+  }
+
+  .column{
+    margin-top: -0.8%;
+  }
+
+  .row {
+    margin-bottom: 5.5%;
+  }
+
+  .loseModal {
+    width: 71%;
+    height: 34%;
+    top: 43%;
+    left: 50%;
+  }
+
+  .loseImg {
+    width: 63vw;
+    height: 23vh;
+    margin-left: 6%;
+    margin-top: -5%;
+    border-radius: 49%;
+  }
+
+  .winImg {
+    width: 60vw;
+    height: 21vh;
+    margin-left: 9%;
+    margin-top: -5%;
+  }
+
+  .tryAgain {
+    margin-top: 5%;
+    font-size: 23px;
+    margin-left: 31%;
+    padding: 4%;
+    width: 8rem;
+  }
+
+  .modalText {
+    font-size: 26px;
+    margin-top: 0%;
+  }
+
+  .usernameBox {
+    margin-left: 20%;
+    margin-top: 4%;
+    width: 57%;
+    padding: 2%;
+    font-size: 114%;
+  }
+
+  .charMax {
+    font-size: 19px;
+    margin-left: 30%;
+    margin-top: 3%;
+    font-weight: bold;
+  }
+
+  .submit {
+    width: 32%;
+    margin-top: -1%;
+    font-size: 25px;
+    margin-left: 35%;
+    padding: 1.5%;
+  }
+
+  /* .rankModal {
+    width: 103%;
+    top: 45%;
+    height: 25rem;
+  } */
+
+  .winModal {
+    width: 73%;
+    top: 46%;
+    left: 50%;
+  }
+
+  .rankPagetitle {
+    font-size: 33px;
+  }
+
+  .rankModal {
+    width: 55%;
+    height: 32rem;
+  }
+
+  th {
+    font-size: 12px;
+  }
+
+  td, th {
+    font-size: 11px;
+  }
+
+  .columnUserResult {
+    height: 30px;
+    font-size: 15px;
+    padding-top: 1rem;
+    width: 43%;
+    margin-left: 4rem;
+  }
+
+  .playAgain {
+    width: 36%;
+    margin-top: 10%;
+    font-size: 18px;
+    margin-left: 33%;
+    padding: 3.5%;
+  }
+}
+
+
+/*------------------ same as iphone patroit ----------------------*/
+ @media (min-width:363px) and (max-width: 459px){
+  .logo{
+    display:none;
+  }
+
+  .stat {
+    margin-right: 6%;
+    margin-top: 1.5%;
+    font-size: 21px;
+    color: white;
+  }
+
+  .stat1 {
+   margin-right: 1%;
+    margin-top: 1.5%;
+    font-size: 21px;
+    color: white;
+  }
+
+  .stat2 {
+   margin-right: 8%;
+    margin-top: 1.5%;
+    font-size: 21px;
+    color: white;
+  }
+
+  .resetButton {
+   cursor: pointer;
+    margin-top: 6px;
+    height: 7%;
+    margin-left: -42%;
+    width: 27%;
+  }
+
+  .speaker, .mute{
+    cursor: pointer;
+    margin-top: 7.5px;
+    height: 7%;
+    margin-left: -42%;
+    width: 27%;
+  }
+
+  .mainCards {
+    width: 100%;
+    display: inline-block;
+    margin-left: -0.9%;
+    margin-top: 0.5%;
+  }
+
+  .card{
+    width: 23vw;
+    margin-left: 8%;
+    height: 12.3vh;
+    margin-top: 2%;
+  }
+
+  .row{
+    margin-bottom: -18%;
+  }
+
+  .column {
+    margin-top: 0.3%;
+    flex: 1;
+    height: 10rem;
+  }
+
+  .resultAttempts {
+    margin-top: -6%;
+    margin-left: -3%;
+    width: 65px;
+    font-size: 18px;
+    padding-top: 33%;
+    color: rgb(234, 104, 28);
+  }
+
+  .timeResult {
+    margin-top: -6%;
+    margin-left: -16%;
+    width: 65px;
+    font-size: 18px;
+    padding-top: 33%;
+    color: rgb(234, 104, 28);
+  }
+
+  .resultGamePlayed {
     width: 65px;
     height: 80px;
     font-size: 19px;
@@ -872,477 +3499,547 @@ body {
   }
 
 
- .loseModal {
-     width: 71%;
+  .front {
+    border: solid white 1.5px;
+  }
+
+  .loseModal {
+    width: 71%;
     height: 34%;
-    top: 46%;
-    left: 50%;
-}
-
-.winImg {
-    width: 56vw;
-    height: 15vh;
-    margin-left: 16%;
-    margin-top: -5%;
-}
-
-.tryAgain {
-    margin-top: 9%;
-    font-size: 24px;
-    margin-left: 33%;
-    padding: 4%;
-}
-
-.modal-content {
-  padding: 16px;
-    width: 80%;
-    height: 211%;
-    top: 168%;
-    left: 48.5%;
-}
-
-.modalText {
- font-size: 26px;
-  margin-top: 0%;
-}
-
-
-.usernameBox {
-    margin-left: 22%;
-    margin-top: 4%;
-    width: 54%;
-    padding: 2%;
-    font-size: 114%;
-}
-
-.submit {
-    width: 30%;
-    margin-top: 4%;
-    font-size: 25px;
-    margin-left: 36%;
-    padding: 1.5%;
-}
-
-.rankModal {
-    width: 74%;
     top: 43%;
-}
+    left: 50%;
+  }
 
-.loseImg {
-    width: 59vw;
+  .loseImg {
+    width: 63vw;
     height: 23vh;
-    margin-left: 9%;
+    margin-left: 6%;
     margin-top: -5%;
     border-radius: 49%;
-}
+  }
 
-}
+  .tryAgain {
+    margin-top: 5%;
+    font-size: 23px;
+    margin-left: 30%;
+    padding: 4%;
+    width: 7rem;
+  }
 
-/* --------------------------- iPads (landscape) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
- .mainCards {
-    margin-left: 1%;
+
+  .modalText {
+    font-size: 26px;
     margin-top: 0%;
   }
 
-  .card {
-    width: 12.5vw;
-    margin-left: 3%;
-    /* height: 21vh;
-    margin-top: 2.8%; */
-}
 
-
-  .stat {
-         margin-right: 6%;
-    margin-top: 0.5%;
-
-}
-
-    .stat1 {
-          margin-right: 2%;
-        margin-top: 0.5%;
-
-    }
-
-    .stat2 {
-        margin-right: 7%;
-        margin-top: 0.5%;
-    }
-
-
-  .column {
-    margin-top: 2.2%;
+  .winModal {
+    width: 73%;
+    top: 46%;
+    left: 50%;
   }
 
-  .logo {
-    height: 74%;
-    margin-left: 16%;
+   .winImg {
+    width: 60vw;
+    height: 21vh;
+    margin-left: 9%;
     margin-top: -5%;
-    width: 98%;
   }
 
-  .row{
-    margin-bottom: -4.5%;
+  .usernameBox {
+    /* margin-left: 20%;
+    margin-top: 4%;
+    width: 57%;
+    padding: 2%;
+    font-size: 114%; */
+        /* margin-left: 16%;
+    margin-top: 4%;
+    width: 65%;
+    padding: 2%;
+    font-size: 114%; */
+        margin-left: 13%;
+    margin-top: 4%;
+    width: 72%;
+    padding: 2%;
+    font-size: 114%;
   }
 
-  .resetButton{
-    width: 8%;
-    height: 11%;
-    margin-left: 19%;
-    margin-top: -4%;
-    padding: 7px 15px;
-  }
-
-  .speaker, .mute {
-    width: 19%;
-    height: 20%;
-    padding: 4px 12px;
-    margin-left: 19%;
-    margin-top: 5%;
-}
-
-  .timeResult {
-    margin-top: -6%;
-      margin-left: -23%;
-      width: 110px;
-      height: 80px;
-      font-size: 30px;
-      padding-top: 35%;
-  }
-
-  .resultAttempts{
-      margin-top: -9%;
-      margin-left: -19%;
-      width: 110px;
-      height: 80px;
-      font-size: 30px;
-      padding-top: 35%;
-  }
-
-  .resultGamePlayed {
-      width: 111px;
-      margin-top: -3%;
-  }
-
-  .resultAttempts {
-      width: 111px;
-      margin-top: -3%;
-      margin-left: -7%;
-    }
-
-
-  .winImg {
-    width: 35vw;
-    height: 25vh;
-    margin-left: 19%;
-    margin-top: -5%;
-}
-
-    .tryAgain {
-        margin-top: 2%;
-    font-size: 33px;
-    margin-left: 40%;
-    }
-
-
-    .loseModal {
-       padding: 18px;
-    width: 52%;
-    height: 43%;
-    top: 49%;
-    left: 49.3%;
-    }
-
-    .usernameBox {
-       margin-left: 29%;
-    margin-top: 2%;
-    width: 42%;
-    }
-
-    .submit {
-      width: 23%;
-    margin-left: 40%;
-    margin-top: -3%;
-    }
-
-
-    .playAgain {
-    width: 33%;
+  .charMax {
+        font-size: 19px;
+    margin-left: 27%;
     margin-top: 3%;
-    font-size: 29px;
-    margin-left: 35%;
-    padding: 3.3%;
+    font-weight: bold;
+
+
+    /* font-size: 19px;
+    margin-left: 26%;
+    margin-top: 3%;
+    font-weight: bold; */
+
+
+    /* 2 font-size: 19px;
+    margin-left: 24%;
+    margin-top: 3%;
+    font-weight: bold; */
+      /* 1 font-size: 20px;
+      margin-left: 23%;
+      margin-top: 3%;
+      font-weight: bold; */
+  }
+
+  .submit {
+      width: 32%;
+      margin-top: -1%;
+      font-size: 25px;
+      margin-left: 35%;
+      padding: 1.5%;
+  }
+
+
+  .rankModal {
+      width: 103%;
+      top: 45%;
+      height: 25rem;
+  }
+
+  .rankPagetitle {
+      font-size: 39px;
+      margin-top: -1rem;
+  }
+
+  th {
+      font-size: 17px;
   }
 
   td, th {
-    font-size: 26px;
-}
-
-.rankContainer {
-    width: 58%;
-    top: 173%;
-    left: 51%;
-    padding: 22px;
-}
-
-.modalText {
-    /* font-family: 'Aladin', cursive; */
-       font-size: 45px;
-    margin-top: 3%;
-    /* text-align: center;
-    color: white; */
-}
-
-
-   .winModal {
-    padding: 1%;
-    width: 56%;
-    height: 51%;
-    top: 47%;
-    left: 50%;
-}
-
-.charMax {
-    font-size: 24px;
-    margin-left: 35%;
-    font-weight: bold;
-}
-
-
-
-}
-
-/* ----------------------------------------- iPads (portrait) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
-
-  body {
-    padding: 0.9%;
+      font-size: 17px;
   }
 
+  .columnUserResult {
+      width: 28%;
+      height: 24px;
+      padding-top: 1rem;
+      font-size: 14px;
+  }
+
+  .playAgain {
+      width: 31%;
+      margin-top: 4%;
+      font-size: 25px;
+      margin-left: 35%;
+    }
+}
+
+@media (min-width:230px) and (max-width: 362px){
   .logo{
-   display:none;
- }
-
-  .stat{
-    margin-right: 8%;
-    margin-top: 0.5%;
-    font-size: 35px;
+    display:none;
   }
 
-  .stat1{
-    margin-right: 5%;
-    margin-top: 0.5%;
-    font-size: 35px;
+  .stat {
+    margin-right: 3%;
+    margin-top: 2%;
+    font-size: 15px;
+    color:white;
   }
 
-  .stat2{
-    margin-right: 13%;
-    margin-top: 0.5%;
-    font-size: 35px;
+  .stat1 {
+    margin-right: -3%;
+    margin-top: 2%;
+    font-size: 15px;
+    color:white;
   }
 
- .card {
-    width: 21vw;
-    height: 12vh;
-    margin-top: 2.3%;
+  .stat2 {
+    margin-right: 6%;
+    margin-top: 2%;
+    font-size: 15px;
+    color:white;
+  }
+
+  .speaker, .mute{
+    margin-top: 7px;
+    height: 8%;
+    margin-left: -65%;
+    width: 21%;
+  }
+
+  .resetButton {
+    margin-top: 5px;
+    height: 8%;
+    margin-left: -65%;
+    width: 21%;
+  }
+
+  .mainCards {
+    width: 100%;
+    display: inline-block;
+    margin-left: -0.9%;
+    margin-top: 0.5%;
+  }
+
+  .card{
+    width: 23vw;
     margin-left: 8%;
- }
-
- .mainCards{
-    margin-top: -12.5%;
-    margin-left: 2.3%;
- }
-
- .column{
-    margin-top: -0.8%;
-
- }
-
- .row {
-    margin-bottom: 5.5%;
-}
-
- .resetButton {
-    width: 20%;
-    height: 11%;
-    margin-top: 9%;
-    margin-left: -27.5%;
- }
-
- .speaker, .mute {
-    width: 40%;
-    height: 17%;
-    margin-left: -28%;
-    margin-top: 12%;
- }
-
-
- .resultAttempts {
-    color: #ff5522;
-    margin-top: -7%;
-    margin-left: 0%;
-    width: 101px;
-    height: 82px;
-    font-size: 30px;
-    padding-top: 35%;
-}
-
-.timeResult {
-    color: #ff5522;
-    margin-top: -9%;
-    margin-left: -16%;
-    width: 101px;
-    height: 82px;
-    font-size: 31px;
-    padding-top: 35%;
-}
-
-.resultGamePlayed {
-    color: #ff5522;
-    margin-top: -5%;
-    margin-left: 15%;
-    width: 101px;
-    height: 82px;
-    padding-top: 22%;
+    height: 12.3vh;
+    margin-top: 2%;
   }
 
+  .row{
+    margin-bottom: -18%;
+  }
 
-    .winImg {
-       width: 45vw;
-    margin-left: 12%;
+  .column {
+    margin-top: 0.3%;
+    flex: 1;
+    height: 10rem;
+  }
+
+  .resultAttempts {
+    margin-top: -4%;
+    margin-left: -3%;
+    width: 52px;
+    font-size: 12px;
+    padding-top: 34%;
+    color: rgb(234, 104, 28);
+  }
+
+  .timeResult {
+    margin-top: -4%;
+    margin-left: -18%;
+    width: 51px;
+    font-size: 12px;
+    padding-top: 33%;
+    color: rgb(234, 104, 28);
+  }
+
+  .resultGamePlayed {
+    width: 52px;
+    height: 80px;
+    font-size: 12px;
+    margin-top: -4%;
+    margin-left: 14%;
+    padding-top: 26%;
+    color: rgb(234, 104, 28);
+  }
+
+  .loseModal {
+    width: 71%;
+    height: 34%;
+    top: 43%;
+    left: 50%;
+  }
+
+  .loseImg {
+    width: 63vw;
+    height: 23vh;
+    margin-left: 6%;
     margin-top: -5%;
-    height: 18vh;
-    }
+    border-radius: 49%;
+  }
 
-    .loseModal {
-         left: 50.4%;
-    width: 60%;
-    height: 27%;
+  .winImg {
+    width: 60vw;
+    height: 21vh;
+    margin-left: 9%;
+    margin-top: -5%;
+  }
+
+  .tryAgain {
+        /* margin-top: 5%;
+    font-size: 23px;
+    margin-left: 27%;
+    padding: 4%;
+    width: 8rem; */
+    margin-top: 5%;
+    font-size: 23px;
+    margin-left: 30%;
+    padding: 4%;
+    width: 7rem;
+  }
+
+  .modalText {
+    font-size: 26px;
+    margin-top: 0%;
+  }
+
+  .usernameBox {
+    margin-left: 9%;
+    margin-top: 4%;
+    width: 79%;
+    padding: 2%;
+    font-size: 104%;
+    /* margin-left: 20%;
+    margin-top: 4%;
+    width: 57%;
+    padding: 2%;
+    font-size: 114%; */
+  }
+
+  .charMax {
+    font-size: 15px;
+    margin-left: 28%;
+    margin-top: 3%;
+    font-weight: bold;
+    /* font-size: 20px;
+    margin-left: 23%;
+    margin-top: 3%;
+    font-weight: bold; */
+  }
+
+  .submit {
+        width: 38%;
+    margin-top: -1%;
+    font-size: 18px;
+    margin-left: 31%;
+    padding: 1.5%;
+    /* width: 32%;
+    margin-top: -1%;
+    font-size: 25px;
+    margin-left: 35%;
+    padding: 1.5%; */
+  }
+
+  .rankModal {
+    width: 103%;
+    top: 45%;
+    height: 32rem;
+  }
+
+  .winModal {
+    width: 73%;
     top: 46%;
-    padding: 56px;
-    border-radius: 23px;
-    }
+    left: 50%;
+  }
+
+  .rankPagetitle {
+    font-size: 39px;
+    margin-top: -1rem;
+  }
+
+  th {
+    font-size: 17px;
+  }
+
+  td, th {
+    font-size: 9px;
+  }
+
+  .columnUserResult {
+    width: 58%;
+    height: 21px;
+    padding-top: 1rem;
+    font-size: 14px;
+    margin-top: 1rem;
+  }
+
+  .rowUserResult {
+    margin-left: 17%;
+  }
+
+  .playAgain {
+    width: 35%;
+    margin-top: 10%;
+    font-size: 19px;
+    margin-left: 33%;
+    padding: 0.5rem;
+  }
+}
+
+
+ @media (min-width:150px) and (max-width: 229px){
+  .logo{
+    display:none;
+  }
+
+  .resetButton {
+    margin-top: 15px;
+    height: 8%;
+    margin-left: -62%;
+    width: 24%;
+  }
+
+  .speaker, .mute{
+    margin-top: 7px;
+    height: 8%;
+    margin-left: -62%;
+    width: 24%;
+  }
+
+  .stat {
+    margin-right: 3%;
+    margin-top: 11%;
+    font-size: 10px;
+    color: white;
+  }
+
+  .stat1 {
+    margin-right: -6%;
+    margin-top: 11%;
+    font-size: 10px;
+    color: white;
+  }
+
+  .stat2 {
+    margin-right: 0%;
+    margin-top: 11%;
+    font-size: 10px;
+    color: white;
+  }
+
+  .timeResult {
+    margin-top: -4%;
+    margin-left: -21%;
+    width: 40px;
+    font-size: 9px;
+    padding-top: 33%;
+    color: rgb(234, 104, 28);
+  }
+
+  .resultGamePlayed {
+    margin-top: -4%;
+    margin-left: 9%;
+    width: 40px;
+    font-size: 9px;
+    padding-top: 33%;
+    color: rgb(234, 104, 28);
+  }
+
+  .resultAttempts {
+   margin-top: -4%;
+    margin-left: -16%;
+    width: 40px;
+    font-size: 9px;
+    padding-top: 34%;
+    color: rgb(234, 104, 28);
+  }
+
+  .mainCards {
+    width: 100%;
+    display: inline-block;
+    margin-left: -0.9%;
+    margin-top: 0.5%;
+  }
+
+  .card{
+    width: 29vw;
+    margin-left: 13%;
+    height: 8vh;
+    margin-top: 4%;
+  }
+
+  .row{
+    margin-bottom: -18%;
+  }
+
+  .column {
+    margin-top: 0.3%;
+    flex: 1;
+    height: 10rem;
+  }
+
+  .loseImg {
+    width: 63vw;
+    height: 23vh;
+    margin-left: 6%;
+    margin-top: -5%;
+    border-radius: 49%;
+  }
+
+  .winImg {
+    width: 60vw;
+    height: 21vh;
+    margin-left: 9%;
+    margin-top: -5%;
+  }
 
 
     .tryAgain {
-         margin-left: 36%;
-    margin-top: 5%;
-    font-size: 33px;
-    }
-
-
-    .modal-content {
-       padding: 65px;
-    top: 164%;
-    left: 49%;
-    height: 146%;
-    width: 58%;
-    }
-
-
-    .modalText {
-    font-size: 45px;
-    margin-top: -8%;
-    }
-
-
-    .usernameBox {
-    margin-left: 24%;
-    width: 48%;
-    margin-top: 2%;
-    padding: 2.6%;
-    }
-
-
-    .submit{
-    width: 28%;
-    margin-top: -2%;
-    margin-left: 38%;
-    font-size: 30px;
-    }
-
-    .rankContainer {
-      padding: 26px;
-      width: 83%;
-      top: 199%;
-      left: 49%;
-    }
-
-    td, th {
-        padding: 13px;
-        font-size: 27px;
-    }
-
-    th {
-           font-size: 26px;
-
-    }
-
-    .rankPagetitle {
-            font-size: 55px;
-    }
-
-    .playAgain {
-          width: 23%;
-    margin-top: 2%;
-    margin-left: 37%;
-    padding: 3%;
-    font-size: 35px;
-    }
-
-
-    .winModal {
-    padding: 10%;
-    width: 53%;
-    height: 30%;
-    top: 47%;
-    left: 50%;
-
-}
-
-.charMax {
-    font-size: 24px;
-    margin-left: 29%;
-    margin-top: 2%;
-}
-
-
-.rankModal {
-    padding: 8px;
-    width: 93%;
-    top: 50%;
-    height: 55%;
-    left: 50%;
-
-}
-
-table {
-    width: 97%;
-    margin-left: 1%;
-}
-
-.columnUserResult {
-    width: 29%;
-    padding: 8px;
-    height: 34px;
-    font-size: 27px;
-    margin-top: 2%;
-}
-
-.rowUserResult{
-  margin-left:1%;
-}
-
-}
-
-
-
-
-/* Desktops and laptops ----------- */
- /* @media only screen  and (max-width : 500px) {
-  body {
-    display: none;
+    margin-top: 8%;
+    font-size: 19px;
+    margin-left: 21%;
+    padding: 4%;
+    width: 6rem;
   }
 
-} */
+   .loseModal {
+    width: 71%;
+    height: 37%;
+    top: 43%;
+    left: 50%;
+  }
+
+
+  .modalText {
+       font-size: 22px;
+    margin-top: 0%;
+  }
+
+  .usernameBox {
+       margin-left: 7%;
+    margin-top: 4%;
+    width: 86%;
+    padding: 2%;
+    font-size: 68%;
+  }
+
+  .charMax {
+       font-size: 11px;
+    margin-left: 23%;
+    margin-top: 3%;
+    font-weight: bold;
+  }
+
+  .submit {
+   width: 38%;
+    margin-top: -1%;
+    font-size: 12px;
+    margin-left: 33%;
+    padding: 3%;
+  }
+
+  .rankModal {
+    width: 103%;
+    top: 45%;
+    height: 32rem;
+  }
+
+  .winModal {
+    width: 73%;
+    top: 46%;
+    left: 50%;
+  }
+
+  .rankPagetitle {
+    font-size: 31px;
+    margin-top: -1rem;
+  }
+
+  th {
+    font-size: 17px;
+  }
+
+  td, th {
+    font-size: 4px;
+  }
+
+  .columnUserResult {
+    margin-top: 1rem;
+    width: 58%;
+    height: 21px;
+    padding-top: 1rem;
+    font-size: 11px;
+  }
+
+  .rowUserResult {
+    margin-left: 17%;
+  }
+
+  .playAgain {
+    width: 35%;
+    margin-top: 10%;
+    font-size: 19px;
+    margin-left: 33%;
+    padding: 0.5rem;
+  }
+
+ }
