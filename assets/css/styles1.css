@@ -3048,11 +3048,9 @@ td, th {
   }
 
 
-
-
    .loseModal {
     width: 71%;
-    height: 34%;
+    height: 39%;
     top: 43%;
     left: 50%;
   }
@@ -3069,7 +3067,7 @@ td, th {
   .tryAgain {
     margin-top: 5%;
     font-size: 23px;
-    margin-left: 33%;
+    margin-left: 32%;
     padding: 4%;
     width: 9rem;
   }
