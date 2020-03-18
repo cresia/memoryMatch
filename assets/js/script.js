@@ -208,7 +208,7 @@ function timeScores(){
           createLoseModal();
           loseAudio();
         }
-      }, 1000);
+      }, 300);
   }
 }
 
