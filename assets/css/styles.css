@@ -1735,14 +1735,14 @@ td, th {
   width: 11rem;
   display: block;
   margin: 1rem auto;
-  font-size: 32px;
+  font-size: 30px;
 }
 
 .loseModal {
   padding: 18px;
   width: 58%;
-  height: 51%;
-  top: 46%;
+  height: 53%;
+  top: 48%;
   left: 50%;
 }
 
