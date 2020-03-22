@@ -138,7 +138,7 @@ function handleCardClick(event) {
 
         $('.card').on('click', handleCardClick);
 
-      }, 900);
+      }, 1500);
 
       displayStats();
     }
