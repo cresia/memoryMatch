@@ -211,7 +211,7 @@ body{
   display: inline-block;
   margin-left: 3%;
   position: relative;
-  margin-top: -0.5%;
+  margin-top: 0.5%;
 }
 
 .card {
@@ -3448,7 +3448,7 @@ td, th {
     width: 100%;
     display: inline-block;
     margin-left: -0.9%;
-    margin-top: 0.5%;
+    margin-top: -0.3%;
   }
 
   .card{
