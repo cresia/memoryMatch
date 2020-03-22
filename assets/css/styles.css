@@ -1639,7 +1639,7 @@ td, th {
 
 /*---------------- DangerZone conflict with ipads landscape ------------------*/
 @media (min-width:960px) and (max-width: 1193px){
-  .mainCards {
+.mainCards {
     margin-left: 2.5%;
     margin-top: 0.5%;
 }
@@ -1735,6 +1735,7 @@ td, th {
   width: 11rem;
   display: block;
   margin: 1rem auto;
+  font-size: 32px;
 }
 
 .loseModal {
