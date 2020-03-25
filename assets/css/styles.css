@@ -262,6 +262,7 @@ body{
   position:absolute;
   transform: rotateY(180deg);
   margin: 0 auto;
+  backface-visibility: hidden;
 }
 
 .doryCard{
