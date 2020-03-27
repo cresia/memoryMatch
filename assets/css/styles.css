@@ -252,8 +252,9 @@ body{
   margin: 0 auto;
   /* backface-visibility: hidden; */
   /* transform: rotateY(0deg); */
-  -webkit-backface-visibility: hidden;
-  /* -webkit-transform: translate(0deg); */
+  
+  /* -webkit-backface-visibility: hidden; */
+  -webkit-transform: translate(0deg);
 
 }
 
@@ -267,11 +268,11 @@ body{
   /* transform: rotateY(180deg); */
    /* backface-visibility: hidden; */
   margin: 0 auto;
-  /* -webkit-backface-visibility: hidden; */
+  -webkit-backface-visibility: hidden;
   /* visibility:visible; */
   /* -webkit-perspective: 0; */
 
-    -webkit-transform: translate(180deg);
+    -webkit-transform: translateY(180deg);
 
 }
 
