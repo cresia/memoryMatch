@@ -252,7 +252,7 @@ body{
   margin: 0 auto;
   /* backface-visibility: hidden; */
   /* transform: rotateY(0deg); */
-  /* -webkit-backface-visibility: hidden; */
+  -webkit-backface-visibility: hidden;
   -webkit-transform: translate(0deg);
 
 }
