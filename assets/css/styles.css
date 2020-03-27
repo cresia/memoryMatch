@@ -251,7 +251,8 @@ body{
   position:absolute;
   margin: 0 auto;
   /* backface-visibility: hidden; */
-   -webkit-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translate(0deg);
   /* transform: rotateY(0deg); */
 }
 
