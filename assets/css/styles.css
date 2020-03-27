@@ -262,15 +262,16 @@ body{
   background-size: contain;
   position:absolute;
   /* transform: rotateY(180deg); */
+   /* backface-visibility: hidden; */
   margin: 0 auto;
   /* -webkit-backface-visibility: hidden; */
 
    -webkit-perspective: 0;
-    -webkit-backface-visibility: hidden;
+    /* -webkit-backface-visibility: hidden; */
     -webkit-transform: translate(180deg);
     visibility:visible;
-    backface-visibility: hidden;
-  /* backface-visibility: hidden; */
+
+
 }
 
 .doryCard{
