@@ -253,7 +253,7 @@ body{
   /* backface-visibility: hidden; */
   /* transform: rotateY(0deg); */
   -webkit-backface-visibility: hidden;
-  -webkit-transform: translate(0deg);
+  /* -webkit-transform: translate(0deg); */
 
 }
 
@@ -272,9 +272,6 @@ body{
   /* -webkit-perspective: 0; */
 
     -webkit-transform: translate(180deg);
-    -webkit-backface-visibility: hidden;
-
-
 
 }
 
