@@ -251,6 +251,7 @@ body{
   position:absolute;
   margin: 0 auto;
   backface-visibility: hidden;
+  transform: rotateY(0deg);
 }
 
 /* back is the answer */
