@@ -261,9 +261,9 @@ body{
   height:100%;
   background-size: contain;
   position:absolute;
-  transform: rotateY(180deg);
+  /* transform: rotateY(180deg); */
   margin: 0 auto;
-  /* backface-visibility: hidden; */
+  backface-visibility: hidden;
 }
 
 .doryCard{
