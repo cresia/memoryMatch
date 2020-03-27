@@ -250,7 +250,7 @@ body{
   background-repeat: no-repeat;
   position:absolute;
   margin: 0 auto;
-  backface-visibility: hidden;
+  /* backface-visibility: hidden; */
   transform: rotateY(0deg);
 }
 
