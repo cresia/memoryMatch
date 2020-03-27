@@ -269,9 +269,9 @@ body{
    /* backface-visibility: hidden; */
   margin: 0 auto;
 
-  -webkit-backface-visibility: hidden;
+  /* -webkit-backface-visibility: hidden;
   visibility:visible;
-  -webkit-perspective: 0;
+  -webkit-perspective: 0; */
 
     -webkit-transform: translateY(180deg);
 
