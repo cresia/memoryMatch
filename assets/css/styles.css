@@ -251,7 +251,8 @@ body{
   position:absolute;
   margin: 0 auto;
   /* backface-visibility: hidden; */
-  transform: rotateY(0deg);
+   -webkit-backface-visibility: hidden;
+  /* transform: rotateY(0deg); */
 }
 
 /* back is the answer */
@@ -264,12 +265,12 @@ body{
   /* transform: rotateY(180deg); */
    /* backface-visibility: hidden; */
   margin: 0 auto;
-  /* -webkit-backface-visibility: hidden; */
+  -webkit-backface-visibility: hidden;
 
-   -webkit-perspective: 0;
+   /* -webkit-perspective: 0; */
     /* -webkit-backface-visibility: hidden; */
     -webkit-transform: translate(180deg);
-    visibility:visible;
+    /* visibility:visible; */
 
 
 }
