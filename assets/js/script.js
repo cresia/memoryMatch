@@ -31,7 +31,7 @@ var speaker = null;
 var mute = null;
 var match = 0;
 // var max_matches = 9;
-var max_matches = 2;
+var max_matches = 9;
 var addMatchedClass;
 var attempts = 0;
 var games_played = 0;
