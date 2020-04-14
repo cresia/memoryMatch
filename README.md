@@ -8,7 +8,7 @@ Memory matching cards with Finding Nemo Theme. Users are able to match pairs of 
 
 # Initial Setup
 1. Fork this repo and clone your fork from your terminal
-  - `https://github.com/cresia/memoryMatch.git`
+    - `https://github.com/cresia/memoryMatch.git`
 2. Navigate to open `/memoryMatch` directory
 3. Open the `index.html` file
 
