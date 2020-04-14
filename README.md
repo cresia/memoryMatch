@@ -14,7 +14,7 @@ Memory matching cards with Finding Nemo Theme. Users are able to match pairs of 
 2. Navigate to open `/memoryMatch` directory
 3. Open the `index.html` file
 
-**Project Built With:**
+# Project Built With:
   - HTML5
   - CSS5
   - jQuery
