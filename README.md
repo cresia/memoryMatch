@@ -2,11 +2,11 @@
  - Live site: http://memorymatch.kimcodes.life/
 
  
-# Description:
+## Description:
 Memory matching cards with Finding Nemo Theme. Users are able to match pairs of cards with timer that shows the statictics of the first top five high scores
 
 
-# Getting Started
+## Getting Started
 
 **Initial Setup**
 1. Fork this repo and clone your fork from your terminal
