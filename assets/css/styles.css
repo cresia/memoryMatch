@@ -261,6 +261,7 @@ body{
 
 .front:hover{
   animation: shake 0.5s;
+  animation-iteration-count: infinite;
   box-shadow: 0px 6px 16px #71fafa;
 }
 
