@@ -251,10 +251,6 @@ body{
   position:absolute;
   margin: 0 auto;
 
-  /* -webkit-backface-visibility: hidden;
-  -webkit-transform: translate(0deg); */
-
-
   /* backface-visibility: hidden; */
   /* transform: rotateY(0deg); */
 
@@ -262,6 +258,13 @@ body{
   -webkit-transform: rotateY(0deg);
 
 }
+
+.front:hover{
+  /* transform: scale(1.1); */
+  box-shadow: 0px 6px 16px #71fafa;
+}
+
+
 
 /* back is the answer */
 .back{
