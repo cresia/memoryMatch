@@ -218,7 +218,6 @@ body{
 }
 
 .front:hover{
-  /* transform: scale(1.1); */
   -webkit-transform: scale(1.1);
   -webkit-box-shadow: 0px 6px 16px #71fafa;
 }
@@ -787,7 +786,7 @@ td, th {
 }
 
 .front:hover{
-  display: none;
+  display: hidden;
 
 }
 
@@ -817,7 +816,7 @@ td, th {
 }
 
 .front:hover{
-  display: none;
+  display: hidden;
 
 }
 
@@ -1036,7 +1035,7 @@ td, th {
 }
 
 .front:hover{
-  display: none;
+  display: hidden;
 
 }
 
@@ -1615,7 +1614,7 @@ td, th {
 }
 
 .front:hover{
-  display: none;
+  display: hidden;
 
 }
 
@@ -2335,7 +2334,7 @@ th {
 }
 
 .front:hover{
-  display: none;
+  display: hidden;
 
 }
 
@@ -2756,7 +2755,7 @@ td, th {
 }
 
 .front:hover{
-  display: none;
+  display: hidden;
 
 }
 
@@ -3379,7 +3378,7 @@ td, th {
 }
 
 .front:hover{
-  display: none;
+  display: hidden;
 
 }
 
