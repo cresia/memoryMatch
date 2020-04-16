@@ -766,11 +766,20 @@ td, th {
   margin-left: 32%;
 }
 
+.front{
+   -webkit-appearance: none;
+}
+
 }
 
 /* -------------------------- iphone 6,7,8 : portrait ----------------------------*/
 @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
-.logo{
+
+.front{
+   -webkit-appearance: none;
+}
+
+  .logo{
   display:none;
 }
 
@@ -965,6 +974,10 @@ td, th {
 
 /* --------------------------- iPads (landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+.front{
+   -webkit-appearance: none;
+}
+
 .mainCards {
     margin-left: 2.5%;
     margin-top: 0.5%;
@@ -2218,6 +2231,10 @@ th {
 
 /*------------ dangerZone conflict with ipads patroit -------------- */
 @media (min-width:750px) and (max-width: 784px){
+.front{
+   -webkit-appearance: none;
+}
+
 .logo{
   display:none;
 }
@@ -2614,6 +2631,12 @@ td, th {
 
 /*------------ dangerZone conflict with iphone landscape -------------- */
  @media (min-width:600px) and (max-width: 699px){
+   
+
+.front{
+   -webkit-appearance: none;
+}
+
 .logo {
   margin-top: 1%;
   margin-left: 25%;
