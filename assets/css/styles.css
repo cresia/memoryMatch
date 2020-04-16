@@ -207,11 +207,11 @@ body{
   position:absolute;
   margin: 0 auto;
 
-  box-shadow: inset 0px 1px 9px 3px #92e5e9;
-  transition: all .3s ease-in-out;
-
   /* backface-visibility: hidden; */
   /* transform: rotateY(0deg); */
+
+  box-shadow: inset 0px 1px 9px 3px #92e5e9;
+  transition: all .3s ease-in-out;
 
   -webkit-backface-visibility: hidden;
   -webkit-transform: rotateY(0deg);
@@ -766,38 +766,21 @@ td, th {
   margin-left: 32%;
 }
 
-/* .front{
-   -webkit-appearance: none;
-} */
-
-
 .front {
   -webkit-box-shadow: none;
-  -webkit-backface-visibility: hidden;
-  -webkit-transform: rotateY(0deg);
-
 }
 
 .front:hover{
   -webkit-box-shadow: none;
   -webkit-transform: none;
-}
-
-
-
+  }
 }
 
 /* -------------------------- iphone 6,7,8 : portrait ----------------------------*/
 @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
 
-/* .front{
-   -webkit-appearance: none;
-} */
-
 .front {
   -webkit-box-shadow: none;
-  -webkit-backface-visibility: hidden;
-  -webkit-transform: rotateY(0deg);
 }
 
 .front:hover{
@@ -1002,9 +985,6 @@ td, th {
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
 .front {
   -webkit-box-shadow:none;
-  -webkit-appearance: none;
-  -webkit-backface-visibility: hidden;
-  -webkit-transform: rotateY(0deg);
 }
 
 .front:hover{
@@ -1571,9 +1551,6 @@ td, th {
 @media (min-width:960px) and (max-width: 1193px){
 .front {
   -webkit-box-shadow:none;
-  -webkit-appearance: none;
-  -webkit-backface-visibility: hidden;
-  -webkit-transform: rotateY(0deg);
 }
 
 .front:hover{
@@ -2279,8 +2256,6 @@ th {
 
 .front {
   -webkit-box-shadow:none;
-  -webkit-backface-visibility: hidden;
-  -webkit-transform: rotateY(0deg);
 }
 
 .front:hover{
@@ -2685,8 +2660,6 @@ td, th {
 /*------------ dangerZone conflict with iphone landscape -------------- */
 @media (min-width:600px) and (max-width: 699px){
 .front {
-  -webkit-backface-visibility: hidden;
-  -webkit-transform: rotateY(0deg);
   -webkit-box-shadow: none;
 }
 
@@ -3300,8 +3273,6 @@ td, th {
 @media (min-width:363px) and (max-width: 459px){
 .front {
   -webkit-box-shadow:none;
-  -webkit-backface-visibility: hidden;
-  -webkit-transform: rotateY(0deg);
 }
 
 .front:hover{
