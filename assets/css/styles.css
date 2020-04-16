@@ -780,6 +780,7 @@ td, th {
 
 .front:hover{
   -webkit-appearance: none;
+   -webkit-box-shadow: none;
 }
 
 
@@ -802,6 +803,7 @@ td, th {
 
 .front:hover{
   -webkit-appearance: none;
+   -webkit-box-shadow: none;
 }
 
 .logo{
@@ -1012,6 +1014,7 @@ td, th {
 
 .front:hover{
   -webkit-appearance: none;
+   -webkit-box-shadow: none;
 }
 
 .mainCards {
@@ -1582,6 +1585,7 @@ td, th {
 
 .front:hover{
   -webkit-appearance: none;
+   -webkit-box-shadow: none;
 }
 
 .mainCards {
@@ -2292,6 +2296,7 @@ th {
 
 .front:hover{
   -webkit-appearance: none;
+   -webkit-box-shadow: none;
 }
 
 .logo{
@@ -2700,6 +2705,7 @@ td, th {
   -webkit-appearance: none;
   -webkit-backface-visibility: hidden;
   -webkit-transform: rotateY(0deg);
+   -webkit-box-shadow: none;
 }
 
 .front:hover{
@@ -3318,6 +3324,7 @@ td, th {
 
 .front:hover{
   -webkit-appearance: none;
+   -webkit-box-shadow: none;
 }
 
 .logo{
