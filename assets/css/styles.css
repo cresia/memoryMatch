@@ -766,20 +766,62 @@ td, th {
   margin-left: 32%;
 }
 
-.front{
+/* .front{
    -webkit-appearance: none;
+} */
+
+
+.front {
+  border: solid white 2px;
+  background-image: url("../images/frontCardsImg.jpg");
+  width:100%;
+  height:100%;
+  background-position:center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position:absolute;
+  margin: 0 auto;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: rotateY(0deg);
+
 }
+
+.front:hover{
+  display: none;
+
+}
+
 
 }
 
 /* -------------------------- iphone 6,7,8 : portrait ----------------------------*/
 @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
 
-.front{
+/* .front{
    -webkit-appearance: none;
+} */
+
+.front {
+  border: solid white 2px;
+  background-image: url("../images/frontCardsImg.jpg");
+  width:100%;
+  height:100%;
+  background-position:center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position:absolute;
+  margin: 0 auto;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: rotateY(0deg);
+
 }
 
-  .logo{
+.front:hover{
+  display: none;
+
+}
+
+.logo{
   display:none;
 }
 
@@ -974,8 +1016,28 @@ td, th {
 
 /* --------------------------- iPads (landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
-.front{
+/* .front{
    -webkit-appearance: none;
+} */
+
+.front {
+  border: solid white 2px;
+  background-image: url("../images/frontCardsImg.jpg");
+  width:100%;
+  height:100%;
+  background-position:center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position:absolute;
+  margin: 0 auto;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: rotateY(0deg);
+
+}
+
+.front:hover{
+  display: none;
+
 }
 
 .mainCards {
@@ -1536,6 +1598,28 @@ td, th {
 
 /*---------------- DangerZone conflict with ipads landscape ------------------*/
 @media (min-width:960px) and (max-width: 1193px){
+
+.front {
+  border: solid white 2px;
+  background-image: url("../images/frontCardsImg.jpg");
+  width:100%;
+  height:100%;
+  background-position:center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position:absolute;
+  margin: 0 auto;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: rotateY(0deg);
+
+}
+
+.front:hover{
+  display: none;
+
+}
+
+
 .mainCards {
   margin-left: 2.5%;
   margin-top: 0.5%;
@@ -1715,8 +1799,8 @@ td, th {
 
 @media (min-width:900px) and (max-width: 959px){
 .mainCards {
-    margin-left: 2.5%;
-    margin-top: 0.5%;
+  margin-left: 2.5%;
+  margin-top: 0.5%;
 }
 
 .card {
@@ -2231,8 +2315,28 @@ th {
 
 /*------------ dangerZone conflict with ipads patroit -------------- */
 @media (min-width:750px) and (max-width: 784px){
-.front{
+/* .front{
    -webkit-appearance: none;
+} */
+
+.front {
+  border: solid white 2px;
+  background-image: url("../images/frontCardsImg.jpg");
+  width:100%;
+  height:100%;
+  background-position:center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position:absolute;
+  margin: 0 auto;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: rotateY(0deg);
+
+}
+
+.front:hover{
+  display: none;
+
 }
 
 .logo{
@@ -2630,11 +2734,30 @@ td, th {
 
 
 /*------------ dangerZone conflict with iphone landscape -------------- */
- @media (min-width:600px) and (max-width: 699px){
+@media (min-width:600px) and (max-width: 699px){
 
-
-.front{
+/* .front{
    -webkit-appearance: none;
+} */
+
+.front {
+  border: solid white 2px;
+  background-image: url("../images/frontCardsImg.jpg");
+  width:100%;
+  height:100%;
+  background-position:center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position:absolute;
+  margin: 0 auto;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: rotateY(0deg);
+
+}
+
+.front:hover{
+  display: none;
+
 }
 
 .logo {
@@ -3240,6 +3363,27 @@ td, th {
 
 /*------------------ same as iphone patroit ----------------------*/
 @media (min-width:363px) and (max-width: 459px){
+.front {
+  border: solid white 2px;
+  background-image: url("../images/frontCardsImg.jpg");
+  width:100%;
+  height:100%;
+  background-position:center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position:absolute;
+  margin: 0 auto;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: rotateY(0deg);
+
+}
+
+.front:hover{
+  display: none;
+
+}
+
+
 .logo{
   display:none;
 }
