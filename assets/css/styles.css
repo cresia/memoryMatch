@@ -772,11 +772,16 @@ td, th {
 
 .front {
   -webkit-box-shadow: none;
-   -webkit-appearance: none;
+  -webkit-appearance: none;
   -webkit-backface-visibility: hidden;
   -webkit-transform: rotateY(0deg);
 
 }
+
+.front:hover{
+  -webkit-appearance: none;
+}
+
 
 
 }
@@ -793,9 +798,11 @@ td, th {
    -webkit-appearance: none;
   -webkit-backface-visibility: hidden;
   -webkit-transform: rotateY(0deg);
-
 }
 
+.front:hover{
+  -webkit-appearance: none;
+}
 
 .logo{
   display:none;
@@ -1001,7 +1008,10 @@ td, th {
   -webkit-appearance: none;
   -webkit-backface-visibility: hidden;
   -webkit-transform: rotateY(0deg);
+}
 
+.front:hover{
+  -webkit-appearance: none;
 }
 
 .mainCards {
@@ -1568,7 +1578,10 @@ td, th {
   -webkit-appearance: none;
   -webkit-backface-visibility: hidden;
   -webkit-transform: rotateY(0deg);
+}
 
+.front:hover{
+  -webkit-appearance: none;
 }
 
 .mainCards {
@@ -2275,7 +2288,10 @@ th {
   -webkit-appearance: none;
   -webkit-backface-visibility: hidden;
   -webkit-transform: rotateY(0deg);
+}
 
+.front:hover{
+  -webkit-appearance: none;
 }
 
 .logo{
@@ -2686,6 +2702,11 @@ td, th {
   -webkit-transform: rotateY(0deg);
 }
 
+.front:hover{
+  -webkit-appearance: none;
+}
+
+
 .logo {
   margin-top: 1%;
   margin-left: 25%;
@@ -2964,7 +2985,6 @@ table {
   margin-top: -5%;
   border-radius: 49%;
 }
-
 
 .tryAgain {
   margin-top: 5%;
@@ -3296,6 +3316,10 @@ td, th {
   -webkit-transform: rotateY(0deg);
 }
 
+.front:hover{
+  -webkit-appearance: none;
+}
+
 .logo{
   display:none;
 }
@@ -3416,7 +3440,6 @@ td, th {
   width: 7rem;
 }
 
-
 .modalText {
   font-size: 26px;
   margin-top: 0%;
@@ -3429,7 +3452,7 @@ td, th {
   left: 50%;
 }
 
-  .winImg {
+.winImg {
   width: 60vw;
   height: 21vh;
   margin-left: 9%;
@@ -3452,11 +3475,11 @@ td, th {
 }
 
 .submit {
-    width: 32%;
-    margin-top: -1%;
-    font-size: 25px;
-    margin-left: 35%;
-    padding: 1.5%;
+  width: 32%;
+  margin-top: -1%;
+  font-size: 25px;
+  margin-left: 35%;
+  padding: 1.5%;
 }
 
 .rankModal {
