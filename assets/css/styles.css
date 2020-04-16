@@ -207,7 +207,7 @@ body{
   position:absolute;
   margin: 0 auto;
   box-shadow: inset 0px 1px 9px 3px #92e5e9;
-  transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
 
   /* backface-visibility: hidden; */
   /* transform: rotateY(0deg); */
