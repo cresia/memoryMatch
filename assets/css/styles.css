@@ -207,8 +207,8 @@ body{
   position:absolute;
   margin: 0 auto;
 
-  /* box-shadow: inset 0px 1px 9px 3px #92e5e9;
-  transition: all .3s ease-in-out; */
+  box-shadow: inset 0px 1px 9px 3px #92e5e9;
+  transition: all .3s ease-in-out;
 
   /* backface-visibility: hidden; */
   /* transform: rotateY(0deg); */
@@ -218,10 +218,10 @@ body{
 
 }
 
-/* .front:hover{
+.front:hover{
   -webkit-transform: scale(1.1);
   -webkit-box-shadow: 0px 6px 16px #71fafa;
-} */
+}
 
 
 /* back is the answer */
@@ -1000,7 +1000,7 @@ td, th {
 
 /* --------------------------- iPads (landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
-/* .front {
+.front {
   -webkit-box-shadow:none;
   -webkit-appearance: none;
   -webkit-backface-visibility: hidden;
@@ -1010,7 +1010,7 @@ td, th {
 .front:hover{
   -webkit-box-shadow: none;
   -webkit-transform: none;
-} */
+}
 
 .mainCards {
     margin-left: 2.5%;
@@ -1569,8 +1569,7 @@ td, th {
 
 /*---------------- DangerZone conflict with ipads landscape ------------------*/
 @media (min-width:960px) and (max-width: 1193px){
-
-/* .front {
+.front {
   -webkit-box-shadow:none;
   -webkit-appearance: none;
   -webkit-backface-visibility: hidden;
@@ -1580,7 +1579,7 @@ td, th {
 .front:hover{
   -webkit-box-shadow: none;
   -webkit-transform: none;
-} */
+}
 
 .mainCards {
   margin-left: 2.5%;
@@ -2278,7 +2277,7 @@ th {
 /*------------ dangerZone conflict with ipads patroit -------------- */
 @media (min-width:750px) and (max-width: 784px){
 
-/* .front {
+.front {
   -webkit-box-shadow:none;
   -webkit-backface-visibility: hidden;
   -webkit-transform: rotateY(0deg);
@@ -2287,7 +2286,7 @@ th {
 .front:hover{
   -webkit-box-shadow: none;
   -webkit-transform: none;
-} */
+}
 
 .logo{
   display:none;
