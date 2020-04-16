@@ -220,7 +220,7 @@ body{
 .front:hover{
   /* transform: scale(1.1); */
   -webkit-transform: scale(1.1);
-  box-shadow: 0px 6px 16px #71fafa;
+  -webkit-box-shadow: 0px 6px 16px #71fafa;
 }
 
 
@@ -2631,7 +2631,7 @@ td, th {
 
 /*------------ dangerZone conflict with iphone landscape -------------- */
  @media (min-width:600px) and (max-width: 699px){
-   
+
 
 .front{
    -webkit-appearance: none;
