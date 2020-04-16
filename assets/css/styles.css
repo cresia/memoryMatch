@@ -2292,8 +2292,8 @@ th {
 }
 
 .front:hover{
-  -webkit-appearance: none;
   -webkit-box-shadow: none;
+  -webkit-transform: none;
 }
 
 .logo{
