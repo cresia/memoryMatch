@@ -163,8 +163,6 @@ function handleResetButton(){
       theSecondCardClicked = null;
       games_played++;
 
-      $('.card').addClass('shakeCards');
-
       resetStats();
       closeModal();
       buttons();
