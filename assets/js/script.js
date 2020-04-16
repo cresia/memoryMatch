@@ -163,6 +163,14 @@ function handleResetButton(){
       theSecondCardClicked = null;
       games_played++;
 
+      $('.card').css({
+          "animation": "shake 0.5s",
+          "animation - iteration - count": "infinite;",
+
+          
+
+        });
+
       resetStats();
       closeModal();
       buttons();
