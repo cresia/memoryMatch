@@ -210,7 +210,7 @@ body{
   /* backface-visibility: hidden; */
   /* transform: rotateY(0deg); */
 
-  box-shadow: inset 0px 1px 9px 3px #92e5e9;
+  box-shadow: inset 0px 1px 12px 3px #92e5e9;
   transition: all .3s ease-in-out;
 
   -webkit-backface-visibility: hidden;
