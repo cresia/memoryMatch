@@ -220,7 +220,7 @@ body{
 
 .front:hover{
   -webkit-transform: scale(1.1);
-  -webkit-box-shadow: 0px 6px 16px #71fafa;
+  -webkit-box-shadow: 1px 7px 16px #71fafa;
 }
 
 
