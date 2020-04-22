@@ -164,17 +164,18 @@ body{
 .mainCards{
   width: 95%;
   height: 20%;
-  display: inline-block;
+  /* display: inline-block; */
   margin-left: 3%;
   position: relative;
-  margin-top: 0.5%;
+  /* margin-top: 0.5%; */
+   margin-top: 2%;
 }
 
 .card {
   width: 11vw;
   margin-left: 4%;
   height: 21vh;
-  margin-top:2.8%;
+  margin-top:2%;
   position: relative;
   display: inline-block;
   transform-style: preserve-3d;
