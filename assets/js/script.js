@@ -35,7 +35,7 @@ var max_matches = 1;
 var addMatchedClass;
 var attempts = 0;
 var games_played = 0;
-var timer = 300;
+var timer = 350;
 var startTimer = true;
 
 var username;
