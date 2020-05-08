@@ -34,7 +34,7 @@ var max_matches = 9;
 var addMatchedClass;
 var attempts = 0;
 var games_played = 0;
-var timer = 500;
+var timer = 300;
 var startTimer = true;
 
 var username;
@@ -226,7 +226,7 @@ function resetStats() {
   match = 0;
   attempts = 0;
 
-  timer = 300;
+  timer = 100;
   $(".timeResult").text(timer);
   startTimer = true;
 
